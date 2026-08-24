@@ -1,0 +1,370 @@
+{
+  "summary": {
+    "backend": "ollama",
+    "model": "llama3.2:3b",
+    "n_questions": 18,
+    "semantic_correct": 7,
+    "exact_match": 5,
+    "partial_match": 2,
+    "answers_with_hallucinated_facts": 0,
+    "total_hallucinated_entities": 0,
+    "kg_triples": 842,
+    "kg_distinct_predicates": 51
+  },
+  "results": [
+    {
+      "id": "EN-CQ1",
+      "question": "Which opportunities have a technical proposal with a cost estimate?",
+      "n_rows_reference": 5,
+      "answer": "Cannot answer from the available data.",
+      "latency_ms": 124402.24766731262,
+      "n_context_triples": 120,
+      "answer_entities": [],
+      "correct_entities": [],
+      "missing_entities": [
+        "Opportunity_OPP001",
+        "Opportunity_OPP002",
+        "Opportunity_OPP003",
+        "Opportunity_OPP004",
+        "Opportunity_OPP005"
+      ],
+      "asserted_not_in_reference": [],
+      "fabricated_entities": [],
+      "n_fabricated": 0,
+      "correctness": "no_match"
+    },
+    {
+      "id": "EN-CQ2",
+      "question": "Which technical proposals require a Backend Developer profile?",
+      "n_rows_reference": 1,
+      "answer": "Cannot answer from the available data.",
+      "latency_ms": 101244.48466300964,
+      "n_context_triples": 120,
+      "answer_entities": [],
+      "correct_entities": [],
+      "missing_entities": [],
+      "asserted_not_in_reference": [],
+      "fabricated_entities": [],
+      "n_fabricated": 0,
+      "correctness": "exact_match"
+    },
+    {
+      "id": "EN-CQ3",
+      "question": "Which projects are linked to opportunities?",
+      "n_rows_reference": 5,
+      "answer": "Cannot answer from the available data. The question requires information about the association between Projects and Opportunities that is not present in the provided triples.",
+      "latency_ms": 101888.83209228516,
+      "n_context_triples": 120,
+      "answer_entities": [],
+      "correct_entities": [],
+      "missing_entities": [
+        "Opportunity_OPP001",
+        "Opportunity_OPP002",
+        "Opportunity_OPP003",
+        "Opportunity_OPP004",
+        "Opportunity_OPP005",
+        "Project_001",
+        "Project_002",
+        "Project_003",
+        "Project_004",
+        "Project_005"
+      ],
+      "asserted_not_in_reference": [],
+      "fabricated_entities": [],
+      "n_fabricated": 0,
+      "correctness": "no_match"
+    },
+    {
+      "id": "EN-CQ4",
+      "question": "Which employees know Python?",
+      "n_rows_reference": 9,
+      "answer": "Employee_019.",
+      "latency_ms": 108772.86696434021,
+      "n_context_triples": 120,
+      "answer_entities": [
+        "Employee_019"
+      ],
+      "correct_entities": [
+        "Employee_019"
+      ],
+      "missing_entities": [
+        "Employee_012",
+        "Employee_032",
+        "Employee_034",
+        "Employee_038"
+      ],
+      "asserted_not_in_reference": [],
+      "fabricated_entities": [],
+      "n_fabricated": 0,
+      "correctness": "partial_match"
+    },
+    {
+      "id": "EN-CQ5",
+      "question": "Which profiles are needed for the project linked to opportunity OPP001?",
+      "n_rows_reference": 1,
+      "answer": "Cannot answer from the available data.\n\nThe question asks about a specific project linked to an opportunity (Opportunity_OPP01), but there is no triple that explicitly states which profile is necessary for this project. The only information provided is that Employee_001 has Profile_1, and Profile_1 describes multiple employees, but it does not specify the profiles needed for a particular project.",
+      "latency_ms": 117712.03899383545,
+      "n_context_triples": 120,
+      "answer_entities": [
+        "Employee_001",
+        "Opportunity_OPP01",
+        "Profile_1"
+      ],
+      "correct_entities": [],
+      "missing_entities": [],
+      "asserted_not_in_reference": [
+        "Employee_001",
+        "Opportunity_OPP01",
+        "Profile_1"
+      ],
+      "fabricated_entities": [],
+      "n_fabricated": 0,
+      "correctness": "exact_match"
+    },
+    {
+      "id": "EN-CQ6",
+      "question": "Which projects have real margin above 25%?",
+      "n_rows_reference": 2,
+      "answer": "Cannot answer from the available data.",
+      "latency_ms": 100261.3422870636,
+      "n_context_triples": 120,
+      "answer_entities": [],
+      "correct_entities": [],
+      "missing_entities": [
+        "Project_002",
+        "Project_003"
+      ],
+      "asserted_not_in_reference": [],
+      "fabricated_entities": [],
+      "n_fabricated": 0,
+      "correctness": "no_match"
+    },
+    {
+      "id": "PT-CQ1",
+      "question": "Quais oportunidades já têm proposta técnica com estimativa de custo?",
+      "n_rows_reference": 5,
+      "answer": "Cannot answer from the available data.",
+      "latency_ms": 97119.69089508057,
+      "n_context_triples": 120,
+      "answer_entities": [],
+      "correct_entities": [],
+      "missing_entities": [
+        "Opportunity_OPP001",
+        "Opportunity_OPP002",
+        "Opportunity_OPP003",
+        "Opportunity_OPP004",
+        "Opportunity_OPP005"
+      ],
+      "asserted_not_in_reference": [],
+      "fabricated_entities": [],
+      "n_fabricated": 0,
+      "correctness": "no_match"
+    },
+    {
+      "id": "PT-CQ2",
+      "question": "Quais propostas técnicas precisam de um Backend Developer?",
+      "n_rows_reference": 1,
+      "answer": "Cannot answer from the available data.",
+      "latency_ms": 90814.5821094513,
+      "n_context_triples": 120,
+      "answer_entities": [],
+      "correct_entities": [],
+      "missing_entities": [],
+      "asserted_not_in_reference": [],
+      "fabricated_entities": [],
+      "n_fabricated": 0,
+      "correctness": "exact_match"
+    },
+    {
+      "id": "PT-CQ3",
+      "question": "Quais projetos estão ligados a oportunidades?",
+      "n_rows_reference": 5,
+      "answer": "Cannot answer from the available data.",
+      "latency_ms": 92122.15542793274,
+      "n_context_triples": 120,
+      "answer_entities": [],
+      "correct_entities": [],
+      "missing_entities": [
+        "Opportunity_OPP001",
+        "Opportunity_OPP002",
+        "Opportunity_OPP003",
+        "Opportunity_OPP004",
+        "Opportunity_OPP005",
+        "Project_001",
+        "Project_002",
+        "Project_003",
+        "Project_004",
+        "Project_005"
+      ],
+      "asserted_not_in_reference": [],
+      "fabricated_entities": [],
+      "n_fabricated": 0,
+      "correctness": "no_match"
+    },
+    {
+      "id": "PT-CQ4",
+      "question": "Quais funcionários sabem Python?",
+      "n_rows_reference": 9,
+      "answer": "Employee_019.",
+      "latency_ms": 103702.81767845154,
+      "n_context_triples": 120,
+      "answer_entities": [
+        "Employee_019"
+      ],
+      "correct_entities": [
+        "Employee_019"
+      ],
+      "missing_entities": [
+        "Employee_012",
+        "Employee_032",
+        "Employee_034",
+        "Employee_038"
+      ],
+      "asserted_not_in_reference": [],
+      "fabricated_entities": [],
+      "n_fabricated": 0,
+      "correctness": "partial_match"
+    },
+    {
+      "id": "PT-CQ5",
+      "question": "Quais perfis são necessários para o projeto ligado à oportunidade OPP001?",
+      "n_rows_reference": 1,
+      "answer": "Não posso responder essa pergunta.",
+      "latency_ms": 92019.51003074646,
+      "n_context_triples": 120,
+      "answer_entities": [],
+      "correct_entities": [],
+      "missing_entities": [],
+      "asserted_not_in_reference": [],
+      "fabricated_entities": [],
+      "n_fabricated": 0,
+      "correctness": "no_match"
+    },
+    {
+      "id": "PT-CQ6",
+      "question": "Quais projetos tiveram margem real acima de 25%?",
+      "n_rows_reference": 2,
+      "answer": "Não posso responder essa pergunta com base nas informações forneçidas.",
+      "latency_ms": 87909.7912311554,
+      "n_context_triples": 120,
+      "answer_entities": [],
+      "correct_entities": [],
+      "missing_entities": [
+        "Project_002",
+        "Project_003"
+      ],
+      "asserted_not_in_reference": [],
+      "fabricated_entities": [],
+      "n_fabricated": 0,
+      "correctness": "no_match"
+    },
+    {
+      "id": "NAT-1",
+      "question": "Show me the projects whose real margin is below their expected margin.",
+      "n_rows_reference": 0,
+      "answer": "Cannot answer from the available data.",
+      "latency_ms": 86006.42251968384,
+      "n_context_triples": 120,
+      "answer_entities": [],
+      "correct_entities": [],
+      "missing_entities": [],
+      "asserted_not_in_reference": [],
+      "fabricated_entities": [],
+      "n_fabricated": 0,
+      "correctness": "exact_match"
+    },
+    {
+      "id": "NAT-2",
+      "question": "Quantos funcionários temos por perfil?",
+      "n_rows_reference": 5,
+      "answer": "Cannot answer from the available data.",
+      "latency_ms": 2103.1596660614014,
+      "n_context_triples": 120,
+      "answer_entities": [],
+      "correct_entities": [],
+      "missing_entities": [
+        "Profile_1",
+        "Profile_2",
+        "Profile_3",
+        "Profile_4",
+        "Profile_5"
+      ],
+      "asserted_not_in_reference": [],
+      "fabricated_entities": [],
+      "n_fabricated": 0,
+      "correctness": "no_match"
+    },
+    {
+      "id": "NAT-3",
+      "question": "What is the average expected hours across all technical proposals?",
+      "n_rows_reference": 1,
+      "answer": "Cannot answer from the available data. \n\nThe triples do not provide information about the expected hours of technical proposals. The only information related to technical proposals is that they are associated with opportunities (e.g., Opportunity_OPP01, hasTechnicalProposal, TechnicalProposal_001) and have a negotiation margin (e.g., Opportunity_OPP01, hasNegotiationMargin, 0.24).",
+      "latency_ms": 10355.259895324707,
+      "n_context_triples": 120,
+      "answer_entities": [
+        "Opportunity_OPP01",
+        "TechnicalProposal_001"
+      ],
+      "correct_entities": [],
+      "missing_entities": [],
+      "asserted_not_in_reference": [
+        "Opportunity_OPP01",
+        "TechnicalProposal_001"
+      ],
+      "fabricated_entities": [],
+      "n_fabricated": 0,
+      "correctness": "exact_match"
+    },
+    {
+      "id": "NAT-4",
+      "question": "Quais funcionários trabalham em mais de um projeto?",
+      "n_rows_reference": 0,
+      "answer": "Não posso responder a essa pergunta com base nos dados forneçidos. Posso ajudar com outra coisa?",
+      "latency_ms": 4482.527494430542,
+      "n_context_triples": 120,
+      "answer_entities": [],
+      "correct_entities": [],
+      "missing_entities": [],
+      "asserted_not_in_reference": [],
+      "fabricated_entities": [],
+      "n_fabricated": 0,
+      "correctness": "no_match"
+    },
+    {
+      "id": "NAT-5",
+      "question": "Which opportunities have both a technical and a commercial proposal?",
+      "n_rows_reference": 5,
+      "answer": "Cannot answer from the available data.",
+      "latency_ms": 87616.36519432068,
+      "n_context_triples": 120,
+      "answer_entities": [],
+      "correct_entities": [],
+      "missing_entities": [
+        "Opportunity_OPP001",
+        "Opportunity_OPP002",
+        "Opportunity_OPP003",
+        "Opportunity_OPP004",
+        "Opportunity_OPP005"
+      ],
+      "asserted_not_in_reference": [],
+      "fabricated_entities": [],
+      "n_fabricated": 0,
+      "correctness": "no_match"
+    },
+    {
+      "id": "NAT-6",
+      "question": "Qual o valor total dos pagamentos recebidos?",
+      "n_rows_reference": 1,
+      "answer": "Não posso determinar o valor total dos pagamentos recebidos.",
+      "latency_ms": 104368.92294883728,
+      "n_context_triples": 120,
+      "answer_entities": [],
+      "correct_entities": [],
+      "missing_entities": [],
+      "asserted_not_in_reference": [],
+      "fabricated_entities": [],
+      "n_fabricated": 0,
+      "correctness": "no_match"
+    }
+  ]
+}

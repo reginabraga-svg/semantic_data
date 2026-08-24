@@ -1,0 +1,24 @@
+{
+  "factor": 10,
+  "individuals": 2460,
+  "reasoner_ms": null,
+  "sparql": {
+    "CQ1_opportunities_with_tech_proposal": {
+      "median_ms": 5.560700000387442,
+      "rows": 50
+    },
+    "CQ3_projects_linked_opportunities": {
+      "median_ms": 3.4263999996255734,
+      "rows": 50
+    },
+    "CQ4_employees_knowing_python": {
+      "median_ms": 10.68319999922096,
+      "rows": 9
+    },
+    "CQ6_projects_margin_above_25": {
+      "median_ms": 6.960699999581266,
+      "rows": 20
+    }
+  },
+  "overall_median_cq_ms": 6.260699999984354
+}

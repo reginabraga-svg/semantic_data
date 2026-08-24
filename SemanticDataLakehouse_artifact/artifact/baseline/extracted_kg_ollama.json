@@ -1,0 +1,4524 @@
+{
+  "backend": "ollama",
+  "model": "qwen2.5-coder:1.5b",
+  "n_docs": 246,
+  "n_triples_extracted": 842,
+  "extraction_meta": {
+    "calls": 50,
+    "parse_failures": 1,
+    "raw_responses": [
+      {
+        "batch_start": 0,
+        "latency_ms": 28769.44923400879,
+        "n_triples": 11,
+        "parse_ok": true
+      },
+      {
+        "batch_start": 5,
+        "latency_ms": 21953.929662704468,
+        "n_triples": 15,
+        "parse_ok": true
+      },
+      {
+        "batch_start": 10,
+        "latency_ms": 34312.864542007446,
+        "n_triples": 26,
+        "parse_ok": true
+      },
+      {
+        "batch_start": 15,
+        "latency_ms": 34945.59955596924,
+        "n_triples": 28,
+        "parse_ok": true
+      },
+      {
+        "batch_start": 20,
+        "latency_ms": 37110.437631607056,
+        "n_triples": 0,
+        "parse_ok": false
+      },
+      {
+        "batch_start": 25,
+        "latency_ms": 29050.88782310486,
+        "n_triples": 22,
+        "parse_ok": true
+      },
+      {
+        "batch_start": 30,
+        "latency_ms": 30208.773851394653,
+        "n_triples": 21,
+        "parse_ok": true
+      },
+      {
+        "batch_start": 35,
+        "latency_ms": 22767.266273498535,
+        "n_triples": 14,
+        "parse_ok": true
+      },
+      {
+        "batch_start": 40,
+        "latency_ms": 25136.51967048645,
+        "n_triples": 11,
+        "parse_ok": true
+      },
+      {
+        "batch_start": 45,
+        "latency_ms": 25203.025341033936,
+        "n_triples": 16,
+        "parse_ok": true
+      },
+      {
+        "batch_start": 50,
+        "latency_ms": 20497.339487075806,
+        "n_triples": 13,
+        "parse_ok": true
+      },
+      {
+        "batch_start": 55,
+        "latency_ms": 29440.76919555664,
+        "n_triples": 19,
+        "parse_ok": true
+      },
+      {
+        "batch_start": 60,
+        "latency_ms": 24767.07124710083,
+        "n_triples": 19,
+        "parse_ok": true
+      },
+      {
+        "batch_start": 65,
+        "latency_ms": 23096.322059631348,
+        "n_triples": 16,
+        "parse_ok": true
+      },
+      {
+        "batch_start": 70,
+        "latency_ms": 16834.03182029724,
+        "n_triples": 10,
+        "parse_ok": true
+      },
+      {
+        "batch_start": 75,
+        "latency_ms": 20492.478847503662,
+        "n_triples": 15,
+        "parse_ok": true
+      },
+      {
+        "batch_start": 80,
+        "latency_ms": 22627.21538543701,
+        "n_triples": 14,
+        "parse_ok": true
+      },
+      {
+        "batch_start": 85,
+        "latency_ms": 25656.609773635864,
+        "n_triples": 16,
+        "parse_ok": true
+      },
+      {
+        "batch_start": 90,
+        "latency_ms": 16564.897298812866,
+        "n_triples": 9,
+        "parse_ok": true
+      },
+      {
+        "batch_start": 95,
+        "latency_ms": 23733.999967575073,
+        "n_triples": 10,
+        "parse_ok": true
+      },
+      {
+        "batch_start": 100,
+        "latency_ms": 23518.885850906372,
+        "n_triples": 14,
+        "parse_ok": true
+      },
+      {
+        "batch_start": 105,
+        "latency_ms": 31279.664516448975,
+        "n_triples": 20,
+        "parse_ok": true
+      },
+      {
+        "batch_start": 110,
+        "latency_ms": 20567.66629219055,
+        "n_triples": 10,
+        "parse_ok": true
+      },
+      {
+        "batch_start": 115,
+        "latency_ms": 23944.440603256226,
+        "n_triples": 10,
+        "parse_ok": true
+      },
+      {
+        "batch_start": 120,
+        "latency_ms": 31362.408876419067,
+        "n_triples": 14,
+        "parse_ok": true
+      },
+      {
+        "batch_start": 125,
+        "latency_ms": 26248.831033706665,
+        "n_triples": 16,
+        "parse_ok": true
+      },
+      {
+        "batch_start": 130,
+        "latency_ms": 30699.52654838562,
+        "n_triples": 14,
+        "parse_ok": true
+      },
+      {
+        "batch_start": 135,
+        "latency_ms": 24472.00107574463,
+        "n_triples": 13,
+        "parse_ok": true
+      },
+      {
+        "batch_start": 140,
+        "latency_ms": 25138.152599334717,
+        "n_triples": 14,
+        "parse_ok": true
+      },
+      {
+        "batch_start": 145,
+        "latency_ms": 29654.234409332275,
+        "n_triples": 16,
+        "parse_ok": true
+      },
+      {
+        "batch_start": 150,
+        "latency_ms": 22095.62087059021,
+        "n_triples": 10,
+        "parse_ok": true
+      },
+      {
+        "batch_start": 155,
+        "latency_ms": 24989.006519317627,
+        "n_triples": 12,
+        "parse_ok": true
+      },
+      {
+        "batch_start": 160,
+        "latency_ms": 28444.26989555359,
+        "n_triples": 13,
+        "parse_ok": true
+      },
+      {
+        "batch_start": 165,
+        "latency_ms": 30383.37731361389,
+        "n_triples": 16,
+        "parse_ok": true
+      },
+      {
+        "batch_start": 170,
+        "latency_ms": 25249.430418014526,
+        "n_triples": 13,
+        "parse_ok": true
+      },
+      {
+        "batch_start": 175,
+        "latency_ms": 26913.506269454956,
+        "n_triples": 12,
+        "parse_ok": true
+      },
+      {
+        "batch_start": 180,
+        "latency_ms": 30635.220766067505,
+        "n_triples": 14,
+        "parse_ok": true
+      },
+      {
+        "batch_start": 185,
+        "latency_ms": 34090.42453765869,
+        "n_triples": 16,
+        "parse_ok": true
+      },
+      {
+        "batch_start": 190,
+        "latency_ms": 20895.102977752686,
+        "n_triples": 10,
+        "parse_ok": true
+      },
+      {
+        "batch_start": 195,
+        "latency_ms": 21103.31106185913,
+        "n_triples": 11,
+        "parse_ok": true
+      },
+      {
+        "batch_start": 200,
+        "latency_ms": 24788.098573684692,
+        "n_triples": 13,
+        "parse_ok": true
+      },
+      {
+        "batch_start": 205,
+        "latency_ms": 28452.714920043945,
+        "n_triples": 16,
+        "parse_ok": true
+      },
+      {
+        "batch_start": 210,
+        "latency_ms": 19161.161422729492,
+        "n_triples": 10,
+        "parse_ok": true
+      },
+      {
+        "batch_start": 215,
+        "latency_ms": 23414.363384246826,
+        "n_triples": 15,
+        "parse_ok": true
+      },
+      {
+        "batch_start": 220,
+        "latency_ms": 44320.20306587219,
+        "n_triples": 28,
+        "parse_ok": true
+      },
+      {
+        "batch_start": 225,
+        "latency_ms": 36987.41316795349,
+        "n_triples": 23,
+        "parse_ok": true
+      },
+      {
+        "batch_start": 230,
+        "latency_ms": 32611.395120620728,
+        "n_triples": 19,
+        "parse_ok": true
+      },
+      {
+        "batch_start": 235,
+        "latency_ms": 59915.36045074463,
+        "n_triples": 30,
+        "parse_ok": true
+      },
+      {
+        "batch_start": 240,
+        "latency_ms": 227506.38675689697,
+        "n_triples": 113,
+        "parse_ok": true
+      },
+      {
+        "batch_start": 245,
+        "latency_ms": 8495.677947998047,
+        "n_triples": 2,
+        "parse_ok": true
+      }
+    ]
+  },
+  "triples": [
+    {
+      "s": "BusinessPartner_Acme",
+      "p": "type",
+      "o": "BusinessPartner"
+    },
+    {
+      "s": "ChartOfAccount_Sales",
+      "p": "hasName",
+      "o": "Sales"
+    },
+    {
+      "s": "JournalEntry_001",
+      "p": "classifiedBy",
+      "o": "ChartOfAccount_Sales"
+    },
+    {
+      "s": "JournalEntry_002",
+      "p": "classifiedBy",
+      "o": "ChartOfAccount_Sales"
+    },
+    {
+      "s": "JournalEntry_003",
+      "p": "classifiedBy",
+      "o": "ChartOfAccount_Sales"
+    },
+    {
+      "s": "JournalEntry_001",
+      "p": "records",
+      "o": "ChartOfAccount_Sales"
+    },
+    {
+      "s": "JournalEntry_002",
+      "p": "records",
+      "o": "ChartOfAccount_Sales"
+    },
+    {
+      "s": "JournalEntry_003",
+      "p": "records",
+      "o": "ChartOfAccount_Sales"
+    },
+    {
+      "s": "IncomingPayment_001",
+      "p": "recordedIn",
+      "o": "JournalEntry_001"
+    },
+    {
+      "s": "IncomingPayment_002",
+      "p": "recordedIn",
+      "o": "JournalEntry_002"
+    },
+    {
+      "s": "IncomingPayment_003",
+      "p": "recordedIn",
+      "o": "JournalEntry_003"
+    },
+    {
+      "s": "CommercialProposal_001",
+      "p": "type",
+      "o": "CommercialProposal"
+    },
+    {
+      "s": "CommercialProposal_002",
+      "p": "type",
+      "o": "CommercialProposal"
+    },
+    {
+      "s": "CommercialProposal_003",
+      "p": "type",
+      "o": "CommercialProposal"
+    },
+    {
+      "s": "CommercialProposal_004",
+      "p": "type",
+      "o": "CommercialProposal"
+    },
+    {
+      "s": "CommercialProposal_005",
+      "p": "type",
+      "o": "CommercialProposal"
+    },
+    {
+      "s": "CommercialProposal_001",
+      "p": "expectedMargin",
+      "o": "0.35"
+    },
+    {
+      "s": "CommercialProposal_002",
+      "p": "expectedMargin",
+      "o": "0.2"
+    },
+    {
+      "s": "CommercialProposal_003",
+      "p": "expectedMargin",
+      "o": "0.25"
+    },
+    {
+      "s": "CommercialProposal_004",
+      "p": "expectedMargin",
+      "o": "0.35"
+    },
+    {
+      "s": "CommercialProposal_005",
+      "p": "expectedMargin",
+      "o": "0.35"
+    },
+    {
+      "s": "CommercialProposal_001",
+      "p": "totalValue",
+      "o": "106263.0"
+    },
+    {
+      "s": "CommercialProposal_002",
+      "p": "totalValue",
+      "o": "52999.0"
+    },
+    {
+      "s": "CommercialProposal_003",
+      "p": "totalValue",
+      "o": "112264.0"
+    },
+    {
+      "s": "CommercialProposal_004",
+      "p": "totalValue",
+      "o": "96370.0"
+    },
+    {
+      "s": "CommercialProposal_005",
+      "p": "totalValue",
+      "o": "69949.0"
+    },
+    {
+      "s": "Customer_ABC",
+      "p": "type",
+      "o": "BusinessPartner"
+    },
+    {
+      "s": "Customer_ABC",
+      "p": "requests",
+      "o": "Opportunity_OPP001"
+    },
+    {
+      "s": "Customer_ABC",
+      "p": "requests",
+      "o": "Opportunity_OPP002"
+    },
+    {
+      "s": "Customer_ABC",
+      "p": "requests",
+      "o": "Opportunity_OPP003"
+    },
+    {
+      "s": "Customer_ABC",
+      "p": "requests",
+      "o": "Opportunity_OPP004"
+    },
+    {
+      "s": "Customer_ABC",
+      "p": "requests",
+      "o": "Opportunity_OPP005"
+    },
+    {
+      "s": "Opportunity_OPP01",
+      "p": "associatedWith",
+      "o": "SalesOrder_001"
+    },
+    {
+      "s": "Opportunity_OPP01",
+      "p": "hasCommercialProposal",
+      "o": "CommercialProposal_001"
+    },
+    {
+      "s": "Opportunity_OPP01",
+      "p": "hasCustomer",
+      "o": "Customer_ABC"
+    },
+    {
+      "s": "Opportunity_OPP01",
+      "p": "hasTechnicalProposal",
+      "o": "TechnicalProposal_001"
+    },
+    {
+      "s": "Opportunity_OPP01",
+      "p": "hasNegotiationMargin",
+      "o": "0.24"
+    },
+    {
+      "s": "Opportunity_OPP02",
+      "p": "associatedWith",
+      "o": "SalesOrder_002"
+    },
+    {
+      "s": "Opportunity_OPP02",
+      "p": "hasCommercialProposal",
+      "o": "CommercialProposal_002"
+    },
+    {
+      "s": "Opportunity_OPP02",
+      "p": "hasCustomer",
+      "o": "Customer_ABC"
+    },
+    {
+      "s": "Opportunity_OPP02",
+      "p": "hasTechnicalProposal",
+      "o": "TechnicalProposal_002"
+    },
+    {
+      "s": "Opportunity_OPP02",
+      "p": "hasNegotiationMargin",
+      "o": "0.22"
+    },
+    {
+      "s": "Opportunity_OPP03",
+      "p": "associatedWith",
+      "o": "SalesOrder_003"
+    },
+    {
+      "s": "Opportunity_OPP03",
+      "p": "hasCommercialProposal",
+      "o": "CommercialProposal_003"
+    },
+    {
+      "s": "Opportunity_OPP03",
+      "p": "hasCustomer",
+      "o": "Customer_ABC"
+    },
+    {
+      "s": "Opportunity_OPP03",
+      "p": "hasTechnicalProposal",
+      "o": "TechnicalProposal_003"
+    },
+    {
+      "s": "Opportunity_OPP03",
+      "p": "hasNegotiationMargin",
+      "o": "0.28"
+    },
+    {
+      "s": "Opportunity_OPP04",
+      "p": "associatedWith",
+      "o": "SalesOrder_004"
+    },
+    {
+      "s": "Opportunity_OPP04",
+      "p": "hasCommercialProposal",
+      "o": "CommercialProposal_004"
+    },
+    {
+      "s": "Opportunity_OPP04",
+      "p": "hasCustomer",
+      "o": "Customer_ABC"
+    },
+    {
+      "s": "Opportunity_OPP04",
+      "p": "hasTechnicalProposal",
+      "o": "TechnicalProposal_004"
+    },
+    {
+      "s": "Opportunity_OPP04",
+      "p": "hasNegotiationMargin",
+      "o": "0.3"
+    },
+    {
+      "s": "Opportunity_OPP005",
+      "p": "type",
+      "o": "Opportunity"
+    },
+    {
+      "s": "Opportunity_OPP005",
+      "p": "hasCommercialProposal",
+      "o": "CommercialProposal_005"
+    },
+    {
+      "s": "Opportunity_OPP005",
+      "p": "hasCustomer",
+      "o": "Customer_ABC"
+    },
+    {
+      "s": "Opportunity_OPP005",
+      "p": "hasTechnicalProposal",
+      "o": "TechnicalProposal_005"
+    },
+    {
+      "s": "Opportunity_OPP005",
+      "p": "hasNegotiationMargin",
+      "o": "0.27"
+    },
+    {
+      "s": "Employee_001",
+      "p": "type",
+      "o": "BusinessPartner"
+    },
+    {
+      "s": "Employee_001",
+      "p": "worksOn",
+      "o": "WorkHourEmployee_001"
+    },
+    {
+      "s": "Employee_001",
+      "p": "hasProfile",
+      "o": "Profile_1"
+    },
+    {
+      "s": "Employee_001",
+      "p": "hasKnowledge",
+      "o": "Knowledge_1_001"
+    },
+    {
+      "s": "Employee_001",
+      "p": "hasKnowledge",
+      "o": "Knowledge_2_001"
+    },
+    {
+      "s": "Profile_1",
+      "p": "describes",
+      "o": "Employee_001"
+    },
+    {
+      "s": "Profile_1",
+      "p": "describes",
+      "o": "Employee_007"
+    },
+    {
+      "s": "Profile_1",
+      "p": "describes",
+      "o": "Employee_008"
+    },
+    {
+      "s": "Profile_1",
+      "p": "describes",
+      "o": "Employee_013"
+    },
+    {
+      "s": "Profile_1",
+      "p": "describes",
+      "o": "Employee_025"
+    },
+    {
+      "s": "Profile_1",
+      "p": "describes",
+      "o": "Employee_033"
+    },
+    {
+      "s": "Profile_1",
+      "p": "describes",
+      "o": "Employee_040"
+    },
+    {
+      "s": "Profile_1",
+      "p": "describes",
+      "o": "Employee_047"
+    },
+    {
+      "s": "Profile_1",
+      "p": "describes",
+      "o": "Employee_048"
+    },
+    {
+      "s": "Profile_1",
+      "p": "describes",
+      "o": "Employee_049"
+    },
+    {
+      "s": "Profile_1",
+      "p": "isNecessary",
+      "o": "WorkHourProfile_001"
+    },
+    {
+      "s": "Profile_1",
+      "p": "profileIsNecessary",
+      "o": "WorkHourProfile_001"
+    },
+    {
+      "s": "Knowledge_1_001",
+      "p": "type",
+      "o": "Knowledge"
+    },
+    {
+      "s": "Knowledge_1_001",
+      "p": "possessedBy",
+      "o": "Employee_001"
+    },
+    {
+      "s": "Knowledge_2_001",
+      "p": "type",
+      "o": "Knowledge"
+    },
+    {
+      "s": "Knowledge_2_001",
+      "p": "possessedBy",
+      "o": "Employee_001"
+    },
+    {
+      "s": "Profile_1",
+      "p": "hasName",
+      "o": "Backend Developer"
+    },
+    {
+      "s": "Profile_1",
+      "p": "hourlyCost",
+      "o": "120.0"
+    },
+    {
+      "s": "WorkHourEmployee_002",
+      "p": "type",
+      "o": "WorkHour"
+    },
+    {
+      "s": "WorkHourEmployee_002",
+      "p": "allocatedTo",
+      "o": "Project_003"
+    },
+    {
+      "s": "WorkHourEmployee_002",
+      "p": "belongsTo",
+      "o": "Employee_002"
+    },
+    {
+      "s": "WorkHourEmployee_002",
+      "p": "allocatedHours",
+      "o": "84"
+    },
+    {
+      "s": "Employee_003",
+      "p": "type",
+      "o": "BusinessPartner"
+    },
+    {
+      "s": "Employee_003",
+      "p": "worksOn",
+      "o": "WorkHourEmployee_003"
+    },
+    {
+      "s": "Employee_003",
+      "p": "hasProfile",
+      "o": "Profile_5"
+    },
+    {
+      "s": "Employee_003",
+      "p": "hasKnowledge",
+      "o": "Knowledge_1_003"
+    },
+    {
+      "s": "Employee_003",
+      "p": "hasKnowledge",
+      "o": "Knowledge_2_003"
+    },
+    {
+      "s": "Profile_5",
+      "p": "type",
+      "o": "Profile"
+    },
+    {
+      "s": "Profile_5",
+      "p": "describes",
+      "o": "Employee_003"
+    },
+    {
+      "s": "Profile_5",
+      "p": "describes",
+      "o": "Employee_022"
+    },
+    {
+      "s": "Profile_5",
+      "p": "describes",
+      "o": "Employee_029"
+    },
+    {
+      "s": "Profile_5",
+      "p": "describes",
+      "o": "Employee_034"
+    },
+    {
+      "s": "Profile_5",
+      "p": "describes",
+      "o": "Employee_036"
+    },
+    {
+      "s": "Profile_5",
+      "p": "describes",
+      "o": "Employee_038"
+    },
+    {
+      "s": "Profile_5",
+      "p": "describes",
+      "o": "Employee_043"
+    },
+    {
+      "s": "Profile_5",
+      "p": "describes",
+      "o": "Employee_046"
+    },
+    {
+      "s": "Profile_5",
+      "p": "isNecessaryWorkHourProfile",
+      "o": "WorkHourProfile_005"
+    },
+    {
+      "s": "Profile_5",
+      "p": "profileIsNecessaryWorkHourProfile",
+      "o": "WorkHourProfile_005"
+    },
+    {
+      "s": "Profile_5",
+      "p": "hasName",
+      "o": "Project Manager"
+    },
+    {
+      "s": "Profile_5",
+      "p": "hourlyCost",
+      "o": "160.0"
+    },
+    {
+      "s": "WorkHourEmployee_003",
+      "p": "type",
+      "o": "WorkHour"
+    },
+    {
+      "s": "WorkHourEmployee_003",
+      "p": "allocatedTo",
+      "o": "Project_004"
+    },
+    {
+      "s": "WorkHourEmployee_003",
+      "p": "belongsTo",
+      "o": "Employee_003"
+    },
+    {
+      "s": "WorkHourEmployee_003",
+      "p": "allocatedHours",
+      "o": "72"
+    },
+    {
+      "s": "Employee_004",
+      "p": "type",
+      "o": "BusinessPartner"
+    },
+    {
+      "s": "Employee_004",
+      "p": "worksOn",
+      "o": "WorkHourEmployee_004"
+    },
+    {
+      "s": "Employee_004",
+      "p": "hasProfile",
+      "o": "Profile_4"
+    },
+    {
+      "s": "Employee_004",
+      "p": "hasKnowledge",
+      "o": "Knowledge_1_004"
+    },
+    {
+      "s": "Employee_004",
+      "p": "hasKnowledge",
+      "o": "Knowledge_2_004"
+    },
+    {
+      "s": "Employee_004",
+      "p": "hasName",
+      "o": "Funcionário 004"
+    },
+    {
+      "s": "Employee_004",
+      "p": "hourlyCost",
+      "o": "64.0"
+    },
+    {
+      "s": "Profile_4",
+      "p": "type",
+      "o": "Profile"
+    },
+    {
+      "s": "Profile_4",
+      "p": "describes",
+      "o": "Employee_004"
+    },
+    {
+      "s": "Profile_4",
+      "p": "describes",
+      "o": "Employee_005"
+    },
+    {
+      "s": "Profile_4",
+      "p": "describes",
+      "o": "Employee_012"
+    },
+    {
+      "s": "Profile_4",
+      "p": "describes",
+      "o": "Employee_019"
+    },
+    {
+      "s": "Profile_4",
+      "p": "describes",
+      "o": "Employee_020"
+    },
+    {
+      "s": "Profile_4",
+      "p": "isNecessaryWorkHourProfile",
+      "o": "WorkHourProfile_004"
+    },
+    {
+      "s": "Profile_4",
+      "p": "profileIsNecessaryWorkHourProfile",
+      "o": "WorkHourProfile_004"
+    },
+    {
+      "s": "Profile_4",
+      "p": "hasName",
+      "o": "Data Scientist"
+    },
+    {
+      "s": "Profile_4",
+      "p": "hourlyCost",
+      "o": "150.0"
+    },
+    {
+      "s": "WorkHourEmployee_004",
+      "p": "type",
+      "o": "WorkHour"
+    },
+    {
+      "s": "WorkHourEmployee_004",
+      "p": "allocatedTo",
+      "o": "Project_005"
+    },
+    {
+      "s": "WorkHourEmployee_004",
+      "p": "belongsTo",
+      "o": "Employee_004"
+    },
+    {
+      "s": "WorkHourEmployee_004",
+      "p": "allocatedHours",
+      "o": "149"
+    },
+    {
+      "s": "Employee_005",
+      "p": "type",
+      "o": "BusinessPartner"
+    },
+    {
+      "s": "Employee_005",
+      "p": "worksOn",
+      "o": "WorkHourEmployee_005"
+    },
+    {
+      "s": "Employee_005",
+      "p": "hasProfile",
+      "o": "Profile_4"
+    },
+    {
+      "s": "Employee_005",
+      "p": "hasKnowledge",
+      "o": "Knowledge_1_005"
+    },
+    {
+      "s": "Employee_005",
+      "p": "hasKnowledge",
+      "o": "Knowledge_2_005"
+    },
+    {
+      "s": "Employee_005",
+      "p": "hasName",
+      "o": "Funcionário 005"
+    },
+    {
+      "s": "Employee_005",
+      "p": "hourlyCost",
+      "o": "64.0"
+    },
+    {
+      "s": "WorkHourEmployee_005",
+      "p": "allocatedTo",
+      "o": "Project_001"
+    },
+    {
+      "s": "WorkHourEmployee_005",
+      "p": "belongsTo",
+      "o": "Employee_005"
+    },
+    {
+      "s": "WorkHourEmployee_005",
+      "p": "allocatedHours",
+      "o": "113"
+    },
+    {
+      "s": "Employee_006",
+      "p": "type",
+      "o": "BusinessPartner"
+    },
+    {
+      "s": "Employee_006",
+      "p": "worksOn",
+      "o": "WorkHourEmployee_006"
+    },
+    {
+      "s": "Employee_006",
+      "p": "hasProfile",
+      "o": "Profile_3"
+    },
+    {
+      "s": "Employee_006",
+      "p": "hasKnowledge",
+      "o": "Knowledge_1_006"
+    },
+    {
+      "s": "Employee_006",
+      "p": "hasKnowledge",
+      "o": "Knowledge_2_006"
+    },
+    {
+      "s": "Employee_006",
+      "p": "hasName",
+      "o": "Funcionário 006"
+    },
+    {
+      "s": "Employee_006",
+      "p": "hourlyCost",
+      "o": "84.0"
+    },
+    {
+      "s": "WorkHourEmployee_006",
+      "p": "type",
+      "o": "WorkHour"
+    },
+    {
+      "s": "WorkHourEmployee_006",
+      "p": "allocatedTo",
+      "o": "Project_002"
+    },
+    {
+      "s": "WorkHourEmployee_006",
+      "p": "belongsTo",
+      "o": "Employee_006"
+    },
+    {
+      "s": "WorkHourEmployee_006",
+      "p": "allocatedHours",
+      "o": "77"
+    },
+    {
+      "s": "Employee_007",
+      "p": "type",
+      "o": "BusinessPartner"
+    },
+    {
+      "s": "Employee_007",
+      "p": "worksOn",
+      "o": "WorkHourEmployee_007"
+    },
+    {
+      "s": "Employee_007",
+      "p": "hasProfile",
+      "o": "Profile_1"
+    },
+    {
+      "s": "Employee_007",
+      "p": "hasKnowledge",
+      "o": "Knowledge_1_007"
+    },
+    {
+      "s": "Employee_007",
+      "p": "hasKnowledge",
+      "o": "Knowledge_2_007"
+    },
+    {
+      "s": "WorkHourEmployee_007",
+      "p": "allocatedTo",
+      "o": "Project_003"
+    },
+    {
+      "s": "WorkHourEmployee_007",
+      "p": "belongsTo",
+      "o": "Employee_007"
+    },
+    {
+      "s": "WorkHourEmployee_007",
+      "p": "allocatedHours",
+      "o": "112"
+    },
+    {
+      "s": "Employee_008",
+      "p": "type",
+      "o": "BusinessPartner"
+    },
+    {
+      "s": "Employee_008",
+      "p": "worksOn",
+      "o": "WorkHourEmployee_008"
+    },
+    {
+      "s": "Employee_008",
+      "p": "hasProfile",
+      "o": "Profile_1"
+    },
+    {
+      "s": "Employee_008",
+      "p": "hasKnowledge",
+      "o": "Knowledge_1_008"
+    },
+    {
+      "s": "Employee_008",
+      "p": "hasKnowledge",
+      "o": "Knowledge_2_008"
+    },
+    {
+      "s": "WorkHourEmployee_008",
+      "p": "allocatedTo",
+      "o": "Project_003"
+    },
+    {
+      "s": "WorkHourEmployee_008",
+      "p": "belongsTo",
+      "o": "Employee_008"
+    },
+    {
+      "s": "WorkHourEmployee_008",
+      "p": "allocatedHours",
+      "o": "93"
+    },
+    {
+      "s": "Knowledge_1_008",
+      "p": "type",
+      "o": "Knowledge"
+    },
+    {
+      "s": "Employee_008",
+      "p": "possessedBy",
+      "o": "Knowledge_1_008"
+    },
+    {
+      "s": "Employee_008",
+      "p": "possessedBy",
+      "o": "Knowledge_2_008"
+    },
+    {
+      "s": "WorkHourEmployee_008",
+      "p": "allocatedTo",
+      "o": "Project_004"
+    },
+    {
+      "s": "WorkHourEmployee_008",
+      "p": "belongsTo",
+      "o": "Employee_008"
+    },
+    {
+      "s": "WorkHourEmployee_008",
+      "p": "allocatedHours",
+      "o": "155"
+    },
+    {
+      "s": "Employee_009",
+      "p": "worksOn",
+      "o": "WorkHourEmployee_009"
+    },
+    {
+      "s": "Employee_009",
+      "p": "hasProfile",
+      "o": "Profile_3"
+    },
+    {
+      "s": "Employee_009",
+      "p": "hasKnowledge",
+      "o": "Knowledge_1_009"
+    },
+    {
+      "s": "Employee_009",
+      "p": "hasKnowledge",
+      "o": "Knowledge_2_009"
+    },
+    {
+      "s": "Employee_009",
+      "p": "hasName",
+      "o": "Funcionário 009"
+    },
+    {
+      "s": "Employee_009",
+      "p": "hourlyCost",
+      "o": "54.0"
+    },
+    {
+      "s": "Knowledge_1_009",
+      "p": "type",
+      "o": "Knowledge"
+    },
+    {
+      "s": "Employee_009",
+      "p": "hasWorkHour",
+      "o": "WorkHourEmployee_009"
+    },
+    {
+      "s": "WorkHourEmployee_009",
+      "p": "allocatedTo",
+      "o": "Project_005"
+    },
+    {
+      "s": "WorkHourEmployee_009",
+      "p": "belongsTo",
+      "o": "Employee_009"
+    },
+    {
+      "s": "Employee_010",
+      "p": "worksOn",
+      "o": "WorkHourEmployee_010"
+    },
+    {
+      "s": "Employee_010",
+      "p": "hasProfile",
+      "o": "Profile_2"
+    },
+    {
+      "s": "Employee_010",
+      "p": "hasKnowledge",
+      "o": "Knowledge_1_010"
+    },
+    {
+      "s": "Employee_010",
+      "p": "hasKnowledge",
+      "o": "Knowledge_2_010"
+    },
+    {
+      "s": "WorkHourEmployee_010",
+      "p": "allocatedHours",
+      "o": "121"
+    },
+    {
+      "s": "Employee_010",
+      "p": "hasName",
+      "o": "Funcionário 010"
+    },
+    {
+      "s": "Employee_010",
+      "p": "hourlyCost",
+      "o": "83.0"
+    },
+    {
+      "s": "Knowledge_2_009",
+      "p": "type",
+      "o": "Knowledge"
+    },
+    {
+      "s": "Knowledge_2_009",
+      "p": "possessedBy",
+      "o": "Employee_009"
+    },
+    {
+      "s": "Knowledge_2_009",
+      "p": "hasName",
+      "o": "ETL"
+    },
+    {
+      "s": "Knowledge_1_010",
+      "p": "type",
+      "o": "Knowledge"
+    },
+    {
+      "s": "Knowledge_1_010",
+      "p": "possessedBy",
+      "o": "Employee_010"
+    },
+    {
+      "s": "Knowledge_1_010",
+      "p": "hasName",
+      "o": "Docker"
+    },
+    {
+      "s": "Knowledge_2_010",
+      "p": "type",
+      "o": "Knowledge"
+    },
+    {
+      "s": "Knowledge_2_010",
+      "p": "possessedBy",
+      "o": "Employee_010"
+    },
+    {
+      "s": "Knowledge_2_010",
+      "p": "hasName",
+      "o": "SQL"
+    },
+    {
+      "s": "WorkHourEmployee_010",
+      "p": "type",
+      "o": "WorkHour"
+    },
+    {
+      "s": "WorkHourEmployee_010",
+      "p": "allocatedTo",
+      "o": "Project_001"
+    },
+    {
+      "s": "WorkHourEmployee_010",
+      "p": "belongsTo",
+      "o": "Employee_010"
+    },
+    {
+      "s": "WorkHourEmployee_010",
+      "p": "allocatedHours",
+      "o": "136"
+    },
+    {
+      "s": "Employee_011",
+      "p": "type",
+      "o": "BusinessPartner"
+    },
+    {
+      "s": "Employee_011",
+      "p": "worksOn",
+      "o": "WorkHourEmployee_011"
+    },
+    {
+      "s": "Employee_011",
+      "p": "hasProfile",
+      "o": "Profile_2"
+    },
+    {
+      "s": "Employee_011",
+      "p": "hasKnowledge",
+      "o": "Knowledge_1_011"
+    },
+    {
+      "s": "Employee_011",
+      "p": "hasKnowledge",
+      "o": "Knowledge_2_011"
+    },
+    {
+      "s": "WorkHourEmployee_011",
+      "p": "allocatedTo",
+      "o": "Project_002"
+    },
+    {
+      "s": "WorkHourEmployee_011",
+      "p": "belongsTo",
+      "o": "Employee_011"
+    },
+    {
+      "s": "Employee_011",
+      "p": "hasName",
+      "o": "Funcionário 011"
+    },
+    {
+      "s": "Employee_011",
+      "p": "hourlyCost",
+      "o": "59.0"
+    },
+    {
+      "s": "Knowledge_1_011",
+      "p": "type",
+      "o": "Knowledge"
+    },
+    {
+      "s": "Knowledge_1_011",
+      "p": "possessedBy",
+      "o": "Employee_011"
+    },
+    {
+      "s": "Knowledge_1_011",
+      "p": "hasName",
+      "o": "Java"
+    },
+    {
+      "s": "Knowledge_2_011",
+      "p": "type",
+      "o": "Knowledge"
+    },
+    {
+      "s": "Knowledge_2_011",
+      "p": "possessedBy",
+      "o": "Employee_011"
+    },
+    {
+      "s": "Knowledge_2_011",
+      "p": "hasName",
+      "o": "Python"
+    },
+    {
+      "s": "Employee_012",
+      "p": "type",
+      "o": "BusinessPartner"
+    },
+    {
+      "s": "Employee_012",
+      "p": "worksOn",
+      "o": "WorkHourEmployee_012"
+    },
+    {
+      "s": "Employee_012",
+      "p": "hasProfile",
+      "o": "Profile_4"
+    },
+    {
+      "s": "Employee_012",
+      "p": "hasKnowledge",
+      "o": "Knowledge_1_012"
+    },
+    {
+      "s": "Employee_012",
+      "p": "hasKnowledge",
+      "o": "Knowledge_2_012"
+    },
+    {
+      "s": "WorkHourEmployee_012",
+      "p": "allocatedTo",
+      "o": "Project_003"
+    },
+    {
+      "s": "WorkHourEmployee_012",
+      "p": "belongsTo",
+      "o": "Employee_012"
+    },
+    {
+      "s": "WorkHourEmployee_012",
+      "p": "allocatedHours",
+      "o": "56"
+    },
+    {
+      "s": "Employee_013",
+      "p": "type",
+      "o": "BusinessPartner"
+    },
+    {
+      "s": "Employee_013",
+      "p": "worksOn",
+      "o": "WorkHourEmployee_013"
+    },
+    {
+      "s": "Employee_013",
+      "p": "hasProfile",
+      "o": "Profile_1"
+    },
+    {
+      "s": "Employee_013",
+      "p": "hasKnowledge",
+      "o": "Knowledge_1_013"
+    },
+    {
+      "s": "Employee_013",
+      "p": "hasKnowledge",
+      "o": "Knowledge_2_013"
+    },
+    {
+      "s": "WorkHourEmployee_013",
+      "p": "allocatedTo",
+      "o": "Project_003"
+    },
+    {
+      "s": "WorkHourEmployee_013",
+      "p": "belongsTo",
+      "o": "Employee_013"
+    },
+    {
+      "s": "WorkHourEmployee_013",
+      "p": "allocatedHours",
+      "o": "87"
+    },
+    {
+      "s": "Employee_013",
+      "p": "hasKnowledge",
+      "o": "Knowledge_1_013"
+    },
+    {
+      "s": "Employee_013",
+      "p": "hasKnowledge",
+      "o": "Knowledge_2_013"
+    },
+    {
+      "s": "WorkHourEmployee_013",
+      "p": "allocatedTo",
+      "o": "Project_004"
+    },
+    {
+      "s": "WorkHourEmployee_013",
+      "p": "belongsTo",
+      "o": "Employee_013"
+    },
+    {
+      "s": "Employee_014",
+      "p": "worksOn",
+      "o": "WorkHourEmployee_014"
+    },
+    {
+      "s": "Employee_014",
+      "p": "hasProfile",
+      "o": "Profile_2"
+    },
+    {
+      "s": "Employee_014",
+      "p": "hasKnowledge",
+      "o": "Knowledge_1_014"
+    },
+    {
+      "s": "Employee_014",
+      "p": "hasKnowledge",
+      "o": "Knowledge_2_014"
+    },
+    {
+      "s": "Employee_014",
+      "p": "hasName",
+      "o": "Funcionário 014"
+    },
+    {
+      "s": "Employee_014",
+      "p": "hourlyCost",
+      "o": "90.0"
+    },
+    {
+      "s": "Knowledge_2_014",
+      "p": "type",
+      "o": "Knowledge"
+    },
+    {
+      "s": "Employee_014",
+      "p": "worksOn",
+      "o": "WorkHourEmployee_014"
+    },
+    {
+      "s": "WorkHourEmployee_014",
+      "p": "allocatedTo",
+      "o": "Project_005"
+    },
+    {
+      "s": "WorkHourEmployee_014",
+      "p": "belongsTo",
+      "o": "Employee_014"
+    },
+    {
+      "s": "Employee_015",
+      "p": "worksOn",
+      "o": "WorkHourEmployee_015"
+    },
+    {
+      "s": "Employee_015",
+      "p": "hasProfile",
+      "o": "Profile_3"
+    },
+    {
+      "s": "Employee_015",
+      "p": "hasKnowledge",
+      "o": "Knowledge_1_015"
+    },
+    {
+      "s": "Employee_015",
+      "p": "hasKnowledge",
+      "o": "Knowledge_2_015"
+    },
+    {
+      "s": "WorkHourEmployee_014",
+      "p": "allocatedHours",
+      "o": "109"
+    },
+    {
+      "s": "Employee_015",
+      "p": "hasName",
+      "o": "Funcionário 015"
+    },
+    {
+      "s": "Employee_015",
+      "p": "hourlyCost",
+      "o": "98.0"
+    },
+    {
+      "s": "Knowledge_1_015",
+      "p": "type",
+      "o": "Knowledge"
+    },
+    {
+      "s": "Employee_015",
+      "p": "hasKnowledge",
+      "o": "Knowledge_1_015"
+    },
+    {
+      "s": "Knowledge_2_015",
+      "p": "type",
+      "o": "Knowledge"
+    },
+    {
+      "s": "Employee_015",
+      "p": "hasKnowledge",
+      "o": "Knowledge_2_015"
+    },
+    {
+      "s": "WorkHourEmployee_015",
+      "p": "type",
+      "o": "WorkHour"
+    },
+    {
+      "s": "WorkHourEmployee_015",
+      "p": "allocatedTo",
+      "o": "Project_001"
+    },
+    {
+      "s": "WorkHourEmployee_015",
+      "p": "belongsTo",
+      "o": "Employee_015"
+    },
+    {
+      "s": "WorkHourEmployee_015",
+      "p": "allocatedHours",
+      "o": "74"
+    },
+    {
+      "s": "Employee_016",
+      "p": "type",
+      "o": "BusinessPartner"
+    },
+    {
+      "s": "Employee_016",
+      "p": "worksOn",
+      "o": "WorkHourEmployee_016"
+    },
+    {
+      "s": "Employee_016",
+      "p": "hasProfile",
+      "o": "Profile_2"
+    },
+    {
+      "s": "Employee_016",
+      "p": "hasKnowledge",
+      "o": "Knowledge_1_016"
+    },
+    {
+      "s": "Employee_016",
+      "p": "hasKnowledge",
+      "o": "Knowledge_2_016"
+    },
+    {
+      "s": "Employee_016",
+      "p": "hasName",
+      "o": "Funcionário 016"
+    },
+    {
+      "s": "Employee_016",
+      "p": "hourlyCost",
+      "o": "91.0"
+    },
+    {
+      "s": "WorkHourEmployee_016",
+      "p": "allocatedTo",
+      "o": "Project_002"
+    },
+    {
+      "s": "WorkHourEmployee_016",
+      "p": "belongsTo",
+      "o": "Employee_016"
+    },
+    {
+      "s": "WorkHourEmployee_016",
+      "p": "allocatedHours",
+      "o": "77"
+    },
+    {
+      "s": "Employee_017",
+      "p": "type",
+      "o": "BusinessPartner"
+    },
+    {
+      "s": "Employee_017",
+      "p": "worksOn",
+      "o": "WorkHourEmployee_017"
+    },
+    {
+      "s": "Employee_017",
+      "p": "hasProfile",
+      "o": "Profile_3"
+    },
+    {
+      "s": "Employee_017",
+      "p": "hasKnowledge",
+      "o": "Knowledge_1_017"
+    },
+    {
+      "s": "Employee_017",
+      "p": "hasKnowledge",
+      "o": "Knowledge_2_017"
+    },
+    {
+      "s": "WorkHourEmployee_017",
+      "p": "allocatedTo",
+      "o": "Project_003"
+    },
+    {
+      "s": "WorkHourEmployee_017",
+      "p": "belongsTo",
+      "o": "Employee_017"
+    },
+    {
+      "s": "WorkHourEmployee_017",
+      "p": "allocatedHours",
+      "o": "58"
+    },
+    {
+      "s": "Employee_018",
+      "p": "type",
+      "o": "BusinessPartner"
+    },
+    {
+      "s": "Employee_018",
+      "p": "worksOn",
+      "o": "WorkHourEmployee_018"
+    },
+    {
+      "s": "Employee_018",
+      "p": "hasProfile",
+      "o": "Profile_2"
+    },
+    {
+      "s": "Employee_018",
+      "p": "hasKnowledge",
+      "o": "Knowledge_1_018"
+    },
+    {
+      "s": "Employee_018",
+      "p": "hasKnowledge",
+      "o": "Knowledge_2_018"
+    },
+    {
+      "s": "WorkHourEmployee_018",
+      "p": "allocatedTo",
+      "o": "Project_003"
+    },
+    {
+      "s": "WorkHourEmployee_018",
+      "p": "belongsTo",
+      "o": "Employee_018"
+    },
+    {
+      "s": "WorkHourEmployee_018",
+      "p": "allocatedHours",
+      "o": "63"
+    },
+    {
+      "s": "Employee_018",
+      "p": "hasKnowledge",
+      "o": "Power BI"
+    },
+    {
+      "s": "Employee_018",
+      "p": "hasKnowledge",
+      "o": "AWS"
+    },
+    {
+      "s": "WorkHourEmployee_018",
+      "p": "allocatedTo",
+      "o": "Project_004"
+    },
+    {
+      "s": "WorkHourEmployee_018",
+      "p": "belongsTo",
+      "o": "Employee_018"
+    },
+    {
+      "s": "Employee_019",
+      "p": "worksOn",
+      "o": "WorkHourEmployee_018"
+    },
+    {
+      "s": "Employee_019",
+      "p": "hasProfile",
+      "o": "Profile_4"
+    },
+    {
+      "s": "Employee_019",
+      "p": "hasKnowledge",
+      "o": "Python"
+    },
+    {
+      "s": "Employee_019",
+      "p": "hasName",
+      "o": "Funcionário 019"
+    },
+    {
+      "s": "Employee_019",
+      "p": "hourlyCost",
+      "o": "74.0"
+    },
+    {
+      "s": "Knowledge_2_019",
+      "p": "type",
+      "o": "Knowledge"
+    },
+    {
+      "s": "Employee_019",
+      "p": "hasKnowledge",
+      "o": "Knowledge_2_019"
+    },
+    {
+      "s": "WorkHourEmployee_019",
+      "p": "allocatedTo",
+      "o": "Project_005"
+    },
+    {
+      "s": "WorkHourEmployee_019",
+      "p": "belongsTo",
+      "o": "Employee_019"
+    },
+    {
+      "s": "Employee_020",
+      "p": "worksOn",
+      "o": "WorkHourEmployee_020"
+    },
+    {
+      "s": "Employee_020",
+      "p": "hasProfile",
+      "o": "Profile_4"
+    },
+    {
+      "s": "Employee_020",
+      "p": "hasKnowledge",
+      "o": "Knowledge_1_020"
+    },
+    {
+      "s": "Employee_020",
+      "p": "hasKnowledge",
+      "o": "Knowledge_2_020"
+    },
+    {
+      "s": "Employee_020",
+      "p": "hasName",
+      "o": "Funcionário 020"
+    },
+    {
+      "s": "Employee_020",
+      "p": "hourlyCost",
+      "o": "77.0"
+    },
+    {
+      "s": "WorkHourEmployee_020",
+      "p": "type",
+      "o": "WorkHour"
+    },
+    {
+      "s": "WorkHourEmployee_020",
+      "p": "allocatedTo",
+      "o": "Project_001"
+    },
+    {
+      "s": "WorkHourEmployee_020",
+      "p": "belongsTo",
+      "o": "Employee_020"
+    },
+    {
+      "s": "WorkHourEmployee_021",
+      "p": "type",
+      "o": "WorkHour"
+    },
+    {
+      "s": "WorkHourEmployee_021",
+      "p": "allocatedTo",
+      "o": "Project_002"
+    },
+    {
+      "s": "WorkHourEmployee_021",
+      "p": "belongsTo",
+      "o": "Employee_021"
+    },
+    {
+      "s": "Employee_021",
+      "p": "worksOn",
+      "o": "WorkHourEmployee_021"
+    },
+    {
+      "s": "Employee_021",
+      "p": "hasProfile",
+      "o": "Profile_3"
+    },
+    {
+      "s": "Employee_021",
+      "p": "hasKnowledge",
+      "o": "Knowledge_1_021"
+    },
+    {
+      "s": "Employee_021",
+      "p": "hasKnowledge",
+      "o": "Knowledge_2_021"
+    },
+    {
+      "s": "Employee_021",
+      "p": "hasName",
+      "o": "Funcionário 021"
+    },
+    {
+      "s": "Employee_021",
+      "p": "hourlyCost",
+      "o": "70.0"
+    },
+    {
+      "s": "Knowledge_1_021",
+      "p": "possessedBy",
+      "o": "Employee_021"
+    },
+    {
+      "s": "Knowledge_2_021",
+      "p": "possessedBy",
+      "o": "Employee_021"
+    },
+    {
+      "s": "Employee_022",
+      "p": "type",
+      "o": "BusinessPartner"
+    },
+    {
+      "s": "Employee_022",
+      "p": "worksOn",
+      "o": "WorkHourEmployee_022"
+    },
+    {
+      "s": "Employee_022",
+      "p": "hasProfile",
+      "o": "Profile_5"
+    },
+    {
+      "s": "Employee_022",
+      "p": "hasKnowledge",
+      "o": "Knowledge_1_022"
+    },
+    {
+      "s": "Employee_022",
+      "p": "hasKnowledge",
+      "o": "Knowledge_2_023"
+    },
+    {
+      "s": "WorkHourEmployee_022",
+      "p": "allocatedTo",
+      "o": "Project_003"
+    },
+    {
+      "s": "WorkHourEmployee_022",
+      "p": "belongsTo",
+      "o": "Employee_022"
+    },
+    {
+      "s": "WorkHourEmployee_022",
+      "p": "allocatedHours",
+      "o": "118"
+    },
+    {
+      "s": "Employee_023",
+      "p": "type",
+      "o": "BusinessPartner"
+    },
+    {
+      "s": "Employee_023",
+      "p": "worksOn",
+      "o": "WorkHourEmployee_023"
+    },
+    {
+      "s": "Employee_023",
+      "p": "hasProfile",
+      "o": "Profile_2"
+    },
+    {
+      "s": "Employee_023",
+      "p": "hasKnowledge",
+      "o": "Knowledge_1_023"
+    },
+    {
+      "s": "Employee_023",
+      "p": "hasKnowledge",
+      "o": "Knowledge_2_023"
+    },
+    {
+      "s": "WorkHourEmployee_023",
+      "p": "allocatedTo",
+      "o": "Project_003"
+    },
+    {
+      "s": "WorkHourEmployee_023",
+      "p": "belongsTo",
+      "o": "Employee_023"
+    },
+    {
+      "s": "WorkHourEmployee_023",
+      "p": "allocatedHours",
+      "o": "118"
+    },
+    {
+      "s": "Knowledge_1_022",
+      "p": "possessedBy",
+      "o": "Employee_022"
+    },
+    {
+      "s": "Knowledge_1_022",
+      "p": "hasName",
+      "o": "AWS"
+    },
+    {
+      "s": "Knowledge_2_022",
+      "p": "possessedBy",
+      "o": "Employee_022"
+    },
+    {
+      "s": "Knowledge_2_022",
+      "p": "hasName",
+      "o": "ETL"
+    },
+    {
+      "s": "Employee_023",
+      "p": "hasKnowledge",
+      "o": "Knowledge_1_024"
+    },
+    {
+      "s": "Employee_023",
+      "p": "hasKnowledge",
+      "o": "Knowledge_2_024"
+    },
+    {
+      "s": "WorkHourEmployee_023",
+      "p": "allocatedTo",
+      "o": "Project_004"
+    },
+    {
+      "s": "WorkHourEmployee_023",
+      "p": "belongsTo",
+      "o": "Employee_023"
+    },
+    {
+      "s": "WorkHourEmployee_023",
+      "p": "allocatedHours",
+      "o": "129"
+    },
+    {
+      "s": "Employee_024",
+      "p": "worksOn",
+      "o": "WorkHourEmployee_024"
+    },
+    {
+      "s": "Employee_024",
+      "p": "hasProfile",
+      "o": "Profile_3"
+    },
+    {
+      "s": "Employee_024",
+      "p": "hasKnowledge",
+      "o": "Power BI"
+    },
+    {
+      "s": "Employee_024",
+      "p": "hasName",
+      "o": "Funcionário 024"
+    },
+    {
+      "s": "Employee_024",
+      "p": "hourlyCost",
+      "o": "48.0"
+    },
+    {
+      "s": "Knowledge_2_024",
+      "p": "type",
+      "o": "Knowledge"
+    },
+    {
+      "s": "Employee_024",
+      "p": "hasKnowledge",
+      "o": "Knowledge_2_024"
+    },
+    {
+      "s": "WorkHourEmployee_024",
+      "p": "allocatedTo",
+      "o": "Project_005"
+    },
+    {
+      "s": "WorkHourEmployee_024",
+      "p": "belongsTo",
+      "o": "Employee_024"
+    },
+    {
+      "s": "Employee_025",
+      "p": "worksOn",
+      "o": "WorkHourEmployee_025"
+    },
+    {
+      "s": "Employee_025",
+      "p": "hasProfile",
+      "o": "Profile_1"
+    },
+    {
+      "s": "Employee_025",
+      "p": "hasKnowledge",
+      "o": "Knowledge_1_025"
+    },
+    {
+      "s": "Employee_025",
+      "p": "hasKnowledge",
+      "o": "Knowledge_2_025"
+    },
+    {
+      "s": "Employee_025",
+      "p": "hasName",
+      "o": "Funcionário 025"
+    },
+    {
+      "s": "Employee_025",
+      "p": "hourlyCost",
+      "o": "47.0"
+    },
+    {
+      "s": "WorkHourEmployee_025",
+      "p": "type",
+      "o": "WorkHour"
+    },
+    {
+      "s": "WorkHourEmployee_025",
+      "p": "allocatedTo",
+      "o": "Project_001"
+    },
+    {
+      "s": "WorkHourEmployee_025",
+      "p": "belongsTo",
+      "o": "Employee_025"
+    },
+    {
+      "s": "WorkHourEmployee_026",
+      "p": "type",
+      "o": "WorkHour"
+    },
+    {
+      "s": "WorkHourEmployee_026",
+      "p": "allocatedTo",
+      "o": "Project_002"
+    },
+    {
+      "s": "WorkHourEmployee_026",
+      "p": "belongsTo",
+      "o": "Employee_026"
+    },
+    {
+      "s": "Employee_026",
+      "p": "worksOn",
+      "o": "WorkHourEmployee_026"
+    },
+    {
+      "s": "Employee_026",
+      "p": "hasProfile",
+      "o": "Profile_2"
+    },
+    {
+      "s": "Employee_026",
+      "p": "hasKnowledge",
+      "o": "Knowledge_1_026"
+    },
+    {
+      "s": "Employee_026",
+      "p": "hasKnowledge",
+      "o": "Knowledge_2_026"
+    },
+    {
+      "s": "Employee_026",
+      "p": "hasName",
+      "o": "Funcionário 026"
+    },
+    {
+      "s": "Employee_026",
+      "p": "hourlyCost",
+      "o": "64.0"
+    },
+    {
+      "s": "Knowledge_1_026",
+      "p": "possessedBy",
+      "o": "Employee_026"
+    },
+    {
+      "s": "Knowledge_2_026",
+      "p": "possessedBy",
+      "o": "Employee_026"
+    },
+    {
+      "s": "Employee_027",
+      "p": "type",
+      "o": "BusinessPartner"
+    },
+    {
+      "s": "Employee_027",
+      "p": "worksOn",
+      "o": "WorkHourEmployee_027"
+    },
+    {
+      "s": "Employee_027",
+      "p": "hasProfile",
+      "o": "Profile_3"
+    },
+    {
+      "s": "Employee_027",
+      "p": "hasKnowledge",
+      "o": "Knowledge_1_027"
+    },
+    {
+      "s": "Employee_027",
+      "p": "hasKnowledge",
+      "o": "Knowledge_2_027"
+    },
+    {
+      "s": "WorkHourEmployee_027",
+      "p": "allocatedTo",
+      "o": "Project_003"
+    },
+    {
+      "s": "WorkHourEmployee_027",
+      "p": "belongsTo",
+      "o": "Employee_027"
+    },
+    {
+      "s": "WorkHourEmployee_027",
+      "p": "allocatedHours",
+      "o": "135"
+    },
+    {
+      "s": "Employee_028",
+      "p": "type",
+      "o": "BusinessPartner"
+    },
+    {
+      "s": "Employee_028",
+      "p": "worksOn",
+      "o": "WorkHourEmployee_028"
+    },
+    {
+      "s": "Employee_028",
+      "p": "hasProfile",
+      "o": "Profile_2"
+    },
+    {
+      "s": "Employee_028",
+      "p": "hasKnowledge",
+      "o": "Knowledge_1_028"
+    },
+    {
+      "s": "Employee_028",
+      "p": "hasKnowledge",
+      "o": "Knowledge_2_028"
+    },
+    {
+      "s": "WorkHourEmployee_028",
+      "p": "allocatedTo",
+      "o": "Project_003"
+    },
+    {
+      "s": "WorkHourEmployee_028",
+      "p": "belongsTo",
+      "o": "Employee_028"
+    },
+    {
+      "s": "WorkHourEmployee_028",
+      "p": "allocatedHours",
+      "o": "93"
+    },
+    {
+      "s": "Employee_028",
+      "p": "worksOn",
+      "o": "WorkHourEmployee_028"
+    },
+    {
+      "s": "WorkHourEmployee_028",
+      "p": "allocatedTo",
+      "o": "Project_004"
+    },
+    {
+      "s": "WorkHourEmployee_028",
+      "p": "belongsTo",
+      "o": "Employee_028"
+    },
+    {
+      "s": "Employee_029",
+      "p": "worksOn",
+      "o": "WorkHourEmployee_029"
+    },
+    {
+      "s": "WorkHourEmployee_029",
+      "p": "allocatedTo",
+      "o": "Project_004"
+    },
+    {
+      "s": "WorkHourEmployee_029",
+      "p": "belongsTo",
+      "o": "Employee_029"
+    },
+    {
+      "s": "Employee_029",
+      "p": "hasProfile",
+      "o": "Profile_5"
+    },
+    {
+      "s": "Employee_029",
+      "p": "hasKnowledge",
+      "o": "Knowledge_1_029"
+    },
+    {
+      "s": "Employee_029",
+      "p": "hasKnowledge",
+      "o": "Knowledge_2_029"
+    },
+    {
+      "s": "WorkHourEmployee_028",
+      "p": "allocatedHours",
+      "o": "102"
+    },
+    {
+      "s": "Employee_029",
+      "p": "hasName",
+      "o": "Funcionário 029"
+    },
+    {
+      "s": "Employee_029",
+      "p": "hourlyCost",
+      "o": "42.0"
+    },
+    {
+      "s": "Knowledge_1_029",
+      "p": "possessedBy",
+      "o": "Employee_029"
+    },
+    {
+      "s": "Knowledge_2_029",
+      "p": "possessedBy",
+      "o": "Employee_029"
+    },
+    {
+      "s": "Knowledge_2_029",
+      "p": "type",
+      "o": "Knowledge"
+    },
+    {
+      "s": "Employee_029",
+      "p": "worksOn",
+      "o": "WorkHourEmployee_029"
+    },
+    {
+      "s": "WorkHourEmployee_029",
+      "p": "allocatedTo",
+      "o": "Project_005"
+    },
+    {
+      "s": "WorkHourEmployee_029",
+      "p": "belongsTo",
+      "o": "Employee_029"
+    },
+    {
+      "s": "Employee_030",
+      "p": "worksOn",
+      "o": "WorkHourEmployee_030"
+    },
+    {
+      "s": "WorkHourEmployee_030",
+      "p": "allocatedHours",
+      "o": "128"
+    },
+    {
+      "s": "Employee_030",
+      "p": "hasProfile",
+      "o": "Profile_3"
+    },
+    {
+      "s": "Employee_030",
+      "p": "hasKnowledge",
+      "o": "Knowledge_1_030"
+    },
+    {
+      "s": "Employee_030",
+      "p": "hasKnowledge",
+      "o": "Knowledge_2_030"
+    },
+    {
+      "s": "Employee_030",
+      "p": "hasName",
+      "o": "Funcionário 030"
+    },
+    {
+      "s": "Employee_030",
+      "p": "hourlyCost",
+      "o": "68.0"
+    },
+    {
+      "s": "Knowledge_1_030",
+      "p": "type",
+      "o": "Knowledge"
+    },
+    {
+      "s": "Knowledge_2_030",
+      "p": "type",
+      "o": "Knowledge"
+    },
+    {
+      "s": "WorkHourEmployee_030",
+      "p": "type",
+      "o": "WorkHour"
+    },
+    {
+      "s": "WorkHourEmployee_030",
+      "p": "allocatedTo",
+      "o": "Project_001"
+    },
+    {
+      "s": "WorkHourEmployee_030",
+      "p": "belongsTo",
+      "o": "Employee_030"
+    },
+    {
+      "s": "WorkHourEmployee_030",
+      "p": "allocatedHours",
+      "o": "70"
+    },
+    {
+      "s": "Employee_031",
+      "p": "type",
+      "o": "BusinessPartner"
+    },
+    {
+      "s": "Employee_031",
+      "p": "worksOn",
+      "o": "WorkHourEmployee_031"
+    },
+    {
+      "s": "Employee_031",
+      "p": "hasProfile",
+      "o": "Profile_3"
+    },
+    {
+      "s": "Employee_031",
+      "p": "hasKnowledge",
+      "o": "Knowledge_1_031"
+    },
+    {
+      "s": "Employee_031",
+      "p": "hasKnowledge",
+      "o": "Knowledge_2_031"
+    },
+    {
+      "s": "Employee_031",
+      "p": "hasName",
+      "o": "Funcionário 031"
+    },
+    {
+      "s": "Employee_031",
+      "p": "hourlyCost",
+      "o": "74.0"
+    },
+    {
+      "s": "WorkHourEmployee_031",
+      "p": "allocatedTo",
+      "o": "Project_002"
+    },
+    {
+      "s": "WorkHourEmployee_031",
+      "p": "belongsTo",
+      "o": "Employee_031"
+    },
+    {
+      "s": "WorkHourEmployee_031",
+      "p": "allocatedHours",
+      "o": "155"
+    },
+    {
+      "s": "Employee_032",
+      "p": "type",
+      "o": "BusinessPartner"
+    },
+    {
+      "s": "Employee_032",
+      "p": "worksOn",
+      "o": "WorkHourEmployee_032"
+    },
+    {
+      "s": "Employee_032",
+      "p": "hasProfile",
+      "o": "Profile_3"
+    },
+    {
+      "s": "Employee_032",
+      "p": "hasKnowledge",
+      "o": "Knowledge_1_032"
+    },
+    {
+      "s": "Employee_032",
+      "p": "hasKnowledge",
+      "o": "Knowledge_2_032"
+    },
+    {
+      "s": "WorkHourEmployee_032",
+      "p": "allocatedTo",
+      "o": "Project_003"
+    },
+    {
+      "s": "WorkHourEmployee_032",
+      "p": "belongsTo",
+      "o": "Employee_032"
+    },
+    {
+      "s": "WorkHourEmployee_032",
+      "p": "allocatedHours",
+      "o": "64"
+    },
+    {
+      "s": "Employee_033",
+      "p": "type",
+      "o": "BusinessPartner"
+    },
+    {
+      "s": "Employee_033",
+      "p": "worksOn",
+      "o": "WorkHourEmployee_033"
+    },
+    {
+      "s": "Employee_033",
+      "p": "hasProfile",
+      "o": "Profile_1"
+    },
+    {
+      "s": "Employee_033",
+      "p": "hasKnowledge",
+      "o": "Knowledge_1_033"
+    },
+    {
+      "s": "Employee_033",
+      "p": "hasKnowledge",
+      "o": "Knowledge_2_033"
+    },
+    {
+      "s": "WorkHourEmployee_033",
+      "p": "allocatedTo",
+      "o": "Project_003"
+    },
+    {
+      "s": "WorkHourEmployee_033",
+      "p": "belongsTo",
+      "o": "Employee_033"
+    },
+    {
+      "s": "WorkHourEmployee_033",
+      "p": "allocatedHours",
+      "o": "82"
+    },
+    {
+      "s": "Employee_034",
+      "p": "worksOn",
+      "o": "WorkHourEmployee_034"
+    },
+    {
+      "s": "WorkHourEmployee_034",
+      "p": "allocatedTo",
+      "o": "Project_004"
+    },
+    {
+      "s": "WorkHourEmployee_034",
+      "p": "belongsTo",
+      "o": "Employee_034"
+    },
+    {
+      "s": "Employee_034",
+      "p": "hasProfile",
+      "o": "Profile_5"
+    },
+    {
+      "s": "Employee_034",
+      "p": "hasKnowledge",
+      "o": "Knowledge_1_034"
+    },
+    {
+      "s": "Employee_034",
+      "p": "hasKnowledge",
+      "o": "Knowledge_2_034"
+    },
+    {
+      "s": "Employee_034",
+      "p": "hasName",
+      "o": "Funcionário 034"
+    },
+    {
+      "s": "Employee_034",
+      "p": "hourlyCost",
+      "o": "90.0"
+    },
+    {
+      "s": "Knowledge_1_034",
+      "p": "possessedBy",
+      "o": "Employee_034"
+    },
+    {
+      "s": "Knowledge_2_034",
+      "p": "possessedBy",
+      "o": "Employee_034"
+    },
+    {
+      "s": "Employee_034",
+      "p": "hasWorkHour",
+      "o": "WorkHourEmployee_034"
+    },
+    {
+      "s": "WorkHourEmployee_034",
+      "p": "allocatedTo",
+      "o": "Project_005"
+    },
+    {
+      "s": "WorkHourEmployee_034",
+      "p": "belongsTo",
+      "o": "Employee_034"
+    },
+    {
+      "s": "Employee_035",
+      "p": "worksOn",
+      "o": "WorkHourEmployee_035"
+    },
+    {
+      "s": "Employee_035",
+      "p": "hasProfile",
+      "o": "Profile_2"
+    },
+    {
+      "s": "Employee_035",
+      "p": "hasKnowledge",
+      "o": "Knowledge_1_035"
+    },
+    {
+      "s": "Employee_035",
+      "p": "hasKnowledge",
+      "o": "Knowledge_2_035"
+    },
+    {
+      "s": "WorkHourEmployee_034",
+      "p": "allocatedHours",
+      "o": "82"
+    },
+    {
+      "s": "Employee_035",
+      "p": "hasName",
+      "o": "Funcionário 035"
+    },
+    {
+      "s": "Employee_035",
+      "p": "hourlyCost",
+      "o": "44.0"
+    },
+    {
+      "s": "Knowledge_1_035",
+      "p": "possessedBy",
+      "o": "Employee_035"
+    },
+    {
+      "s": "Knowledge_2_035",
+      "p": "possessedBy",
+      "o": "Employee_035"
+    },
+    {
+      "s": "WorkHourEmployee_035",
+      "p": "type",
+      "o": "WorkHour"
+    },
+    {
+      "s": "WorkHourEmployee_035",
+      "p": "allocatedTo",
+      "o": "Project_001"
+    },
+    {
+      "s": "WorkHourEmployee_035",
+      "p": "belongsTo",
+      "o": "Employee_035"
+    },
+    {
+      "s": "WorkHourEmployee_035",
+      "p": "allocatedHours",
+      "o": "146"
+    },
+    {
+      "s": "Employee_036",
+      "p": "type",
+      "o": "BusinessPartner"
+    },
+    {
+      "s": "Employee_036",
+      "p": "worksOn",
+      "o": "WorkHourEmployee_036"
+    },
+    {
+      "s": "Employee_036",
+      "p": "hasProfile",
+      "o": "Profile_5"
+    },
+    {
+      "s": "Employee_036",
+      "p": "hasKnowledge",
+      "o": "Knowledge_1_036"
+    },
+    {
+      "s": "Employee_036",
+      "p": "hasKnowledge",
+      "o": "Knowledge_2_036"
+    },
+    {
+      "s": "Employee_036",
+      "p": "hasName",
+      "o": "Funcionário 036"
+    },
+    {
+      "s": "Employee_036",
+      "p": "hourlyCost",
+      "o": "92.0"
+    },
+    {
+      "s": "WorkHourEmployee_035",
+      "p": "allocatedTo",
+      "o": "Project_002"
+    },
+    {
+      "s": "WorkHourEmployee_035",
+      "p": "belongsTo",
+      "o": "Employee_036"
+    },
+    {
+      "s": "Employee_037",
+      "p": "type",
+      "o": "BusinessPartner"
+    },
+    {
+      "s": "Employee_037",
+      "p": "worksOn",
+      "o": "WorkHourEmployee_037"
+    },
+    {
+      "s": "Employee_037",
+      "p": "hasProfile",
+      "o": "Profile_2"
+    },
+    {
+      "s": "Employee_037",
+      "p": "hasKnowledge",
+      "o": "Knowledge_1_037"
+    },
+    {
+      "s": "Employee_037",
+      "p": "hasKnowledge",
+      "o": "Knowledge_2_037"
+    },
+    {
+      "s": "WorkHourEmployee_037",
+      "p": "allocatedTo",
+      "o": "Project_003"
+    },
+    {
+      "s": "WorkHourEmployee_037",
+      "p": "belongsTo",
+      "o": "Employee_037"
+    },
+    {
+      "s": "WorkHourEmployee_037",
+      "p": "allocatedHours",
+      "o": "155"
+    },
+    {
+      "s": "Employee_038",
+      "p": "type",
+      "o": "BusinessPartner"
+    },
+    {
+      "s": "Employee_038",
+      "p": "worksOn",
+      "o": "WorkHourEmployee_038"
+    },
+    {
+      "s": "Employee_038",
+      "p": "hasProfile",
+      "o": "Profile_5"
+    },
+    {
+      "s": "Employee_038",
+      "p": "hasKnowledge",
+      "o": "Knowledge_1_038"
+    },
+    {
+      "s": "Employee_038",
+      "p": "hasKnowledge",
+      "o": "Knowledge_2_038"
+    },
+    {
+      "s": "WorkHourEmployee_038",
+      "p": "allocatedTo",
+      "o": "Project_003"
+    },
+    {
+      "s": "WorkHourEmployee_038",
+      "p": "belongsTo",
+      "o": "Employee_038"
+    },
+    {
+      "s": "WorkHourEmployee_038",
+      "p": "allocatedHours",
+      "o": "94"
+    },
+    {
+      "s": "Employee_038",
+      "p": "worksOn",
+      "o": "WorkHourEmployee_038"
+    },
+    {
+      "s": "WorkHourEmployee_038",
+      "p": "allocatedTo",
+      "o": "Project_004"
+    },
+    {
+      "s": "WorkHourEmployee_038",
+      "p": "belongsTo",
+      "o": "Employee_038"
+    },
+    {
+      "s": "Employee_039",
+      "p": "worksOn",
+      "o": "WorkHourEmployee_039"
+    },
+    {
+      "s": "WorkHourEmployee_039",
+      "p": "allocatedTo",
+      "o": "Project_004"
+    },
+    {
+      "s": "WorkHourEmployee_039",
+      "p": "belongsTo",
+      "o": "Employee_039"
+    },
+    {
+      "s": "Employee_039",
+      "p": "hasProfile",
+      "o": "Profile_2"
+    },
+    {
+      "s": "Employee_039",
+      "p": "hasKnowledge",
+      "o": "Knowledge_1_039"
+    },
+    {
+      "s": "Employee_039",
+      "p": "hasKnowledge",
+      "o": "Knowledge_2_039"
+    },
+    {
+      "s": "Employee_039",
+      "p": "hasName",
+      "o": "Funcionário 039"
+    },
+    {
+      "s": "Employee_039",
+      "p": "hourlyCost",
+      "o": "91.0"
+    },
+    {
+      "s": "Knowledge_1_039",
+      "p": "possessedBy",
+      "o": "Employee_039"
+    },
+    {
+      "s": "Knowledge_2_039",
+      "p": "possessedBy",
+      "o": "Employee_039"
+    },
+    {
+      "s": "Employee_039",
+      "p": "hasWorkHour",
+      "o": "WorkHourEmployee_039"
+    },
+    {
+      "s": "WorkHourEmployee_039",
+      "p": "allocatedTo",
+      "o": "Project_005"
+    },
+    {
+      "s": "WorkHourEmployee_039",
+      "p": "belongsTo",
+      "o": "Employee_039"
+    },
+    {
+      "s": "Employee_040",
+      "p": "worksOn",
+      "o": "WorkHourEmployee_040"
+    },
+    {
+      "s": "Employee_040",
+      "p": "hasProfile",
+      "o": "Profile_1"
+    },
+    {
+      "s": "Employee_040",
+      "p": "hasKnowledge",
+      "o": "Knowledge_1_040"
+    },
+    {
+      "s": "Employee_040",
+      "p": "hasKnowledge",
+      "o": "Knowledge_2_040"
+    },
+    {
+      "s": "WorkHourEmployee_040",
+      "p": "allocatedHours",
+      "o": "62"
+    },
+    {
+      "s": "Employee_040",
+      "p": "hasName",
+      "o": "Funcionário 040"
+    },
+    {
+      "s": "Employee_040",
+      "p": "hourlyCost",
+      "o": "40.0"
+    },
+    {
+      "s": "Knowledge_1_040",
+      "p": "possessedBy",
+      "o": "Employee_040"
+    },
+    {
+      "s": "Knowledge_2_040",
+      "p": "possessedBy",
+      "o": "Employee_040"
+    },
+    {
+      "s": "WorkHourEmployee_040",
+      "p": "type",
+      "o": "WorkHour"
+    },
+    {
+      "s": "WorkHourEmployee_040",
+      "p": "allocatedTo",
+      "o": "Project_001"
+    },
+    {
+      "s": "WorkHourEmployee_040",
+      "p": "belongsTo",
+      "o": "Employee_040"
+    },
+    {
+      "s": "WorkHourEmployee_040",
+      "p": "hasAllocatedHours",
+      "o": "85"
+    },
+    {
+      "s": "Employee_041",
+      "p": "type",
+      "o": "BusinessPartner"
+    },
+    {
+      "s": "Employee_041",
+      "p": "worksOn",
+      "o": "WorkHourEmployee_041"
+    },
+    {
+      "s": "Employee_041",
+      "p": "hasProfile",
+      "o": "Profile_2"
+    },
+    {
+      "s": "Employee_041",
+      "p": "hasKnowledge",
+      "o": "Knowledge_1_041"
+    },
+    {
+      "s": "Employee_041",
+      "p": "hasKnowledge",
+      "o": "Knowledge_2_041"
+    },
+    {
+      "s": "Employee_041",
+      "p": "hasName",
+      "o": "Funcionário 041"
+    },
+    {
+      "s": "Employee_041",
+      "p": "hourlyCost",
+      "o": "41.0"
+    },
+    {
+      "s": "WorkHourEmployee_041",
+      "p": "allocatedTo",
+      "o": "Project_002"
+    },
+    {
+      "s": "WorkHourEmployee_041",
+      "p": "belongsTo",
+      "o": "Employee_041"
+    },
+    {
+      "s": "WorkHourEmployee_041",
+      "p": "hasAllocatedHours",
+      "o": "62"
+    },
+    {
+      "s": "Employee_042",
+      "p": "type",
+      "o": "BusinessPartner"
+    },
+    {
+      "s": "Employee_042",
+      "p": "worksOn",
+      "o": "WorkHourEmployee_042"
+    },
+    {
+      "s": "Employee_042",
+      "p": "hasProfile",
+      "o": "Profile_3"
+    },
+    {
+      "s": "Employee_042",
+      "p": "hasKnowledge",
+      "o": "Knowledge_1_042"
+    },
+    {
+      "s": "Employee_042",
+      "p": "hasKnowledge",
+      "o": "Knowledge_2_042"
+    },
+    {
+      "s": "WorkHourEmployee_042",
+      "p": "allocatedTo",
+      "o": "Project_003"
+    },
+    {
+      "s": "WorkHourEmployee_042",
+      "p": "belongsTo",
+      "o": "Employee_042"
+    },
+    {
+      "s": "WorkHourEmployee_042",
+      "p": "allocatedHours",
+      "o": "93"
+    },
+    {
+      "s": "Employee_043",
+      "p": "type",
+      "o": "BusinessPartner"
+    },
+    {
+      "s": "Employee_043",
+      "p": "worksOn",
+      "o": "WorkHourEmployee_043"
+    },
+    {
+      "s": "Employee_043",
+      "p": "hasProfile",
+      "o": "Profile_5"
+    },
+    {
+      "s": "Employee_043",
+      "p": "hasKnowledge",
+      "o": "Knowledge_1_043"
+    },
+    {
+      "s": "Employee_043",
+      "p": "hasKnowledge",
+      "o": "Knowledge_2_043"
+    },
+    {
+      "s": "WorkHourEmployee_043",
+      "p": "allocatedTo",
+      "o": "Project_003"
+    },
+    {
+      "s": "WorkHourEmployee_043",
+      "p": "belongsTo",
+      "o": "Employee_043"
+    },
+    {
+      "s": "WorkHourEmployee_043",
+      "p": "allocatedHours",
+      "o": "70"
+    },
+    {
+      "s": "Employee_043",
+      "p": "hasKnowledge",
+      "o": "Knowledge_1_043"
+    },
+    {
+      "s": "Employee_043",
+      "p": "hasKnowledge",
+      "o": "Knowledge_2_043"
+    },
+    {
+      "s": "WorkHourEmployee_043",
+      "p": "allocatedTo",
+      "o": "Project_004"
+    },
+    {
+      "s": "WorkHourEmployee_043",
+      "p": "belongsTo",
+      "o": "Employee_043"
+    },
+    {
+      "s": "Employee_044",
+      "p": "worksOn",
+      "o": "WorkHourEmployee_043"
+    },
+    {
+      "s": "Employee_044",
+      "p": "hasProfile",
+      "o": "Profile_3"
+    },
+    {
+      "s": "Employee_044",
+      "p": "hasKnowledge",
+      "o": "Knowledge_1_044"
+    },
+    {
+      "s": "Employee_044",
+      "p": "hasKnowledge",
+      "o": "Knowledge_2_044"
+    },
+    {
+      "s": "Employee_044",
+      "p": "hasName",
+      "o": "Funcionário 044"
+    },
+    {
+      "s": "Employee_044",
+      "p": "hourlyCost",
+      "o": "68.0"
+    },
+    {
+      "s": "Knowledge_2_044",
+      "p": "type",
+      "o": "Knowledge"
+    },
+    {
+      "s": "Employee_044",
+      "p": "hasKnowledge",
+      "o": "Knowledge_2_044"
+    },
+    {
+      "s": "Employee_044",
+      "p": "hasKnowledge",
+      "o": "Knowledge_1_045"
+    },
+    {
+      "s": "Employee_045",
+      "p": "worksOn",
+      "o": "WorkHourEmployee_045"
+    },
+    {
+      "s": "WorkHourEmployee_045",
+      "p": "allocatedTo",
+      "o": "Project_005"
+    },
+    {
+      "s": "WorkHourEmployee_045",
+      "p": "belongsTo",
+      "o": "Employee_044"
+    },
+    {
+      "s": "Employee_045",
+      "p": "hasProfile",
+      "o": "Profile_2"
+    },
+    {
+      "s": "Employee_045",
+      "p": "hasKnowledge",
+      "o": "Knowledge_1_045"
+    },
+    {
+      "s": "Employee_045",
+      "p": "hasKnowledge",
+      "o": "Knowledge_2_045"
+    },
+    {
+      "s": "Employee_045",
+      "p": "hasName",
+      "o": "Funcionário 045"
+    },
+    {
+      "s": "Employee_045",
+      "p": "hourlyCost",
+      "o": "86.0"
+    },
+    {
+      "s": "WorkHourEmployee_045",
+      "p": "type",
+      "o": "WorkHour"
+    },
+    {
+      "s": "WorkHourEmployee_045",
+      "p": "allocatedTo",
+      "o": "Project_001"
+    },
+    {
+      "s": "WorkHourEmployee_045",
+      "p": "belongsTo",
+      "o": "Employee_045"
+    },
+    {
+      "s": "WorkHourEmployee_045",
+      "p": "allocatedHours",
+      "o": "140"
+    },
+    {
+      "s": "Employee_046",
+      "p": "type",
+      "o": "BusinessPartner"
+    },
+    {
+      "s": "Employee_046",
+      "p": "worksOn",
+      "o": "WorkHourEmployee_046"
+    },
+    {
+      "s": "Employee_046",
+      "p": "hasProfile",
+      "o": "Profile_5"
+    },
+    {
+      "s": "Employee_046",
+      "p": "hasKnowledge",
+      "o": "Knowledge_1_046"
+    },
+    {
+      "s": "Employee_046",
+      "p": "hasKnowledge",
+      "o": "Knowledge_2_046"
+    },
+    {
+      "s": "Employee_046",
+      "p": "hasName",
+      "o": "Funcionário 046"
+    },
+    {
+      "s": "Employee_046",
+      "p": "hourlyCost",
+      "o": "81.0"
+    },
+    {
+      "s": "WorkHourEmployee_045",
+      "p": "allocatedTo",
+      "o": "Project_002"
+    },
+    {
+      "s": "WorkHourEmployee_045",
+      "p": "belongsTo",
+      "o": "Employee_046"
+    },
+    {
+      "s": "Employee_047",
+      "p": "type",
+      "o": "BusinessPartner"
+    },
+    {
+      "s": "Employee_047",
+      "p": "worksOn",
+      "o": "WorkHourEmployee_047"
+    },
+    {
+      "s": "Employee_047",
+      "p": "hasProfile",
+      "o": "Profile_1"
+    },
+    {
+      "s": "Employee_047",
+      "p": "hasKnowledge",
+      "o": "Knowledge_1_047"
+    },
+    {
+      "s": "Employee_047",
+      "p": "hasKnowledge",
+      "o": "Knowledge_2_047"
+    },
+    {
+      "s": "WorkHourEmployee_047",
+      "p": "allocatedTo",
+      "o": "Project_003"
+    },
+    {
+      "s": "WorkHourEmployee_047",
+      "p": "belongsTo",
+      "o": "Employee_047"
+    },
+    {
+      "s": "WorkHourEmployee_047",
+      "p": "allocatedHours",
+      "o": "127"
+    },
+    {
+      "s": "Employee_048",
+      "p": "type",
+      "o": "BusinessPartner"
+    },
+    {
+      "s": "Employee_048",
+      "p": "worksOn",
+      "o": "WorkHourEmployee_048"
+    },
+    {
+      "s": "Employee_048",
+      "p": "hasProfile",
+      "o": "Profile_1"
+    },
+    {
+      "s": "Employee_048",
+      "p": "hasKnowledge",
+      "o": "Knowledge_1_048"
+    },
+    {
+      "s": "Employee_048",
+      "p": "hasKnowledge",
+      "o": "Knowledge_2_048"
+    },
+    {
+      "s": "WorkHourEmployee_048",
+      "p": "allocatedTo",
+      "o": "Project_003"
+    },
+    {
+      "s": "WorkHourEmployee_048",
+      "p": "belongsTo",
+      "o": "Employee_048"
+    },
+    {
+      "s": "WorkHourEmployee_048",
+      "p": "allocatedHours",
+      "o": "44"
+    },
+    {
+      "s": "Employee_048",
+      "p": "hasKnowledge",
+      "o": "Knowledge_1_048"
+    },
+    {
+      "s": "Employee_048",
+      "p": "hasKnowledge",
+      "o": "Knowledge_2_048"
+    },
+    {
+      "s": "WorkHourEmployee_048",
+      "p": "allocatedTo",
+      "o": "Project_004"
+    },
+    {
+      "s": "WorkHourEmployee_048",
+      "p": "belongsTo",
+      "o": "Employee_048"
+    },
+    {
+      "s": "Employee_049",
+      "p": "worksOn",
+      "o": "WorkHourEmployee_048"
+    },
+    {
+      "s": "Employee_049",
+      "p": "hasProfile",
+      "o": "Profile_1"
+    },
+    {
+      "s": "Employee_049",
+      "p": "hasKnowledge",
+      "o": "Knowledge_1_049"
+    },
+    {
+      "s": "Employee_049",
+      "p": "hasKnowledge",
+      "o": "Knowledge_2_049"
+    },
+    {
+      "s": "Employee_049",
+      "p": "hasName",
+      "o": "Funcionário 049"
+    },
+    {
+      "s": "Employee_049",
+      "p": "hourlyCost",
+      "o": "44.0"
+    },
+    {
+      "s": "Employee_049",
+      "p": "worksOn",
+      "o": "WorkHourEmployee_049"
+    },
+    {
+      "s": "WorkHourEmployee_049",
+      "p": "allocatedTo",
+      "o": "Project_005"
+    },
+    {
+      "s": "WorkHourEmployee_049",
+      "p": "belongsTo",
+      "o": "Employee_049"
+    },
+    {
+      "s": "Employee_050",
+      "p": "worksOn",
+      "o": "WorkHourEmployee_050"
+    },
+    {
+      "s": "WorkHourEmployee_050",
+      "p": "allocatedTo",
+      "o": "Project_005"
+    },
+    {
+      "s": "WorkHourEmployee_050",
+      "p": "belongsTo",
+      "o": "Employee_050"
+    },
+    {
+      "s": "Employee_050",
+      "p": "hasProfile",
+      "o": "Profile_3"
+    },
+    {
+      "s": "Employee_050",
+      "p": "hasKnowledge",
+      "o": "Knowledge_1_050"
+    },
+    {
+      "s": "Employee_050",
+      "p": "hasKnowledge",
+      "o": "Knowledge_2_050"
+    },
+    {
+      "s": "Employee_050",
+      "p": "hasName",
+      "o": "Funcionário 050"
+    },
+    {
+      "s": "Employee_050",
+      "p": "hourlyCost",
+      "o": "85.0"
+    },
+    {
+      "s": "Project_005",
+      "p": "allocatedHours",
+      "o": "56"
+    },
+    {
+      "s": "Knowledge_2_049",
+      "p": "type",
+      "o": "Knowledge"
+    },
+    {
+      "s": "Knowledge_2_049",
+      "p": "possessedBy",
+      "o": "Employee_049"
+    },
+    {
+      "s": "Knowledge_2_049",
+      "p": "hasName",
+      "o": "JavaScript"
+    },
+    {
+      "s": "WorkHourEmployee_050",
+      "p": "type",
+      "o": "WorkHour"
+    },
+    {
+      "s": "WorkHourEmployee_050",
+      "p": "allocatedTo",
+      "o": "Project_001"
+    },
+    {
+      "s": "WorkHourEmployee_050",
+      "p": "belongsTo",
+      "o": "Employee_050"
+    },
+    {
+      "s": "WorkHourEmployee_050",
+      "p": "allocatedHours",
+      "o": "81"
+    },
+    {
+      "s": "IncomingPayment_001",
+      "p": "type",
+      "o": "IncomingPayment"
+    },
+    {
+      "s": "IncomingPayment_001",
+      "p": "appliesTo",
+      "o": "SalesInvoice_001"
+    },
+    {
+      "s": "IncomingPayment_001",
+      "p": "incomingPaymentAppliesToInvoice",
+      "o": "SalesInvoice_001"
+    },
+    {
+      "s": "IncomingPayment_001",
+      "p": "purchaseInvoiceRecordedInJournal",
+      "o": "JournalEntry_001"
+    },
+    {
+      "s": "IncomingPayment_001",
+      "p": "recordedIn",
+      "o": "JournalEntry_001"
+    },
+    {
+      "s": "IncomingPayment_001",
+      "p": "salesInvoiceRecordedInJournal",
+      "o": "JournalEntry_001"
+    },
+    {
+      "s": "IncomingPayment_001",
+      "p": "amount",
+      "o": "74225.0"
+    },
+    {
+      "s": "SalesInvoice_001",
+      "p": "type",
+      "o": "Invoice"
+    },
+    {
+      "s": "SalesInvoice_001",
+      "p": "generatedFrom",
+      "o": "SalesOrder_001"
+    },
+    {
+      "s": "SalesInvoice_001",
+      "p": "receivedPayment",
+      "o": "IncomingPayment_001"
+    },
+    {
+      "s": "SalesInvoice_001",
+      "p": "salesInvoiceGeneratedFromOrder",
+      "o": "SalesOrder_001"
+    },
+    {
+      "s": "SalesInvoice_001",
+      "p": "totalValue",
+      "o": "84424"
+    },
+    {
+      "s": "IncomingPayment_002",
+      "p": "type",
+      "o": "IncomingPayment"
+    },
+    {
+      "s": "IncomingPayment_002",
+      "p": "appliesTo",
+      "o": "SalesInvoice_002"
+    },
+    {
+      "s": "IncomingPayment_002",
+      "p": "incomingPaymentAppliesToInvoice",
+      "o": "SalesInvoice_002"
+    },
+    {
+      "s": "IncomingPayment_002",
+      "p": "purchaseInvoiceRecordedInJournal",
+      "o": "JournalEntry_002"
+    },
+    {
+      "s": "IncomingPayment_002",
+      "p": "recordedIn",
+      "o": "JournalEntry_002"
+    },
+    {
+      "s": "IncomingPayment_002",
+      "p": "salesInvoiceRecordedInJournal",
+      "o": "JournalEntry_002"
+    },
+    {
+      "s": "IncomingPayment_002",
+      "p": "amount",
+      "o": "46131.0"
+    },
+    {
+      "s": "SalesInvoice_002",
+      "p": "type",
+      "o": "Invoice"
+    },
+    {
+      "s": "SalesInvoice_002",
+      "p": "generatedFrom",
+      "o": "SalesOrder_002"
+    },
+    {
+      "s": "SalesInvoice_002",
+      "p": "receivedPayment",
+      "o": "IncomingPayment_002"
+    },
+    {
+      "s": "SalesInvoice_002",
+      "p": "salesInvoiceGeneratedFromOrder",
+      "o": "SalesOrder_002"
+    },
+    {
+      "s": "SalesInvoice_002",
+      "p": "totalValue",
+      "o": "99441"
+    },
+    {
+      "s": "IncomingPayment_003",
+      "p": "type",
+      "o": "IncomingPayment"
+    },
+    {
+      "s": "IncomingPayment_003",
+      "p": "appliesTo",
+      "o": "SalesInvoice_003"
+    },
+    {
+      "s": "IncomingPayment_003",
+      "p": "incomingPaymentAppliesToInvoice",
+      "o": "SalesInvoice_003"
+    },
+    {
+      "s": "IncomingPayment_003",
+      "p": "purchaseInvoiceRecordedInJournal",
+      "o": "JournalEntry_003"
+    },
+    {
+      "s": "IncomingPayment_003",
+      "p": "recordedIn",
+      "o": "JournalEntry_003"
+    },
+    {
+      "s": "IncomingPayment_003",
+      "p": "salesInvoiceRecordedInJournal",
+      "o": "JournalEntry_003"
+    },
+    {
+      "s": "SalesInvoice_003",
+      "p": "type",
+      "o": "Invoice"
+    },
+    {
+      "s": "SalesInvoice_003",
+      "p": "generatedFrom",
+      "o": "SalesOrder_003"
+    },
+    {
+      "s": "SalesInvoice_003",
+      "p": "receivedPayment",
+      "o": "IncomingPayment_003"
+    },
+    {
+      "s": "SalesInvoice_003",
+      "p": "salesInvoiceGeneratedFromOrder",
+      "o": "SalesOrder_003"
+    },
+    {
+      "s": "SalesOrder_001",
+      "p": "type",
+      "o": "Order"
+    },
+    {
+      "s": "SalesOrder_001",
+      "p": "opportunityGeneratesSalesOrder",
+      "o": "Opportunity_OPP001"
+    },
+    {
+      "s": "SalesOrder_001",
+      "p": "generates",
+      "o": "Opportunity_OPP001"
+    },
+    {
+      "s": "SalesOrder_001",
+      "p": "isPreviewOf",
+      "o": "SalesInvoice_001"
+    },
+    {
+      "s": "TechnicalProposal_001",
+      "p": "type",
+      "o": "TechnicalProposal"
+    },
+    {
+      "s": "TechnicalProposal_001",
+      "p": "needsToWorkHourProfile",
+      "o": "WorkHourProfile_001"
+    },
+    {
+      "s": "TechnicalProposal_001",
+      "p": "technicalProposalNeedsToWorkHourProfile",
+      "o": "WorkHourProfile_001"
+    },
+    {
+      "s": "TechnicalProposal_001",
+      "p": "hasCost",
+      "o": "75486.0"
+    },
+    {
+      "s": "TechnicalProposal_001",
+      "p": "hasName",
+      "o": "Implantação Sistema 1"
+    },
+    {
+      "s": "SalesOrder_002",
+      "p": "type",
+      "o": "Order"
+    },
+    {
+      "s": "SalesOrder_002",
+      "p": "opportunityGeneratesSalesOrder",
+      "o": "Opportunity_OPP002"
+    },
+    {
+      "s": "SalesOrder_002",
+      "p": "generates",
+      "o": "Opportunity_OPP002"
+    },
+    {
+      "s": "SalesOrder_002",
+      "p": "isPreviewOf",
+      "o": "SalesInvoice_002"
+    },
+    {
+      "s": "TechnicalProposal_002",
+      "p": "type",
+      "o": "TechnicalProposal"
+    },
+    {
+      "s": "TechnicalProposal_002",
+      "p": "needsToWorkHourProfile",
+      "o": "WorkHourProfile_002"
+    },
+    {
+      "s": "TechnicalProposal_003",
+      "p": "type",
+      "o": "TechnicalProposal"
+    },
+    {
+      "s": "TechnicalProposal_003",
+      "p": "needsToWorkHourProfile",
+      "o": "WorkHourProfile_003"
+    },
+    {
+      "s": "TechnicalProposal_004",
+      "p": "type",
+      "o": "TechnicalProposal"
+    },
+    {
+      "s": "TechnicalProposal_004",
+      "p": "needsToWorkHourProfile",
+      "o": "WorkHourProfile_004"
+    },
+    {
+      "s": "TechnicalProposal_005",
+      "p": "type",
+      "o": "TechnicalProposal"
+    },
+    {
+      "s": "TechnicalProposal_005",
+      "p": "needsToWorkHourProfile",
+      "o": "WorkHourProfile_005"
+    },
+    {
+      "s": "SalesOrder_003",
+      "p": "opportunityGeneratesSalesOrder",
+      "o": "Opportunity_OPP003"
+    },
+    {
+      "s": "SalesOrder_003",
+      "p": "generates",
+      "o": "Opportunity_OPP003"
+    },
+    {
+      "s": "SalesOrder_003",
+      "p": "isPreviewOf",
+      "o": "SalesInvoice_003"
+    },
+    {
+      "s": "TechnicalProposal_002",
+      "p": "hasCost",
+      "o": "28963.0"
+    },
+    {
+      "s": "TechnicalProposal_002",
+      "p": "hasName",
+      "o": "Implantação Sistema 2"
+    },
+    {
+      "s": "TechnicalProposal_003",
+      "p": "hasCost",
+      "o": "68952.0"
+    },
+    {
+      "s": "TechnicalProposal_003",
+      "p": "hasName",
+      "o": "Implantação Sistema 3"
+    },
+    {
+      "s": "TechnicalProposal_004",
+      "p": "hasCost",
+      "o": "45026.0"
+    },
+    {
+      "s": "TechnicalProposal_004",
+      "p": "hasName",
+      "o": "Implantação Sistema 4"
+    },
+    {
+      "s": "TechnicalProposal_005",
+      "p": "hasCost",
+      "o": "36751.0"
+    },
+    {
+      "s": "TechnicalProposal_005",
+      "p": "hasName",
+      "o": "Implantação Sistema 5"
+    },
+    {
+      "s": "WorkHourProfile_001",
+      "p": "type",
+      "o": "WorkHourProfile"
+    },
+    {
+      "s": "WorkHourProfile_002",
+      "p": "type",
+      "o": "WorkHourProfile"
+    },
+    {
+      "s": "WorkHourProfile_003",
+      "p": "type",
+      "o": "WorkHourProfile"
+    },
+    {
+      "s": "WorkHourProfile_004",
+      "p": "type",
+      "o": "WorkHourProfile"
+    },
+    {
+      "s": "WorkHourProfile_005",
+      "p": "type",
+      "o": "WorkHourProfile"
+    },
+    {
+      "s": "WorkHourProfile_001",
+      "p": "isNecessaryTechnicalProposal",
+      "o": "TechnicalProposal_001"
+    },
+    {
+      "s": "WorkHourProfile_002",
+      "p": "isNecessaryTechnicalProposal",
+      "o": "TechnicalProposal_002"
+    },
+    {
+      "s": "WorkHourProfile_003",
+      "p": "isNecessaryTechnicalProposal",
+      "o": "TechnicalProposal_003"
+    },
+    {
+      "s": "WorkHourProfile_004",
+      "p": "isNecessaryTechnicalProposal",
+      "o": "TechnicalProposal_004"
+    },
+    {
+      "s": "WorkHourProfile_005",
+      "p": "isNecessaryTechnicalProposal",
+      "o": "TechnicalProposal_005"
+    },
+    {
+      "s": "WorkHourProfile_001",
+      "p": "needsTo",
+      "o": "Profile_1"
+    },
+    {
+      "s": "WorkHourProfile_002",
+      "p": "needsTo",
+      "o": "Profile_2"
+    },
+    {
+      "s": "WorkHourProfile_003",
+      "p": "needsTo",
+      "o": "Profile_3"
+    },
+    {
+      "s": "WorkHourProfile_004",
+      "p": "needsTo",
+      "o": "Profile_4"
+    },
+    {
+      "s": "WorkHourProfile_005",
+      "p": "needsTo",
+      "o": "Profile_5"
+    },
+    {
+      "s": "WorkHourProfile_001",
+      "p": "workHourProfileNeedsToProfile",
+      "o": "Profile_1"
+    },
+    {
+      "s": "WorkHourProfile_002",
+      "p": "workHourProfileNeedsToProfile",
+      "o": "Profile_2"
+    },
+    {
+      "s": "WorkHourProfile_003",
+      "p": "workHourProfileNeedsToProfile",
+      "o": "Profile_3"
+    },
+    {
+      "s": "WorkHourProfile_004",
+      "p": "workHourProfileNeedsToProfile",
+      "o": "Profile_4"
+    },
+    {
+      "s": "WorkHourProfile_005",
+      "p": "workHourProfileNeedsToProfile",
+      "o": "Profile_5"
+    },
+    {
+      "s": "WorkHourProfile_001",
+      "p": "workHourProfileIsNecessaryTechnicalProposal",
+      "o": "TechnicalProposal_001"
+    },
+    {
+      "s": "WorkHourProfile_002",
+      "p": "workHourProfileIsNecessaryTechnicalProposal",
+      "o": "TechnicalProposal_002"
+    },
+    {
+      "s": "WorkHourProfile_003",
+      "p": "workHourProfileIsNecessaryTechnicalProposal",
+      "o": "TechnicalProposal_003"
+    },
+    {
+      "s": "WorkHourProfile_004",
+      "p": "workHourProfileIsNecessaryTechnicalProposal",
+      "o": "TechnicalProposal_004"
+    },
+    {
+      "s": "WorkHourProfile_005",
+      "p": "workHourProfileIsNecessaryTechnicalProposal",
+      "o": "TechnicalProposal_005"
+    },
+    {
+      "s": "WorkHourProfile_001",
+      "p": "expectedHours",
+      "o": "160"
+    },
+    {
+      "s": "WorkHourProfile_002",
+      "p": "expectedHours",
+      "o": "200"
+    },
+    {
+      "s": "WorkHourProfile_003",
+      "p": "expectedHours",
+      "o": "200"
+    },
+    {
+      "s": "WorkHourProfile_004",
+      "p": "expectedHours",
+      "o": "160"
+    },
+    {
+      "s": "WorkHourProfile_005",
+      "p": "expectedHours",
+      "o": "160"
+    },
+    {
+      "s": "Project_001",
+      "p": "type",
+      "o": "Project"
+    },
+    {
+      "s": "Project_001",
+      "p": "hasAllocation",
+      "o": "WorkHourEmployee_005"
+    },
+    {
+      "s": "Project_001",
+      "p": "hasAllocation",
+      "o": "WorkHourEmployee_010"
+    },
+    {
+      "s": "Project_001",
+      "p": "hasAllocation",
+      "o": "WorkHourEmployee_015"
+    },
+    {
+      "s": "Project_001",
+      "p": "hasAllocation",
+      "o": "WorkHourEmployee_020"
+    },
+    {
+      "s": "Project_001",
+      "p": "hasAllocation",
+      "o": "WorkHourEmployee_025"
+    },
+    {
+      "s": "Project_001",
+      "p": "hasAllocation",
+      "o": "WorkHourEmployee_030"
+    },
+    {
+      "s": "Project_001",
+      "p": "hasAllocation",
+      "o": "WorkHourEmployee_035"
+    },
+    {
+      "s": "Project_001",
+      "p": "hasAllocation",
+      "o": "WorkHourEmployee_040"
+    },
+    {
+      "s": "Project_001",
+      "p": "hasAllocation",
+      "o": "WorkHourEmployee_045"
+    },
+    {
+      "s": "Project_001",
+      "p": "hasAllocation",
+      "o": "WorkHourEmployee_050"
+    },
+    {
+      "s": "Project_001",
+      "p": "relatedTo",
+      "o": "Opportunity_OPP001"
+    },
+    {
+      "s": "Project_001",
+      "p": "employs",
+      "o": "Employee_001"
+    },
+    {
+      "s": "Project_001",
+      "p": "employs",
+      "o": "Employee_006"
+    },
+    {
+      "s": "Project_001",
+      "p": "employs",
+      "o": "Employee_011"
+    },
+    {
+      "s": "Project_001",
+      "p": "employs",
+      "o": "Employee_016"
+    },
+    {
+      "s": "Project_001",
+      "p": "employs",
+      "o": "Employee_021"
+    },
+    {
+      "s": "Project_001",
+      "p": "employs",
+      "o": "Employee_026"
+    },
+    {
+      "s": "Project_001",
+      "p": "employs",
+      "o": "Employee_031"
+    },
+    {
+      "s": "Project_001",
+      "p": "employs",
+      "o": "Employee_036"
+    },
+    {
+      "s": "Project_001",
+      "p": "employs",
+      "o": "Employee_041"
+    },
+    {
+      "s": "Project_001",
+      "p": "employs",
+      "o": "Employee_046"
+    },
+    {
+      "s": "Project_001",
+      "p": "projectRelatedTo",
+      "o": "Opportunity_OPP001"
+    },
+    {
+      "s": "Project_002",
+      "p": "type",
+      "o": "Project"
+    },
+    {
+      "s": "Project_002",
+      "p": "hasAllocation",
+      "o": "WorkHourEmployee_001"
+    },
+    {
+      "s": "Project_002",
+      "p": "hasAllocation",
+      "o": "WorkHourEmployee_006"
+    },
+    {
+      "s": "Project_002",
+      "p": "hasAllocation",
+      "o": "WorkHourEmployee_011"
+    },
+    {
+      "s": "Project_002",
+      "p": "hasAllocation",
+      "o": "WorkHourEmployee_016"
+    },
+    {
+      "s": "Project_002",
+      "p": "hasAllocation",
+      "o": "WorkHourEmployee_021"
+    },
+    {
+      "s": "Project_002",
+      "p": "hasAllocation",
+      "o": "WorkHourEmployee_026"
+    },
+    {
+      "s": "Project_002",
+      "p": "hasAllocation",
+      "o": "WorkHourEmployee_031"
+    },
+    {
+      "s": "Project_002",
+      "p": "hasAllocation",
+      "o": "WorkHourEmployee_036"
+    },
+    {
+      "s": "Project_002",
+      "p": "hasAllocation",
+      "o": "WorkHourEmployee_041"
+    },
+    {
+      "s": "Project_002",
+      "p": "hasAllocation",
+      "o": "WorkHourEmployee_046"
+    },
+    {
+      "s": "Project_002",
+      "p": "relatedTo",
+      "o": "Opportunity_OPP002"
+    },
+    {
+      "s": "Project_002",
+      "p": "employs",
+      "o": "Employee_002"
+    },
+    {
+      "s": "Project_002",
+      "p": "employs",
+      "o": "Employee_007"
+    },
+    {
+      "s": "Project_002",
+      "p": "employs",
+      "o": "Employee_012"
+    },
+    {
+      "s": "Project_002",
+      "p": "employs",
+      "o": "Employee_017"
+    },
+    {
+      "s": "Project_002",
+      "p": "employs",
+      "o": "Employee_022"
+    },
+    {
+      "s": "Project_002",
+      "p": "employs",
+      "o": "Employee_027"
+    },
+    {
+      "s": "Project_002",
+      "p": "employs",
+      "o": "Employee_032"
+    },
+    {
+      "s": "Project_002",
+      "p": "employs",
+      "o": "Employee_037"
+    },
+    {
+      "s": "Project_002",
+      "p": "employs",
+      "o": "Employee_042"
+    },
+    {
+      "s": "Project_002",
+      "p": "employs",
+      "o": "Employee_047"
+    },
+    {
+      "s": "Project_002",
+      "p": "projectRelatedTo",
+      "o": "Opportunity_OPP002"
+    },
+    {
+      "s": "Project_003",
+      "p": "type",
+      "o": "Project"
+    },
+    {
+      "s": "Project_003",
+      "p": "hasAllocation",
+      "o": "WorkHourEmployee_002"
+    },
+    {
+      "s": "Project_003",
+      "p": "hasAllocation",
+      "o": "WorkHourEmployee_007"
+    },
+    {
+      "s": "Project_003",
+      "p": "hasAllocation",
+      "o": "WorkHourEmployee_012"
+    },
+    {
+      "s": "Project_003",
+      "p": "hasAllocation",
+      "o": "WorkHourEmployee_017"
+    },
+    {
+      "s": "Project_003",
+      "p": "hasAllocation",
+      "o": "WorkHourEmployee_022"
+    },
+    {
+      "s": "Project_003",
+      "p": "hasAllocation",
+      "o": "WorkHourEmployee_027"
+    },
+    {
+      "s": "Project_003",
+      "p": "hasAllocation",
+      "o": "WorkHourEmployee_032"
+    },
+    {
+      "s": "Project_003",
+      "p": "hasAllocation",
+      "o": "WorkHourEmployee_037"
+    },
+    {
+      "s": "Project_003",
+      "p": "hasAllocation",
+      "o": "WorkHourEmployee_042"
+    },
+    {
+      "s": "Project_003",
+      "p": "hasAllocation",
+      "o": "WorkHourEmployee_047"
+    },
+    {
+      "s": "Project_003",
+      "p": "relatedTo",
+      "o": "Opportunity_OPP003"
+    },
+    {
+      "s": "Project_003",
+      "p": "employs",
+      "o": "Employee_003"
+    },
+    {
+      "s": "Project_003",
+      "p": "employs",
+      "o": "Employee_008"
+    },
+    {
+      "s": "Project_003",
+      "p": "employs",
+      "o": "Employee_013"
+    },
+    {
+      "s": "Project_003",
+      "p": "employs",
+      "o": "Employee_018"
+    },
+    {
+      "s": "Project_003",
+      "p": "employs",
+      "o": "Employee_023"
+    },
+    {
+      "s": "Project_003",
+      "p": "employs",
+      "o": "Employee_028"
+    },
+    {
+      "s": "Project_003",
+      "p": "employs",
+      "o": "Employee_033"
+    },
+    {
+      "s": "Project_003",
+      "p": "employs",
+      "o": "Employee_038"
+    },
+    {
+      "s": "Project_003",
+      "p": "employs",
+      "o": "Employee_043"
+    },
+    {
+      "s": "Project_003",
+      "p": "employs",
+      "o": "Employee_048"
+    },
+    {
+      "s": "Project_003",
+      "p": "projectRelatedTo",
+      "o": "Opportunity_OPP003"
+    },
+    {
+      "s": "Project_004",
+      "p": "type",
+      "o": "Project"
+    },
+    {
+      "s": "Project_004",
+      "p": "hasAllocation",
+      "o": "WorkHourEmployee_003"
+    },
+    {
+      "s": "Project_004",
+      "p": "hasAllocation",
+      "o": "WorkHourEmployee_008"
+    },
+    {
+      "s": "Project_004",
+      "p": "hasAllocation",
+      "o": "WorkHourEmployee_013"
+    },
+    {
+      "s": "Project_004",
+      "p": "hasAllocation",
+      "o": "WorkHourEmployee_018"
+    },
+    {
+      "s": "Project_004",
+      "p": "hasAllocation",
+      "o": "WorkHourEmployee_023"
+    },
+    {
+      "s": "Project_004",
+      "p": "hasAllocation",
+      "o": "WorkHourEmployee_028"
+    },
+    {
+      "s": "Project_004",
+      "p": "hasAllocation",
+      "o": "WorkHourEmployee_033"
+    },
+    {
+      "s": "Project_004",
+      "p": "hasAllocation",
+      "o": "WorkHourEmployee_038"
+    },
+    {
+      "s": "Project_004",
+      "p": "hasAllocation",
+      "o": "WorkHourEmployee_043"
+    },
+    {
+      "s": "Project_004",
+      "p": "hasAllocation",
+      "o": "WorkHourEmployee_048"
+    },
+    {
+      "s": "Project_004",
+      "p": "relatedTo",
+      "o": "Opportunity_OPP004"
+    },
+    {
+      "s": "Project_004",
+      "p": "employs",
+      "o": "Employee_004"
+    },
+    {
+      "s": "Project_004",
+      "p": "employs",
+      "o": "Employee_009"
+    },
+    {
+      "s": "Project_004",
+      "p": "employs",
+      "o": "Employee_014"
+    },
+    {
+      "s": "Project_004",
+      "p": "employs",
+      "o": "Employee_019"
+    },
+    {
+      "s": "Project_004",
+      "p": "employs",
+      "o": "Employee_024"
+    },
+    {
+      "s": "Project_004",
+      "p": "employs",
+      "o": "Employee_029"
+    },
+    {
+      "s": "Project_004",
+      "p": "employs",
+      "o": "Employee_034"
+    },
+    {
+      "s": "Project_004",
+      "p": "employs",
+      "o": "Employee_039"
+    },
+    {
+      "s": "Project_004",
+      "p": "employs",
+      "o": "Employee_044"
+    },
+    {
+      "s": "Project_004",
+      "p": "projectRelatedTo",
+      "o": "Opportunity_OPP004"
+    },
+    {
+      "s": "Project_005",
+      "p": "type",
+      "o": "Project"
+    },
+    {
+      "s": "Project_005",
+      "p": "hasAllocation",
+      "o": "WorkHourEmployee_004"
+    },
+    {
+      "s": "Project_005",
+      "p": "hasAllocation",
+      "o": "WorkHourEmployee_009"
+    },
+    {
+      "s": "Project_005",
+      "p": "hasAllocation",
+      "o": "WorkHourEmployee_014"
+    },
+    {
+      "s": "Project_005",
+      "p": "hasAllocation",
+      "o": "WorkHourEmployee_019"
+    },
+    {
+      "s": "Project_005",
+      "p": "hasAllocation",
+      "o": "WorkHourEmployee_024"
+    },
+    {
+      "s": "Project_005",
+      "p": "hasAllocation",
+      "o": "WorkHourEmployee_029"
+    },
+    {
+      "s": "Project_005",
+      "p": "hasAllocation",
+      "o": "WorkHourEmployee_034"
+    },
+    {
+      "s": "Project_005",
+      "p": "hasAllocation",
+      "o": "WorkHourEmployee_039"
+    },
+    {
+      "s": "Project_005",
+      "p": "hasAllocation",
+      "o": "WorkHourEmployee_044"
+    },
+    {
+      "s": "Project_005",
+      "p": "hasAllocation",
+      "o": "WorkHourEmployee_048"
+    },
+    {
+      "s": "Project_005",
+      "p": "relatedTo",
+      "o": "Opportunity_OPP005"
+    },
+    {
+      "s": "Project_005",
+      "p": "employs",
+      "o": "Employee_003"
+    },
+    {
+      "s": "Project_005",
+      "p": "employs",
+      "o": "Employee_008"
+    },
+    {
+      "s": "Project_005",
+      "p": "employs",
+      "o": "Employee_013"
+    },
+    {
+      "s": "Project_005",
+      "p": "employs",
+      "o": "Employee_018"
+    },
+    {
+      "s": "Project_005",
+      "p": "employs",
+      "o": "Employee_023"
+    },
+    {
+      "s": "Project_005",
+      "p": "employs",
+      "o": "Employee_028"
+    },
+    {
+      "s": "Project_005",
+      "p": "employs",
+      "o": "Employee_033"
+    },
+    {
+      "s": "Project_005",
+      "p": "employs",
+      "o": "Employee_038"
+    },
+    {
+      "s": "Project_005",
+      "p": "employs",
+      "o": "Employee_043"
+    },
+    {
+      "s": "Project_005",
+      "p": "employs",
+      "o": "Employee_048"
+    },
+    {
+      "s": "Supplier_XYZ",
+      "p": "type",
+      "o": "BusinessPartner"
+    },
+    {
+      "s": "Supplier_XYZ",
+      "p": "hasName",
+      "o": "XYZ Fornecimentos S.A."
+    }
+  ]
+}

@@ -1,0 +1,4305 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/anon/ontologies/2025/9/proveniencia"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/anon/ontologies/2025/9/proveniencia">
+    <Prefix name="" IRI="http://www.semanticweb.org/anon/ontologies/2025/9/proveniencia/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Activity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Airflow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AirflowTask"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bronze"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Convenia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataSource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Entity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gold"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Jira"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Kafka"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SAP"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Salesforce"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Silver"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Spark"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Table"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Topic"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#used"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#type"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Airflow_Agent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kafka_Agent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Spark_Agent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#aggregate_issues_gold_0"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#aggregate_issues_gold_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#aggregate_issues_gold_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#aggregate_issues_gold_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#aggregate_issues_gold_4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#aggregate_projects_gold_0"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#aggregate_projects_gold_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#aggregate_worklogs_gold_0"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#aggregate_worklogs_gold_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#aggregate_worklogs_gold_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#aggregate_worklogs_gold_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#aggregate_worklogs_gold_4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#aggregate_worklogs_gold_5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#aggregate_worklogs_gold_6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#aggregate_worklogs_gold_7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#aggregate_worklogs_gold_8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#aggregate_worklogs_gold_9"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#get_issues_jira_0"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#get_issues_jira_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#get_issues_jira_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#get_issues_jira_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#get_issues_jira_4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#get_projects_jira_0"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#get_projects_jira_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#get_worklogs_jira_0"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#get_worklogs_jira_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#get_worklogs_jira_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#get_worklogs_jira_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#get_worklogs_jira_4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#get_worklogs_jira_5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#get_worklogs_jira_6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#get_worklogs_jira_7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#get_worklogs_jira_8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#get_worklogs_jira_9"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_issues_raw_data_0"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_issues_raw_data_0_bronze"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_issues_raw_data_0_gold"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_issues_raw_data_0_kafka"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_issues_raw_data_0_silver"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_issues_raw_data_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_issues_raw_data_1_bronze"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_issues_raw_data_1_gold"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_issues_raw_data_1_kafka"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_issues_raw_data_1_silver"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_issues_raw_data_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_issues_raw_data_2_bronze"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_issues_raw_data_2_gold"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_issues_raw_data_2_kafka"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_issues_raw_data_2_silver"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_issues_raw_data_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_issues_raw_data_3_bronze"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_issues_raw_data_3_gold"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_issues_raw_data_3_kafka"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_issues_raw_data_3_silver"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_issues_raw_data_4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_issues_raw_data_4_bronze"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_issues_raw_data_4_gold"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_issues_raw_data_4_kafka"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_issues_raw_data_4_silver"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_project_raw_data_0"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_project_raw_data_0_bronze"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_project_raw_data_0_gold"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_project_raw_data_0_kafka"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_project_raw_data_0_silver"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_project_raw_data_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_project_raw_data_1_bronze"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_project_raw_data_1_gold"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_project_raw_data_1_kafka"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_project_raw_data_1_silver"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_0"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_0_bronze"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_0_gold"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_0_kafka"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_0_silver"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_1_bronze"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_1_gold"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_1_kafka"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_1_silver"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_2_bronze"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_2_gold"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_2_kafka"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_2_silver"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_3_bronze"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_3_gold"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_3_kafka"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_3_silver"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_4_bronze"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_4_gold"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_4_kafka"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_4_silver"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_5_bronze"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_5_gold"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_5_kafka"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_5_silver"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_6_bronze"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_6_gold"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_6_kafka"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_6_silver"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_7_bronze"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_7_gold"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_7_kafka"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_7_silver"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_8_bronze"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_8_gold"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_8_kafka"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_8_silver"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_9"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_9_bronze"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_9_gold"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_9_kafka"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_9_silver"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#load_issues_bronze_0"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#load_issues_bronze_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#load_issues_bronze_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#load_issues_bronze_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#load_issues_bronze_4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#load_projects_bronze_0"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#load_projects_bronze_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#load_worklogs_bronze_0"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#load_worklogs_bronze_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#load_worklogs_bronze_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#load_worklogs_bronze_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#load_worklogs_bronze_4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#load_worklogs_bronze_5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#load_worklogs_bronze_6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#load_worklogs_bronze_7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#load_worklogs_bronze_8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#load_worklogs_bronze_9"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#transform_issues_silver_0"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#transform_issues_silver_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#transform_issues_silver_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#transform_issues_silver_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#transform_issues_silver_4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#transform_projects_silver_0"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#transform_projects_silver_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#transform_worklogs_silver_0"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#transform_worklogs_silver_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#transform_worklogs_silver_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#transform_worklogs_silver_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#transform_worklogs_silver_4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#transform_worklogs_silver_5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#transform_worklogs_silver_6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#transform_worklogs_silver_7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#transform_worklogs_silver_8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#transform_worklogs_silver_9"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Airflow"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Agent"/>
+            <DataHasValue>
+                <DataProperty IRI="#type"/>
+                <Literal>Airflow</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#AirflowTask"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Activity"/>
+            <DataHasValue>
+                <DataProperty IRI="#type"/>
+                <Literal>AirflowTask</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Bronze"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Table"/>
+            <DataHasValue>
+                <DataProperty IRI="#name"/>
+                <Literal>Bronze</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Convenia"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#DataSource"/>
+            <DataHasValue>
+                <DataProperty IRI="#name"/>
+                <Literal>Convenia</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#DataSource"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Entity"/>
+            <DataHasValue>
+                <DataProperty IRI="#type"/>
+                <Literal>DataSource</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Gold"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Table"/>
+            <DataHasValue>
+                <DataProperty IRI="#name"/>
+                <Literal>Gold</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Jira"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#DataSource"/>
+            <DataHasValue>
+                <DataProperty IRI="#name"/>
+                <Literal>Jira</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Kafka"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Agent"/>
+            <DataHasValue>
+                <DataProperty IRI="#type"/>
+                <Literal>Kafka</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SAP"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#DataSource"/>
+            <DataHasValue>
+                <DataProperty IRI="#name"/>
+                <Literal>SAP</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Salesforce"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#DataSource"/>
+            <DataHasValue>
+                <DataProperty IRI="#name"/>
+                <Literal>Salesforce</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Silver"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Table"/>
+            <DataHasValue>
+                <DataProperty IRI="#name"/>
+                <Literal>Silver</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Spark"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Agent"/>
+            <DataHasValue>
+                <DataProperty IRI="#type"/>
+                <Literal>Spark</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Table"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Entity"/>
+            <DataHasValue>
+                <DataProperty IRI="#type"/>
+                <Literal>Table</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Topic"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Entity"/>
+            <DataHasValue>
+                <DataProperty IRI="#type"/>
+                <Literal>Topic</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <DisjointClasses>
+        <Class IRI="#Activity"/>
+        <Class IRI="#Agent"/>
+        <Class IRI="#Entity"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Agent"/>
+        <NamedIndividual IRI="#Airflow_Agent"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Agent"/>
+        <NamedIndividual IRI="#Kafka_Agent"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Agent"/>
+        <NamedIndividual IRI="#Spark_Agent"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#aggregate_issues_gold_0"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#aggregate_issues_gold_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#aggregate_issues_gold_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#aggregate_issues_gold_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#aggregate_issues_gold_4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#aggregate_projects_gold_0"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#aggregate_projects_gold_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#aggregate_worklogs_gold_0"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#aggregate_worklogs_gold_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#aggregate_worklogs_gold_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#aggregate_worklogs_gold_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#aggregate_worklogs_gold_4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#aggregate_worklogs_gold_5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#aggregate_worklogs_gold_6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#aggregate_worklogs_gold_7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#aggregate_worklogs_gold_8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#aggregate_worklogs_gold_9"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#get_issues_jira_0"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#get_issues_jira_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#get_issues_jira_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#get_issues_jira_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#get_issues_jira_4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#get_projects_jira_0"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#get_projects_jira_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#get_worklogs_jira_0"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#get_worklogs_jira_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#get_worklogs_jira_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#get_worklogs_jira_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#get_worklogs_jira_4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#get_worklogs_jira_5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#get_worklogs_jira_6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#get_worklogs_jira_7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#get_worklogs_jira_8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#get_worklogs_jira_9"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_0"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_0_bronze"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_0_gold"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_0_kafka"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_0_silver"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_1_bronze"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_1_gold"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_1_kafka"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_1_silver"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_2_bronze"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_2_gold"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_2_kafka"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_2_silver"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_3_bronze"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_3_gold"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_3_kafka"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_3_silver"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_4_bronze"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_4_gold"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_4_kafka"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_4_silver"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_project_raw_data_0"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_project_raw_data_0_bronze"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_project_raw_data_0_gold"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_project_raw_data_0_kafka"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_project_raw_data_0_silver"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_project_raw_data_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_project_raw_data_1_bronze"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_project_raw_data_1_gold"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_project_raw_data_1_kafka"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_project_raw_data_1_silver"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_0"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_0_bronze"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_0_gold"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_0_kafka"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_0_silver"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_1_bronze"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_1_gold"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_1_kafka"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_1_silver"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_2_bronze"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_2_gold"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_2_kafka"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_2_silver"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_3_bronze"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_3_gold"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_3_kafka"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_3_silver"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_4_bronze"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_4_gold"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_4_kafka"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_4_silver"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_5_bronze"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_5_gold"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_5_kafka"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_5_silver"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_6_bronze"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_6_gold"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_6_kafka"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_6_silver"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_7_bronze"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_7_gold"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_7_kafka"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_7_silver"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_8_bronze"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_8_gold"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_8_kafka"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_8_silver"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_9"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_9_bronze"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_9_gold"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_9_kafka"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Entity"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_9_silver"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#load_issues_bronze_0"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#load_issues_bronze_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#load_issues_bronze_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#load_issues_bronze_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#load_issues_bronze_4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#load_projects_bronze_0"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#load_projects_bronze_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#load_worklogs_bronze_0"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#load_worklogs_bronze_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#load_worklogs_bronze_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#load_worklogs_bronze_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#load_worklogs_bronze_4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#load_worklogs_bronze_5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#load_worklogs_bronze_6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#load_worklogs_bronze_7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#load_worklogs_bronze_8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#load_worklogs_bronze_9"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#transform_issues_silver_0"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#transform_issues_silver_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#transform_issues_silver_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#transform_issues_silver_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#transform_issues_silver_4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#transform_projects_silver_0"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#transform_projects_silver_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#transform_worklogs_silver_0"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#transform_worklogs_silver_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#transform_worklogs_silver_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#transform_worklogs_silver_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#transform_worklogs_silver_4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#transform_worklogs_silver_5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#transform_worklogs_silver_6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#transform_worklogs_silver_7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#transform_worklogs_silver_8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#transform_worklogs_silver_9"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#aggregate_issues_gold_0"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_0_silver"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#aggregate_issues_gold_0"/>
+        <NamedIndividual IRI="#Spark_Agent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#aggregate_issues_gold_1"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_1_silver"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#aggregate_issues_gold_1"/>
+        <NamedIndividual IRI="#Spark_Agent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#aggregate_issues_gold_2"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_2_silver"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#aggregate_issues_gold_2"/>
+        <NamedIndividual IRI="#Spark_Agent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#aggregate_issues_gold_3"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_3_silver"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#aggregate_issues_gold_3"/>
+        <NamedIndividual IRI="#Spark_Agent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#aggregate_issues_gold_4"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_4_silver"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#aggregate_issues_gold_4"/>
+        <NamedIndividual IRI="#Spark_Agent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#aggregate_projects_gold_0"/>
+        <NamedIndividual IRI="#jira_project_raw_data_0_silver"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#aggregate_projects_gold_0"/>
+        <NamedIndividual IRI="#Spark_Agent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#aggregate_projects_gold_1"/>
+        <NamedIndividual IRI="#jira_project_raw_data_1_silver"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#aggregate_projects_gold_1"/>
+        <NamedIndividual IRI="#Spark_Agent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#aggregate_worklogs_gold_0"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_0_silver"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#aggregate_worklogs_gold_0"/>
+        <NamedIndividual IRI="#Spark_Agent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#aggregate_worklogs_gold_1"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_1_silver"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#aggregate_worklogs_gold_1"/>
+        <NamedIndividual IRI="#Spark_Agent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#aggregate_worklogs_gold_2"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_2_silver"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#aggregate_worklogs_gold_2"/>
+        <NamedIndividual IRI="#Spark_Agent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#aggregate_worklogs_gold_3"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_3_silver"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#aggregate_worklogs_gold_3"/>
+        <NamedIndividual IRI="#Spark_Agent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#aggregate_worklogs_gold_4"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_4_silver"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#aggregate_worklogs_gold_4"/>
+        <NamedIndividual IRI="#Spark_Agent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#aggregate_worklogs_gold_5"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_5_silver"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#aggregate_worklogs_gold_5"/>
+        <NamedIndividual IRI="#Spark_Agent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#aggregate_worklogs_gold_6"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_6_silver"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#aggregate_worklogs_gold_6"/>
+        <NamedIndividual IRI="#Spark_Agent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#aggregate_worklogs_gold_7"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_7_silver"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#aggregate_worklogs_gold_7"/>
+        <NamedIndividual IRI="#Spark_Agent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#aggregate_worklogs_gold_8"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_8_silver"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#aggregate_worklogs_gold_8"/>
+        <NamedIndividual IRI="#Spark_Agent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#aggregate_worklogs_gold_9"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_9_silver"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#aggregate_worklogs_gold_9"/>
+        <NamedIndividual IRI="#Spark_Agent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#get_issues_jira_0"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_0"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#get_issues_jira_0"/>
+        <NamedIndividual IRI="#Airflow_Agent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#get_issues_jira_1"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#get_issues_jira_1"/>
+        <NamedIndividual IRI="#Airflow_Agent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#get_issues_jira_2"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#get_issues_jira_2"/>
+        <NamedIndividual IRI="#Airflow_Agent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#get_issues_jira_3"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#get_issues_jira_3"/>
+        <NamedIndividual IRI="#Airflow_Agent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#get_issues_jira_4"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#get_issues_jira_4"/>
+        <NamedIndividual IRI="#Airflow_Agent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#get_projects_jira_0"/>
+        <NamedIndividual IRI="#jira_project_raw_data_0"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#get_projects_jira_0"/>
+        <NamedIndividual IRI="#Airflow_Agent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#get_projects_jira_1"/>
+        <NamedIndividual IRI="#jira_project_raw_data_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#get_projects_jira_1"/>
+        <NamedIndividual IRI="#Airflow_Agent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#get_worklogs_jira_0"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_0"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#get_worklogs_jira_0"/>
+        <NamedIndividual IRI="#Airflow_Agent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#get_worklogs_jira_1"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#get_worklogs_jira_1"/>
+        <NamedIndividual IRI="#Airflow_Agent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#get_worklogs_jira_2"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#get_worklogs_jira_2"/>
+        <NamedIndividual IRI="#Airflow_Agent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#get_worklogs_jira_3"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#get_worklogs_jira_3"/>
+        <NamedIndividual IRI="#Airflow_Agent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#get_worklogs_jira_4"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#get_worklogs_jira_4"/>
+        <NamedIndividual IRI="#Airflow_Agent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#get_worklogs_jira_5"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#get_worklogs_jira_5"/>
+        <NamedIndividual IRI="#Airflow_Agent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#get_worklogs_jira_6"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#get_worklogs_jira_6"/>
+        <NamedIndividual IRI="#Airflow_Agent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#get_worklogs_jira_7"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#get_worklogs_jira_7"/>
+        <NamedIndividual IRI="#Airflow_Agent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#get_worklogs_jira_8"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#get_worklogs_jira_8"/>
+        <NamedIndividual IRI="#Airflow_Agent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#get_worklogs_jira_9"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_9"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#get_worklogs_jira_9"/>
+        <NamedIndividual IRI="#Airflow_Agent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_0_bronze"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_0_kafka"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_0_bronze"/>
+        <NamedIndividual IRI="#load_issues_bronze_0"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_0_gold"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_0_silver"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_0_gold"/>
+        <NamedIndividual IRI="#aggregate_issues_gold_0"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_0_kafka"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_0"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_0_kafka"/>
+        <NamedIndividual IRI="#get_issues_jira_0"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_0_silver"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_0_bronze"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_0_silver"/>
+        <NamedIndividual IRI="#transform_issues_silver_0"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_1_bronze"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_1_kafka"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_1_bronze"/>
+        <NamedIndividual IRI="#load_issues_bronze_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_1_gold"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_1_silver"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_1_gold"/>
+        <NamedIndividual IRI="#aggregate_issues_gold_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_1_kafka"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_1_kafka"/>
+        <NamedIndividual IRI="#get_issues_jira_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_1_silver"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_1_bronze"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_1_silver"/>
+        <NamedIndividual IRI="#transform_issues_silver_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_2_bronze"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_2_kafka"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_2_bronze"/>
+        <NamedIndividual IRI="#load_issues_bronze_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_2_gold"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_2_silver"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_2_gold"/>
+        <NamedIndividual IRI="#aggregate_issues_gold_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_2_kafka"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_2_kafka"/>
+        <NamedIndividual IRI="#get_issues_jira_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_2_silver"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_2_bronze"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_2_silver"/>
+        <NamedIndividual IRI="#transform_issues_silver_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_3_bronze"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_3_kafka"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_3_bronze"/>
+        <NamedIndividual IRI="#load_issues_bronze_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_3_gold"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_3_silver"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_3_gold"/>
+        <NamedIndividual IRI="#aggregate_issues_gold_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_3_kafka"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_3_kafka"/>
+        <NamedIndividual IRI="#get_issues_jira_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_3_silver"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_3_bronze"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_3_silver"/>
+        <NamedIndividual IRI="#transform_issues_silver_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_4_bronze"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_4_kafka"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_4_bronze"/>
+        <NamedIndividual IRI="#load_issues_bronze_4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_4_gold"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_4_silver"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_4_gold"/>
+        <NamedIndividual IRI="#aggregate_issues_gold_4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_4_kafka"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_4_kafka"/>
+        <NamedIndividual IRI="#get_issues_jira_4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_4_silver"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_4_bronze"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_4_silver"/>
+        <NamedIndividual IRI="#transform_issues_silver_4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#jira_project_raw_data_0_bronze"/>
+        <NamedIndividual IRI="#jira_project_raw_data_0_kafka"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#jira_project_raw_data_0_bronze"/>
+        <NamedIndividual IRI="#load_projects_bronze_0"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#jira_project_raw_data_0_gold"/>
+        <NamedIndividual IRI="#jira_project_raw_data_0_silver"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#jira_project_raw_data_0_gold"/>
+        <NamedIndividual IRI="#aggregate_projects_gold_0"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#jira_project_raw_data_0_kafka"/>
+        <NamedIndividual IRI="#jira_project_raw_data_0"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#jira_project_raw_data_0_kafka"/>
+        <NamedIndividual IRI="#get_projects_jira_0"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#jira_project_raw_data_0_silver"/>
+        <NamedIndividual IRI="#jira_project_raw_data_0_bronze"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#jira_project_raw_data_0_silver"/>
+        <NamedIndividual IRI="#transform_projects_silver_0"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#jira_project_raw_data_1_bronze"/>
+        <NamedIndividual IRI="#jira_project_raw_data_1_kafka"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#jira_project_raw_data_1_bronze"/>
+        <NamedIndividual IRI="#load_projects_bronze_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#jira_project_raw_data_1_gold"/>
+        <NamedIndividual IRI="#jira_project_raw_data_1_silver"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#jira_project_raw_data_1_gold"/>
+        <NamedIndividual IRI="#aggregate_projects_gold_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#jira_project_raw_data_1_kafka"/>
+        <NamedIndividual IRI="#jira_project_raw_data_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#jira_project_raw_data_1_kafka"/>
+        <NamedIndividual IRI="#get_projects_jira_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#jira_project_raw_data_1_silver"/>
+        <NamedIndividual IRI="#jira_project_raw_data_1_bronze"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#jira_project_raw_data_1_silver"/>
+        <NamedIndividual IRI="#transform_projects_silver_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_0_bronze"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_0_kafka"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_0_bronze"/>
+        <NamedIndividual IRI="#load_worklogs_bronze_0"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_0_gold"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_0_silver"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_0_gold"/>
+        <NamedIndividual IRI="#aggregate_worklogs_gold_0"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_0_kafka"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_0"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_0_kafka"/>
+        <NamedIndividual IRI="#get_worklogs_jira_0"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_0_silver"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_0_bronze"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_0_silver"/>
+        <NamedIndividual IRI="#transform_worklogs_silver_0"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_1_bronze"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_1_kafka"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_1_bronze"/>
+        <NamedIndividual IRI="#load_worklogs_bronze_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_1_gold"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_1_silver"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_1_gold"/>
+        <NamedIndividual IRI="#aggregate_worklogs_gold_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_1_kafka"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_1_kafka"/>
+        <NamedIndividual IRI="#get_worklogs_jira_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_1_silver"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_1_bronze"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_1_silver"/>
+        <NamedIndividual IRI="#transform_worklogs_silver_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_2_bronze"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_2_kafka"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_2_bronze"/>
+        <NamedIndividual IRI="#load_worklogs_bronze_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_2_gold"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_2_silver"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_2_gold"/>
+        <NamedIndividual IRI="#aggregate_worklogs_gold_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_2_kafka"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_2_kafka"/>
+        <NamedIndividual IRI="#get_worklogs_jira_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_2_silver"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_2_bronze"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_2_silver"/>
+        <NamedIndividual IRI="#transform_worklogs_silver_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_3_bronze"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_3_kafka"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_3_bronze"/>
+        <NamedIndividual IRI="#load_worklogs_bronze_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_3_gold"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_3_silver"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_3_gold"/>
+        <NamedIndividual IRI="#aggregate_worklogs_gold_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_3_kafka"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_3_kafka"/>
+        <NamedIndividual IRI="#get_worklogs_jira_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_3_silver"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_3_bronze"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_3_silver"/>
+        <NamedIndividual IRI="#transform_worklogs_silver_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_4_bronze"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_4_kafka"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_4_bronze"/>
+        <NamedIndividual IRI="#load_worklogs_bronze_4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_4_gold"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_4_silver"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_4_gold"/>
+        <NamedIndividual IRI="#aggregate_worklogs_gold_4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_4_kafka"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_4_kafka"/>
+        <NamedIndividual IRI="#get_worklogs_jira_4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_4_silver"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_4_bronze"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_4_silver"/>
+        <NamedIndividual IRI="#transform_worklogs_silver_4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_5_bronze"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_5_kafka"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_5_bronze"/>
+        <NamedIndividual IRI="#load_worklogs_bronze_5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_5_gold"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_5_silver"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_5_gold"/>
+        <NamedIndividual IRI="#aggregate_worklogs_gold_5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_5_kafka"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_5_kafka"/>
+        <NamedIndividual IRI="#get_worklogs_jira_5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_5_silver"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_5_bronze"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_5_silver"/>
+        <NamedIndividual IRI="#transform_worklogs_silver_5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_6_bronze"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_6_kafka"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_6_bronze"/>
+        <NamedIndividual IRI="#load_worklogs_bronze_6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_6_gold"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_6_silver"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_6_gold"/>
+        <NamedIndividual IRI="#aggregate_worklogs_gold_6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_6_kafka"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_6_kafka"/>
+        <NamedIndividual IRI="#get_worklogs_jira_6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_6_silver"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_6_bronze"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_6_silver"/>
+        <NamedIndividual IRI="#transform_worklogs_silver_6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_7_bronze"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_7_kafka"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_7_bronze"/>
+        <NamedIndividual IRI="#load_worklogs_bronze_7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_7_gold"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_7_silver"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_7_gold"/>
+        <NamedIndividual IRI="#aggregate_worklogs_gold_7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_7_kafka"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_7_kafka"/>
+        <NamedIndividual IRI="#get_worklogs_jira_7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_7_silver"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_7_bronze"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_7_silver"/>
+        <NamedIndividual IRI="#transform_worklogs_silver_7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_8_bronze"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_8_kafka"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_8_bronze"/>
+        <NamedIndividual IRI="#load_worklogs_bronze_8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_8_gold"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_8_silver"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_8_gold"/>
+        <NamedIndividual IRI="#aggregate_worklogs_gold_8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_8_kafka"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_8_kafka"/>
+        <NamedIndividual IRI="#get_worklogs_jira_8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_8_silver"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_8_bronze"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_8_silver"/>
+        <NamedIndividual IRI="#transform_worklogs_silver_8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_9_bronze"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_9_kafka"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_9_bronze"/>
+        <NamedIndividual IRI="#load_worklogs_bronze_9"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_9_gold"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_9_silver"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_9_gold"/>
+        <NamedIndividual IRI="#aggregate_worklogs_gold_9"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_9_kafka"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_9"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_9_kafka"/>
+        <NamedIndividual IRI="#get_worklogs_jira_9"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_9_silver"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_9_bronze"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_9_silver"/>
+        <NamedIndividual IRI="#transform_worklogs_silver_9"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#load_issues_bronze_0"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_0_kafka"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#load_issues_bronze_0"/>
+        <NamedIndividual IRI="#Kafka_Agent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#load_issues_bronze_1"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_1_kafka"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#load_issues_bronze_1"/>
+        <NamedIndividual IRI="#Kafka_Agent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#load_issues_bronze_2"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_2_kafka"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#load_issues_bronze_2"/>
+        <NamedIndividual IRI="#Kafka_Agent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#load_issues_bronze_3"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_3_kafka"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#load_issues_bronze_3"/>
+        <NamedIndividual IRI="#Kafka_Agent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#load_issues_bronze_4"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_4_kafka"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#load_issues_bronze_4"/>
+        <NamedIndividual IRI="#Kafka_Agent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#load_projects_bronze_0"/>
+        <NamedIndividual IRI="#jira_project_raw_data_0_kafka"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#load_projects_bronze_0"/>
+        <NamedIndividual IRI="#Kafka_Agent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#load_projects_bronze_1"/>
+        <NamedIndividual IRI="#jira_project_raw_data_1_kafka"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#load_projects_bronze_1"/>
+        <NamedIndividual IRI="#Kafka_Agent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#load_worklogs_bronze_0"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_0_kafka"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#load_worklogs_bronze_0"/>
+        <NamedIndividual IRI="#Kafka_Agent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#load_worklogs_bronze_1"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_1_kafka"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#load_worklogs_bronze_1"/>
+        <NamedIndividual IRI="#Kafka_Agent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#load_worklogs_bronze_2"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_2_kafka"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#load_worklogs_bronze_2"/>
+        <NamedIndividual IRI="#Kafka_Agent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#load_worklogs_bronze_3"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_3_kafka"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#load_worklogs_bronze_3"/>
+        <NamedIndividual IRI="#Kafka_Agent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#load_worklogs_bronze_4"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_4_kafka"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#load_worklogs_bronze_4"/>
+        <NamedIndividual IRI="#Kafka_Agent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#load_worklogs_bronze_5"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_5_kafka"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#load_worklogs_bronze_5"/>
+        <NamedIndividual IRI="#Kafka_Agent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#load_worklogs_bronze_6"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_6_kafka"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#load_worklogs_bronze_6"/>
+        <NamedIndividual IRI="#Kafka_Agent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#load_worklogs_bronze_7"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_7_kafka"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#load_worklogs_bronze_7"/>
+        <NamedIndividual IRI="#Kafka_Agent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#load_worklogs_bronze_8"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_8_kafka"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#load_worklogs_bronze_8"/>
+        <NamedIndividual IRI="#Kafka_Agent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#load_worklogs_bronze_9"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_9_kafka"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#load_worklogs_bronze_9"/>
+        <NamedIndividual IRI="#Kafka_Agent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#transform_issues_silver_0"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_0_bronze"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#transform_issues_silver_0"/>
+        <NamedIndividual IRI="#Spark_Agent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#transform_issues_silver_1"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_1_bronze"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#transform_issues_silver_1"/>
+        <NamedIndividual IRI="#Spark_Agent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#transform_issues_silver_2"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_2_bronze"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#transform_issues_silver_2"/>
+        <NamedIndividual IRI="#Spark_Agent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#transform_issues_silver_3"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_3_bronze"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#transform_issues_silver_3"/>
+        <NamedIndividual IRI="#Spark_Agent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#transform_issues_silver_4"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_4_bronze"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#transform_issues_silver_4"/>
+        <NamedIndividual IRI="#Spark_Agent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#transform_projects_silver_0"/>
+        <NamedIndividual IRI="#jira_project_raw_data_0_bronze"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#transform_projects_silver_0"/>
+        <NamedIndividual IRI="#Spark_Agent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#transform_projects_silver_1"/>
+        <NamedIndividual IRI="#jira_project_raw_data_1_bronze"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#transform_projects_silver_1"/>
+        <NamedIndividual IRI="#Spark_Agent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#transform_worklogs_silver_0"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_0_bronze"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#transform_worklogs_silver_0"/>
+        <NamedIndividual IRI="#Spark_Agent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#transform_worklogs_silver_1"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_1_bronze"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#transform_worklogs_silver_1"/>
+        <NamedIndividual IRI="#Spark_Agent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#transform_worklogs_silver_2"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_2_bronze"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#transform_worklogs_silver_2"/>
+        <NamedIndividual IRI="#Spark_Agent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#transform_worklogs_silver_3"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_3_bronze"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#transform_worklogs_silver_3"/>
+        <NamedIndividual IRI="#Spark_Agent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#transform_worklogs_silver_4"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_4_bronze"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#transform_worklogs_silver_4"/>
+        <NamedIndividual IRI="#Spark_Agent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#transform_worklogs_silver_5"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_5_bronze"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#transform_worklogs_silver_5"/>
+        <NamedIndividual IRI="#Spark_Agent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#transform_worklogs_silver_6"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_6_bronze"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#transform_worklogs_silver_6"/>
+        <NamedIndividual IRI="#Spark_Agent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#transform_worklogs_silver_7"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_7_bronze"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#transform_worklogs_silver_7"/>
+        <NamedIndividual IRI="#Spark_Agent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#transform_worklogs_silver_8"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_8_bronze"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#transform_worklogs_silver_8"/>
+        <NamedIndividual IRI="#Spark_Agent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#used"/>
+        <NamedIndividual IRI="#transform_worklogs_silver_9"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_9_bronze"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#transform_worklogs_silver_9"/>
+        <NamedIndividual IRI="#Spark_Agent"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Airflow_Agent"/>
+        <Literal>Airflow</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#Airflow_Agent"/>
+        <Literal>System</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Kafka_Agent"/>
+        <Literal>Kafka</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#Kafka_Agent"/>
+        <Literal>System</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Spark_Agent"/>
+        <Literal>Spark</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#Spark_Agent"/>
+        <Literal>System</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#aggregate_issues_gold_0"/>
+        <Literal>aggregate_issues_gold_0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#aggregate_issues_gold_0"/>
+        <Literal>SparkJob</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#aggregate_issues_gold_1"/>
+        <Literal>aggregate_issues_gold_1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#aggregate_issues_gold_1"/>
+        <Literal>SparkJob</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#aggregate_issues_gold_2"/>
+        <Literal>aggregate_issues_gold_2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#aggregate_issues_gold_2"/>
+        <Literal>SparkJob</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#aggregate_issues_gold_3"/>
+        <Literal>aggregate_issues_gold_3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#aggregate_issues_gold_3"/>
+        <Literal>SparkJob</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#aggregate_issues_gold_4"/>
+        <Literal>aggregate_issues_gold_4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#aggregate_issues_gold_4"/>
+        <Literal>SparkJob</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#aggregate_projects_gold_0"/>
+        <Literal>aggregate_projects_gold_0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#aggregate_projects_gold_0"/>
+        <Literal>SparkJob</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#aggregate_projects_gold_1"/>
+        <Literal>aggregate_projects_gold_1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#aggregate_projects_gold_1"/>
+        <Literal>SparkJob</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#aggregate_worklogs_gold_0"/>
+        <Literal>aggregate_worklogs_gold_0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#aggregate_worklogs_gold_0"/>
+        <Literal>SparkJob</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#aggregate_worklogs_gold_1"/>
+        <Literal>aggregate_worklogs_gold_1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#aggregate_worklogs_gold_1"/>
+        <Literal>SparkJob</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#aggregate_worklogs_gold_2"/>
+        <Literal>aggregate_worklogs_gold_2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#aggregate_worklogs_gold_2"/>
+        <Literal>SparkJob</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#aggregate_worklogs_gold_3"/>
+        <Literal>aggregate_worklogs_gold_3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#aggregate_worklogs_gold_3"/>
+        <Literal>SparkJob</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#aggregate_worklogs_gold_4"/>
+        <Literal>aggregate_worklogs_gold_4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#aggregate_worklogs_gold_4"/>
+        <Literal>SparkJob</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#aggregate_worklogs_gold_5"/>
+        <Literal>aggregate_worklogs_gold_5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#aggregate_worklogs_gold_5"/>
+        <Literal>SparkJob</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#aggregate_worklogs_gold_6"/>
+        <Literal>aggregate_worklogs_gold_6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#aggregate_worklogs_gold_6"/>
+        <Literal>SparkJob</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#aggregate_worklogs_gold_7"/>
+        <Literal>aggregate_worklogs_gold_7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#aggregate_worklogs_gold_7"/>
+        <Literal>SparkJob</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#aggregate_worklogs_gold_8"/>
+        <Literal>aggregate_worklogs_gold_8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#aggregate_worklogs_gold_8"/>
+        <Literal>SparkJob</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#aggregate_worklogs_gold_9"/>
+        <Literal>aggregate_worklogs_gold_9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#aggregate_worklogs_gold_9"/>
+        <Literal>SparkJob</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#get_issues_jira_0"/>
+        <Literal>get_issues_jira_0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#get_issues_jira_0"/>
+        <Literal>AirflowTask</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#get_issues_jira_1"/>
+        <Literal>get_issues_jira_1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#get_issues_jira_1"/>
+        <Literal>AirflowTask</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#get_issues_jira_2"/>
+        <Literal>get_issues_jira_2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#get_issues_jira_2"/>
+        <Literal>AirflowTask</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#get_issues_jira_3"/>
+        <Literal>get_issues_jira_3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#get_issues_jira_3"/>
+        <Literal>AirflowTask</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#get_issues_jira_4"/>
+        <Literal>get_issues_jira_4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#get_issues_jira_4"/>
+        <Literal>AirflowTask</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#get_projects_jira_0"/>
+        <Literal>get_projects_jira_0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#get_projects_jira_0"/>
+        <Literal>AirflowTask</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#get_projects_jira_1"/>
+        <Literal>get_projects_jira_1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#get_projects_jira_1"/>
+        <Literal>AirflowTask</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#get_worklogs_jira_0"/>
+        <Literal>get_worklogs_jira_0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#get_worklogs_jira_0"/>
+        <Literal>AirflowTask</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#get_worklogs_jira_1"/>
+        <Literal>get_worklogs_jira_1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#get_worklogs_jira_1"/>
+        <Literal>AirflowTask</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#get_worklogs_jira_2"/>
+        <Literal>get_worklogs_jira_2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#get_worklogs_jira_2"/>
+        <Literal>AirflowTask</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#get_worklogs_jira_3"/>
+        <Literal>get_worklogs_jira_3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#get_worklogs_jira_3"/>
+        <Literal>AirflowTask</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#get_worklogs_jira_4"/>
+        <Literal>get_worklogs_jira_4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#get_worklogs_jira_4"/>
+        <Literal>AirflowTask</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#get_worklogs_jira_5"/>
+        <Literal>get_worklogs_jira_5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#get_worklogs_jira_5"/>
+        <Literal>AirflowTask</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#get_worklogs_jira_6"/>
+        <Literal>get_worklogs_jira_6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#get_worklogs_jira_6"/>
+        <Literal>AirflowTask</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#get_worklogs_jira_7"/>
+        <Literal>get_worklogs_jira_7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#get_worklogs_jira_7"/>
+        <Literal>AirflowTask</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#get_worklogs_jira_8"/>
+        <Literal>get_worklogs_jira_8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#get_worklogs_jira_8"/>
+        <Literal>AirflowTask</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#get_worklogs_jira_9"/>
+        <Literal>get_worklogs_jira_9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#get_worklogs_jira_9"/>
+        <Literal>AirflowTask</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_0"/>
+        <Literal>Jira</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_0"/>
+        <Literal>DataSource</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_0_bronze"/>
+        <Literal>Bronze</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_0_bronze"/>
+        <Literal>Table</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_0_gold"/>
+        <Literal>Gold</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_0_gold"/>
+        <Literal>Table</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_0_kafka"/>
+        <Literal>issues_topic</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_0_kafka"/>
+        <Literal>Topic</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_0_silver"/>
+        <Literal>Silver</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_0_silver"/>
+        <Literal>Table</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_1"/>
+        <Literal>Jira</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_1"/>
+        <Literal>DataSource</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_1_bronze"/>
+        <Literal>Bronze</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_1_bronze"/>
+        <Literal>Table</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_1_gold"/>
+        <Literal>Gold</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_1_gold"/>
+        <Literal>Table</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_1_kafka"/>
+        <Literal>issues_topic</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_1_kafka"/>
+        <Literal>Topic</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_1_silver"/>
+        <Literal>Silver</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_1_silver"/>
+        <Literal>Table</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_2"/>
+        <Literal>Jira</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_2"/>
+        <Literal>DataSource</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_2_bronze"/>
+        <Literal>Bronze</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_2_bronze"/>
+        <Literal>Table</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_2_gold"/>
+        <Literal>Gold</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_2_gold"/>
+        <Literal>Table</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_2_kafka"/>
+        <Literal>issues_topic</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_2_kafka"/>
+        <Literal>Topic</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_2_silver"/>
+        <Literal>Silver</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_2_silver"/>
+        <Literal>Table</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_3"/>
+        <Literal>Jira</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_3"/>
+        <Literal>DataSource</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_3_bronze"/>
+        <Literal>Bronze</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_3_bronze"/>
+        <Literal>Table</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_3_gold"/>
+        <Literal>Gold</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_3_gold"/>
+        <Literal>Table</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_3_kafka"/>
+        <Literal>issues_topic</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_3_kafka"/>
+        <Literal>Topic</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_3_silver"/>
+        <Literal>Silver</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_3_silver"/>
+        <Literal>Table</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_4"/>
+        <Literal>Jira</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_4"/>
+        <Literal>DataSource</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_4_bronze"/>
+        <Literal>Bronze</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_4_bronze"/>
+        <Literal>Table</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_4_gold"/>
+        <Literal>Gold</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_4_gold"/>
+        <Literal>Table</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_4_kafka"/>
+        <Literal>issues_topic</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_4_kafka"/>
+        <Literal>Topic</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_4_silver"/>
+        <Literal>Silver</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_issues_raw_data_4_silver"/>
+        <Literal>Table</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_project_raw_data_0"/>
+        <Literal>Jira</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_project_raw_data_0"/>
+        <Literal>DataSource</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_project_raw_data_0_bronze"/>
+        <Literal>Bronze</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_project_raw_data_0_bronze"/>
+        <Literal>Table</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_project_raw_data_0_gold"/>
+        <Literal>Gold</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_project_raw_data_0_gold"/>
+        <Literal>Table</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_project_raw_data_0_kafka"/>
+        <Literal>projects_topic</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_project_raw_data_0_kafka"/>
+        <Literal>Topic</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_project_raw_data_0_silver"/>
+        <Literal>Silver</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_project_raw_data_0_silver"/>
+        <Literal>Table</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_project_raw_data_1"/>
+        <Literal>Jira</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_project_raw_data_1"/>
+        <Literal>DataSource</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_project_raw_data_1_bronze"/>
+        <Literal>Bronze</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_project_raw_data_1_bronze"/>
+        <Literal>Table</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_project_raw_data_1_gold"/>
+        <Literal>Gold</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_project_raw_data_1_gold"/>
+        <Literal>Table</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_project_raw_data_1_kafka"/>
+        <Literal>projects_topic</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_project_raw_data_1_kafka"/>
+        <Literal>Topic</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_project_raw_data_1_silver"/>
+        <Literal>Silver</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_project_raw_data_1_silver"/>
+        <Literal>Table</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_0"/>
+        <Literal>Jira</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_0"/>
+        <Literal>DataSource</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_0_bronze"/>
+        <Literal>Bronze</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_0_bronze"/>
+        <Literal>Table</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_0_gold"/>
+        <Literal>Gold</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_0_gold"/>
+        <Literal>Table</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_0_kafka"/>
+        <Literal>worklogs_topic</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_0_kafka"/>
+        <Literal>Topic</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_0_silver"/>
+        <Literal>Silver</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_0_silver"/>
+        <Literal>Table</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_1"/>
+        <Literal>Jira</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_1"/>
+        <Literal>DataSource</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_1_bronze"/>
+        <Literal>Bronze</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_1_bronze"/>
+        <Literal>Table</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_1_gold"/>
+        <Literal>Gold</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_1_gold"/>
+        <Literal>Table</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_1_kafka"/>
+        <Literal>worklogs_topic</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_1_kafka"/>
+        <Literal>Topic</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_1_silver"/>
+        <Literal>Silver</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_1_silver"/>
+        <Literal>Table</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_2"/>
+        <Literal>Jira</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_2"/>
+        <Literal>DataSource</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_2_bronze"/>
+        <Literal>Bronze</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_2_bronze"/>
+        <Literal>Table</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_2_gold"/>
+        <Literal>Gold</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_2_gold"/>
+        <Literal>Table</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_2_kafka"/>
+        <Literal>worklogs_topic</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_2_kafka"/>
+        <Literal>Topic</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_2_silver"/>
+        <Literal>Silver</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_2_silver"/>
+        <Literal>Table</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_3"/>
+        <Literal>Jira</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_3"/>
+        <Literal>DataSource</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_3_bronze"/>
+        <Literal>Bronze</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_3_bronze"/>
+        <Literal>Table</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_3_gold"/>
+        <Literal>Gold</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_3_gold"/>
+        <Literal>Table</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_3_kafka"/>
+        <Literal>worklogs_topic</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_3_kafka"/>
+        <Literal>Topic</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_3_silver"/>
+        <Literal>Silver</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_3_silver"/>
+        <Literal>Table</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_4"/>
+        <Literal>Jira</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_4"/>
+        <Literal>DataSource</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_4_bronze"/>
+        <Literal>Bronze</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_4_bronze"/>
+        <Literal>Table</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_4_gold"/>
+        <Literal>Gold</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_4_gold"/>
+        <Literal>Table</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_4_kafka"/>
+        <Literal>worklogs_topic</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_4_kafka"/>
+        <Literal>Topic</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_4_silver"/>
+        <Literal>Silver</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_4_silver"/>
+        <Literal>Table</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_5"/>
+        <Literal>Jira</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_5"/>
+        <Literal>DataSource</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_5_bronze"/>
+        <Literal>Bronze</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_5_bronze"/>
+        <Literal>Table</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_5_gold"/>
+        <Literal>Gold</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_5_gold"/>
+        <Literal>Table</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_5_kafka"/>
+        <Literal>worklogs_topic</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_5_kafka"/>
+        <Literal>Topic</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_5_silver"/>
+        <Literal>Silver</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_5_silver"/>
+        <Literal>Table</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_6"/>
+        <Literal>Jira</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_6"/>
+        <Literal>DataSource</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_6_bronze"/>
+        <Literal>Bronze</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_6_bronze"/>
+        <Literal>Table</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_6_gold"/>
+        <Literal>Gold</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_6_gold"/>
+        <Literal>Table</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_6_kafka"/>
+        <Literal>worklogs_topic</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_6_kafka"/>
+        <Literal>Topic</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_6_silver"/>
+        <Literal>Silver</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_6_silver"/>
+        <Literal>Table</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_7"/>
+        <Literal>Jira</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_7"/>
+        <Literal>DataSource</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_7_bronze"/>
+        <Literal>Bronze</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_7_bronze"/>
+        <Literal>Table</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_7_gold"/>
+        <Literal>Gold</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_7_gold"/>
+        <Literal>Table</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_7_kafka"/>
+        <Literal>worklogs_topic</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_7_kafka"/>
+        <Literal>Topic</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_7_silver"/>
+        <Literal>Silver</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_7_silver"/>
+        <Literal>Table</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_8"/>
+        <Literal>Jira</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_8"/>
+        <Literal>DataSource</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_8_bronze"/>
+        <Literal>Bronze</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_8_bronze"/>
+        <Literal>Table</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_8_gold"/>
+        <Literal>Gold</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_8_gold"/>
+        <Literal>Table</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_8_kafka"/>
+        <Literal>worklogs_topic</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_8_kafka"/>
+        <Literal>Topic</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_8_silver"/>
+        <Literal>Silver</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_8_silver"/>
+        <Literal>Table</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_9"/>
+        <Literal>Jira</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_9"/>
+        <Literal>DataSource</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_9_bronze"/>
+        <Literal>Bronze</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_9_bronze"/>
+        <Literal>Table</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_9_gold"/>
+        <Literal>Gold</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_9_gold"/>
+        <Literal>Table</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_9_kafka"/>
+        <Literal>worklogs_topic</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_9_kafka"/>
+        <Literal>Topic</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_9_silver"/>
+        <Literal>Silver</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#jira_worklogs_raw_data_9_silver"/>
+        <Literal>Table</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#load_issues_bronze_0"/>
+        <Literal>load_issues_bronze_0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#load_issues_bronze_0"/>
+        <Literal>SparkJob</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#load_issues_bronze_1"/>
+        <Literal>load_issues_bronze_1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#load_issues_bronze_1"/>
+        <Literal>SparkJob</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#load_issues_bronze_2"/>
+        <Literal>load_issues_bronze_2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#load_issues_bronze_2"/>
+        <Literal>SparkJob</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#load_issues_bronze_3"/>
+        <Literal>load_issues_bronze_3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#load_issues_bronze_3"/>
+        <Literal>SparkJob</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#load_issues_bronze_4"/>
+        <Literal>load_issues_bronze_4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#load_issues_bronze_4"/>
+        <Literal>SparkJob</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#load_projects_bronze_0"/>
+        <Literal>load_projects_bronze_0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#load_projects_bronze_0"/>
+        <Literal>SparkJob</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#load_projects_bronze_1"/>
+        <Literal>load_projects_bronze_1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#load_projects_bronze_1"/>
+        <Literal>SparkJob</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#load_worklogs_bronze_0"/>
+        <Literal>load_worklogs_bronze_0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#load_worklogs_bronze_0"/>
+        <Literal>SparkJob</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#load_worklogs_bronze_1"/>
+        <Literal>load_worklogs_bronze_1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#load_worklogs_bronze_1"/>
+        <Literal>SparkJob</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#load_worklogs_bronze_2"/>
+        <Literal>load_worklogs_bronze_2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#load_worklogs_bronze_2"/>
+        <Literal>SparkJob</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#load_worklogs_bronze_3"/>
+        <Literal>load_worklogs_bronze_3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#load_worklogs_bronze_3"/>
+        <Literal>SparkJob</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#load_worklogs_bronze_4"/>
+        <Literal>load_worklogs_bronze_4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#load_worklogs_bronze_4"/>
+        <Literal>SparkJob</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#load_worklogs_bronze_5"/>
+        <Literal>load_worklogs_bronze_5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#load_worklogs_bronze_5"/>
+        <Literal>SparkJob</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#load_worklogs_bronze_6"/>
+        <Literal>load_worklogs_bronze_6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#load_worklogs_bronze_6"/>
+        <Literal>SparkJob</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#load_worklogs_bronze_7"/>
+        <Literal>load_worklogs_bronze_7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#load_worklogs_bronze_7"/>
+        <Literal>SparkJob</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#load_worklogs_bronze_8"/>
+        <Literal>load_worklogs_bronze_8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#load_worklogs_bronze_8"/>
+        <Literal>SparkJob</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#load_worklogs_bronze_9"/>
+        <Literal>load_worklogs_bronze_9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#load_worklogs_bronze_9"/>
+        <Literal>SparkJob</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#transform_issues_silver_0"/>
+        <Literal>transform_issues_silver_0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#transform_issues_silver_0"/>
+        <Literal>SparkJob</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#transform_issues_silver_1"/>
+        <Literal>transform_issues_silver_1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#transform_issues_silver_1"/>
+        <Literal>SparkJob</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#transform_issues_silver_2"/>
+        <Literal>transform_issues_silver_2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#transform_issues_silver_2"/>
+        <Literal>SparkJob</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#transform_issues_silver_3"/>
+        <Literal>transform_issues_silver_3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#transform_issues_silver_3"/>
+        <Literal>SparkJob</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#transform_issues_silver_4"/>
+        <Literal>transform_issues_silver_4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#transform_issues_silver_4"/>
+        <Literal>SparkJob</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#transform_projects_silver_0"/>
+        <Literal>transform_projects_silver_0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#transform_projects_silver_0"/>
+        <Literal>SparkJob</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#transform_projects_silver_1"/>
+        <Literal>transform_projects_silver_1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#transform_projects_silver_1"/>
+        <Literal>SparkJob</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#transform_worklogs_silver_0"/>
+        <Literal>transform_worklogs_silver_0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#transform_worklogs_silver_0"/>
+        <Literal>SparkJob</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#transform_worklogs_silver_1"/>
+        <Literal>transform_worklogs_silver_1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#transform_worklogs_silver_1"/>
+        <Literal>SparkJob</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#transform_worklogs_silver_2"/>
+        <Literal>transform_worklogs_silver_2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#transform_worklogs_silver_2"/>
+        <Literal>SparkJob</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#transform_worklogs_silver_3"/>
+        <Literal>transform_worklogs_silver_3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#transform_worklogs_silver_3"/>
+        <Literal>SparkJob</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#transform_worklogs_silver_4"/>
+        <Literal>transform_worklogs_silver_4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#transform_worklogs_silver_4"/>
+        <Literal>SparkJob</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#transform_worklogs_silver_5"/>
+        <Literal>transform_worklogs_silver_5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#transform_worklogs_silver_5"/>
+        <Literal>SparkJob</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#transform_worklogs_silver_6"/>
+        <Literal>transform_worklogs_silver_6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#transform_worklogs_silver_6"/>
+        <Literal>SparkJob</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#transform_worklogs_silver_7"/>
+        <Literal>transform_worklogs_silver_7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#transform_worklogs_silver_7"/>
+        <Literal>SparkJob</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#transform_worklogs_silver_8"/>
+        <Literal>transform_worklogs_silver_8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#transform_worklogs_silver_8"/>
+        <Literal>SparkJob</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#transform_worklogs_silver_9"/>
+        <Literal>transform_worklogs_silver_9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#transform_worklogs_silver_9"/>
+        <Literal>SparkJob</Literal>
+    </DataPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#used"/>
+        <ObjectProperty IRI="#usedBy"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#used"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+    </FunctionalObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#used"/>
+        <Class IRI="#Activity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#usedBy"/>
+        <Class IRI="#Entity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <Class IRI="#Activity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <Class IRI="#Entity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <Class IRI="#Entity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#used"/>
+        <Class IRI="#Entity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#usedBy"/>
+        <Class IRI="#Activity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <Class IRI="#Entity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#wasGeneratedBy"/>
+        <Class IRI="#Activity"/>
+    </ObjectPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

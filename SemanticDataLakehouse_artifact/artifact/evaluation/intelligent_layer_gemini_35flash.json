@@ -1,0 +1,810 @@
+{
+  "config": {
+    "sparql_model": "gemini-3.5-flash",
+    "synth_model": "gemini-3.5-flash",
+    "schema_chars": 4169,
+    "schema_extract_ms": 135.0,
+    "n_questions": 18
+  },
+  "results": [
+    {
+      "id": "EN-CQ1",
+      "lang": "en",
+      "category": "paper_cq",
+      "question": "Which opportunities have a technical proposal with a cost estimate?",
+      "generated_sparql": "PREFIX : <http://www.semanticweb.org/anon/ontologies/2025/8/CorpOnto.owl#>\nSELECT DISTINCT ?opp WHERE {\n  ?opp a :Opportunity .\n  ?opp :hasTechnicalProposal ?tp .\n  ?tp :hasCost ?cost .\n}",
+      "reference_sparql": "PREFIX : <http://www.semanticweb.org/anon/ontologies/2025/8/CorpOnto.owl#>\nSELECT DISTINCT ?opp WHERE {\n  ?opp a :Opportunity .\n  ?opp :hasTechnicalProposal ?tp .\n  ?tp :technicalProposalNeedsToWorkHourProfile ?whp .\n  ?whp :expectedHours ?h .\n} ORDER BY ?opp",
+      "exec_error": null,
+      "n_rows_llm": 5,
+      "n_rows_reference": 5,
+      "correctness": "exact_match",
+      "rows_sample": [
+        [
+          "Opportunity_OPP001"
+        ],
+        [
+          "Opportunity_OPP002"
+        ],
+        [
+          "Opportunity_OPP003"
+        ],
+        [
+          "Opportunity_OPP004"
+        ],
+        [
+          "Opportunity_OPP005"
+        ]
+      ],
+      "answer": "The opportunities that have a technical proposal with a cost estimate are [Opportunity_OPP001], [Opportunity_OPP002], [Opportunity_OPP003], [Opportunity_OPP004], and [Opportunity_OPP005]. Please note that the underlying data traversed the Source -> Kafka -> Bronze -> Silver -> Gold pipeline.",
+      "latency_ms": {
+        "nl_to_sparql": 1230.31,
+        "sparql_execution": 130.14,
+        "lineage_enrichment": 2.45,
+        "synthesis": 1214.17,
+        "total": 4584.19
+      },
+      "sparql_meta": {
+        "latency_ms": 1230.31,
+        "model": "gemini-3.5-flash",
+        "prompt_tokens": 1892,
+        "response_tokens": 74,
+        "raw_response_first200": "```sparql\nPREFIX : <http://www.semanticweb.org/anon/ontologies/2025/8/CorpOnto.owl#>\nSELECT DISTINCT ?opp WHERE {\n  ?opp a :Opportunity .\n  ?opp :hasTechnicalProposal ?tp .\n  ?tp :hasCost ?cost .\n}"
+      },
+      "synth_meta": {
+        "latency_ms": 1214.17,
+        "model": "gemini-3.5-flash",
+        "prompt_tokens": 738,
+        "response_tokens": 77
+      }
+    },
+    {
+      "id": "EN-CQ2",
+      "lang": "en",
+      "category": "paper_cq",
+      "question": "Which technical proposals require a Backend Developer profile?",
+      "generated_sparql": "PREFIX : <http://www.semanticweb.org/anon/ontologies/2025/8/CorpOnto.owl#>\nSELECT DISTINCT ?proposal WHERE {\n  ?proposal a :TechnicalProposal .\n  ?proposal :technicalProposalNeedsToWorkHourProfile ?whp .\n  ?whp :workHourProfileNeedsToProfile ?profile .\n  ?profile :hasName \"Backend Developer\" .\n}",
+      "reference_sparql": "PREFIX : <http://www.semanticweb.org/anon/ontologies/2025/8/CorpOnto.owl#>\nSELECT DISTINCT ?tp WHERE {\n  ?tp a :TechnicalProposal .\n  ?tp :technicalProposalNeedsToWorkHourProfile ?whp .\n  ?whp :workHourProfileNeedsToProfile ?p .\n  ?p :hasName \"Backend Developer\" .\n}",
+      "exec_error": null,
+      "n_rows_llm": 1,
+      "n_rows_reference": 1,
+      "correctness": "exact_match",
+      "rows_sample": [
+        [
+          "TechnicalProposal_001"
+        ]
+      ],
+      "answer": "The technical proposal that requires a Backend Developer profile is [TechnicalProposal_001]. The underlying data used to answer this query successfully traversed the Source -> Kafka -> Bronze -> Silver -> Gold pipeline.",
+      "latency_ms": {
+        "nl_to_sparql": 1965.77,
+        "sparql_execution": 6.04,
+        "lineage_enrichment": 0.22,
+        "synthesis": 1164.21,
+        "total": 5141.59
+      },
+      "sparql_meta": {
+        "latency_ms": 1965.77,
+        "model": "gemini-3.5-flash",
+        "prompt_tokens": 1890,
+        "response_tokens": 97,
+        "raw_response_first200": "```sparql\nPREFIX : <http://www.semanticweb.org/anon/ontologies/2025/8/CorpOnto.owl#>\nSELECT DISTINCT ?proposal WHERE {\n  ?proposal a :TechnicalProposal .\n  ?proposal :technicalProposalNeedsToWorkHo"
+      },
+      "synth_meta": {
+        "latency_ms": 1164.21,
+        "model": "gemini-3.5-flash",
+        "prompt_tokens": 389,
+        "response_tokens": 40
+      }
+    },
+    {
+      "id": "EN-CQ3",
+      "lang": "en",
+      "category": "paper_cq",
+      "question": "Which projects are linked to opportunities?",
+      "generated_sparql": "PREFIX : <http://www.semanticweb.org/anon/ontologies/2025/8/CorpOnto.owl#>\nSELECT DISTINCT ?project ?opportunity WHERE {\n  ?project a :Project .\n  ?project :projectRelatedToOpportunity ?opportunity .\n  ?opportunity a :Opportunity .\n}",
+      "reference_sparql": "PREFIX : <http://www.semanticweb.org/anon/ontologies/2025/8/CorpOnto.owl#>\nSELECT DISTINCT ?proj ?opp WHERE {\n  ?proj a :Project .\n  ?proj :projectRelatedToOpportunity ?opp .\n} ORDER BY ?proj",
+      "exec_error": null,
+      "n_rows_llm": 5,
+      "n_rows_reference": 5,
+      "correctness": "exact_match",
+      "rows_sample": [
+        [
+          "Project_001",
+          "Opportunity_OPP001"
+        ],
+        [
+          "Project_002",
+          "Opportunity_OPP002"
+        ],
+        [
+          "Project_003",
+          "Opportunity_OPP003"
+        ],
+        [
+          "Project_004",
+          "Opportunity_OPP004"
+        ],
+        [
+          "Project_005",
+          "Opportunity_OPP005"
+        ]
+      ],
+      "answer": "The projects linked to opportunities are [Project_001] linked to [Opportunity_OPP001], [Project_002] linked to [Opportunity_OPP002], [Project_003] linked to [Opportunity_OPP003], [Project_004] linked to [Opportunity_OPP004], and [Project_005] linked to [Opportunity_OPP005]. The underlying data traversed the Source -> Kafka -> Bronze -> Silver -> Gold pipeline.",
+      "latency_ms": {
+        "nl_to_sparql": 1169.47,
+        "sparql_execution": 5.8,
+        "lineage_enrichment": 2.77,
+        "synthesis": 1241.43,
+        "total": 4425.25
+      },
+      "sparql_meta": {
+        "latency_ms": 1169.47,
+        "model": "gemini-3.5-flash",
+        "prompt_tokens": 1888,
+        "response_tokens": 75,
+        "raw_response_first200": "```sparql\nPREFIX : <http://www.semanticweb.org/anon/ontologies/2025/8/CorpOnto.owl#>\nSELECT DISTINCT ?project ?opportunity WHERE {\n  ?project a :Project .\n  ?project :projectRelatedToOpportunity ?o"
+      },
+      "synth_meta": {
+        "latency_ms": 1241.43,
+        "model": "gemini-3.5-flash",
+        "prompt_tokens": 759,
+        "response_tokens": 113
+      }
+    },
+    {
+      "id": "EN-CQ4",
+      "lang": "en",
+      "category": "paper_cq",
+      "question": "Which employees know Python?",
+      "generated_sparql": "PREFIX : <http://www.semanticweb.org/anon/ontologies/2025/8/CorpOnto.owl#>\nSELECT DISTINCT ?employee WHERE {\n  ?employee a :Employee .\n  ?employee :hasKnowledge ?knowledge .\n  ?knowledge :hasName \"Python\" .\n}",
+      "reference_sparql": "PREFIX : <http://www.semanticweb.org/anon/ontologies/2025/8/CorpOnto.owl#>\nSELECT DISTINCT ?emp ?profName WHERE {\n  ?emp a :Employee .\n  ?emp :hasKnowledge ?k .\n  ?k :hasName \"Python\" .\n  OPTIONAL { ?emp :hasProfile ?p . ?p :hasName ?profName }\n} ORDER BY ?emp",
+      "exec_error": null,
+      "n_rows_llm": 9,
+      "n_rows_reference": 9,
+      "correctness": "partial_match",
+      "rows_sample": [
+        [
+          "Employee_012"
+        ],
+        [
+          "Employee_019"
+        ],
+        [
+          "Employee_032"
+        ],
+        [
+          "Employee_034"
+        ],
+        [
+          "Employee_038"
+        ]
+      ],
+      "answer": "The employees who know Python are [Employee_011], [Employee_012], [Employee_019], [Employee_032], [Employee_034], [Employee_038], [Employee_040], [Employee_042], and [Employee_045]. Please note that the underlying data traversed the Source -> Kafka -> Bronze -> Silver -> Gold pipeline.",
+      "latency_ms": {
+        "nl_to_sparql": 1825.55,
+        "sparql_execution": 18.39,
+        "lineage_enrichment": 1.24,
+        "synthesis": 1176.21,
+        "total": 5051.34
+      },
+      "sparql_meta": {
+        "latency_ms": 1825.55,
+        "model": "gemini-3.5-flash",
+        "prompt_tokens": 1886,
+        "response_tokens": 74,
+        "raw_response_first200": "```sparql\nPREFIX : <http://www.semanticweb.org/anon/ontologies/2025/8/CorpOnto.owl#>\nSELECT DISTINCT ?employee WHERE {\n  ?employee a :Employee .\n  ?employee :hasKnowledge ?knowledge .\n  ?knowledge "
+      },
+      "synth_meta": {
+        "latency_ms": 1176.21,
+        "model": "gemini-3.5-flash",
+        "prompt_tokens": 740,
+        "response_tokens": 89
+      }
+    },
+    {
+      "id": "EN-CQ5",
+      "lang": "en",
+      "category": "paper_cq",
+      "question": "Which profiles are needed for the project linked to opportunity OPP001?",
+      "generated_sparql": "PREFIX : <http://www.semanticweb.org/anon/ontologies/2025/8/CorpOnto.owl#>\nSELECT DISTINCT ?profile ?profileName WHERE {\n  # Find the project related to opportunity OPP001\n  ?project :projectRelatedToOpportunity :OPP001 .\n  \n  # Find the opportunity's technical proposal\n  :OPP001 :hasTechnicalProposal ?techProposal .\n  \n  # Find the work hour profiles needed for this technical proposal\n  ?techProposal :technicalProposalNeedsToWorkHourProfile ?whProfile .\n  \n  # Map the work hour profiles to the actual Profiles\n  ?whProfile :workHourProfileNeedsToProfile ?profile .\n  \n  # Get the name of the profile\n  ?profile :hasName ?profileName .\n}",
+      "reference_sparql": "PREFIX : <http://www.semanticweb.org/anon/ontologies/2025/8/CorpOnto.owl#>\nSELECT DISTINCT ?profName ?hours WHERE {\n  :Opportunity_OPP001 :hasTechnicalProposal ?tp .\n  ?tp :technicalProposalNeedsToWorkHourProfile ?whp .\n  ?whp :expectedHours ?hours .\n  ?whp :workHourProfileNeedsToProfile ?p .\n  ?p :hasName ?profName .\n}",
+      "exec_error": null,
+      "n_rows_llm": 0,
+      "n_rows_reference": 1,
+      "correctness": "no_match",
+      "rows_sample": [],
+      "answer": "Não foram encontrados perfis necessários para o projeto associado à oportunidade [OPP001] nos dados atuais. Esta informação foi processada através do pipeline de dados que percorreu o fluxo Source -> Kafka -> Bronze -> Silver -> Gold.",
+      "latency_ms": {
+        "nl_to_sparql": 1768.7,
+        "sparql_execution": 6.8,
+        "lineage_enrichment": 0,
+        "synthesis": 1875.99,
+        "total": 5657.23
+      },
+      "sparql_meta": {
+        "latency_ms": 1768.7,
+        "model": "gemini-3.5-flash",
+        "prompt_tokens": 1896,
+        "response_tokens": 188,
+        "raw_response_first200": "```sparql\nPREFIX : <http://www.semanticweb.org/anon/ontologies/2025/8/CorpOnto.owl#>\nSELECT DISTINCT ?profile ?profileName WHERE {\n  # Find the project related to opportunity OPP001\n  ?project :pro"
+      },
+      "synth_meta": {
+        "latency_ms": 1875.99,
+        "model": "gemini-3.5-flash",
+        "prompt_tokens": 395,
+        "response_tokens": 49
+      }
+    },
+    {
+      "id": "EN-CQ6",
+      "lang": "en",
+      "category": "paper_cq",
+      "question": "Which projects have real margin above 25%?",
+      "generated_sparql": "PREFIX : <http://www.semanticweb.org/anon/ontologies/2025/8/CorpOnto.owl#>\nSELECT DISTINCT ?project ?margin WHERE {\n  ?project a :Project .\n  ?project :hasRealMargin ?margin .\n  FILTER(?margin > 0.25)\n}",
+      "reference_sparql": "PREFIX : <http://www.semanticweb.org/anon/ontologies/2025/8/CorpOnto.owl#>\nSELECT DISTINCT ?proj ?margin WHERE {\n  ?proj a :Project .\n  ?proj :hasRealMargin ?margin .\n  FILTER(?margin > 0.25)\n} ORDER BY DESC(?margin)",
+      "exec_error": null,
+      "n_rows_llm": 2,
+      "n_rows_reference": 2,
+      "correctness": "exact_match",
+      "rows_sample": [
+        [
+          "Project_002",
+          "0.27"
+        ],
+        [
+          "Project_003",
+          "0.35"
+        ]
+      ],
+      "answer": "The projects with a real margin above 25% are [Project_002] with a margin of 27% and [Project_003] with a margin of 35%. The underlying data used to generate this response traversed the Source -> Kafka -> Bronze -> Silver -> Gold pipeline.",
+      "latency_ms": {
+        "nl_to_sparql": 1353.54,
+        "sparql_execution": 16.19,
+        "lineage_enrichment": 0.32,
+        "synthesis": 1967.94,
+        "total": 5346.77
+      },
+      "sparql_meta": {
+        "latency_ms": 1353.54,
+        "model": "gemini-3.5-flash",
+        "prompt_tokens": 1892,
+        "response_tokens": 78,
+        "raw_response_first200": "```sparql\nPREFIX : <http://www.semanticweb.org/anon/ontologies/2025/8/CorpOnto.owl#>\nSELECT DISTINCT ?project ?margin WHERE {\n  ?project a :Project .\n  ?project :hasRealMargin ?margin .\n  FILTER(?m"
+      },
+      "synth_meta": {
+        "latency_ms": 1967.94,
+        "model": "gemini-3.5-flash",
+        "prompt_tokens": 470,
+        "response_tokens": 64
+      }
+    },
+    {
+      "id": "PT-CQ1",
+      "lang": "pt",
+      "category": "paper_cq_pt",
+      "question": "Quais oportunidades já têm proposta técnica com estimativa de custo?",
+      "generated_sparql": "PREFIX : <http://www.semanticweb.org/anon/ontologies/2025/8/CorpOnto.owl#>\nSELECT DISTINCT ?opportunity ?techProposal ?cost\nWHERE {\n  ?opportunity a :Opportunity .\n  ?opportunity :hasTechnicalProposal ?techProposal .\n  ?techProposal :hasCost ?cost .\n}",
+      "reference_sparql": "PREFIX : <http://www.semanticweb.org/anon/ontologies/2025/8/CorpOnto.owl#>\nSELECT DISTINCT ?opp WHERE {\n  ?opp a :Opportunity .\n  ?opp :hasTechnicalProposal ?tp .\n  ?tp :technicalProposalNeedsToWorkHourProfile ?whp .\n  ?whp :expectedHours ?h .\n} ORDER BY ?opp",
+      "exec_error": null,
+      "n_rows_llm": 5,
+      "n_rows_reference": 5,
+      "correctness": "partial_match",
+      "rows_sample": [
+        [
+          "Opportunity_OPP001",
+          "TechnicalProposal_001",
+          "75486.0"
+        ],
+        [
+          "Opportunity_OPP002",
+          "TechnicalProposal_002",
+          "28963.0"
+        ],
+        [
+          "Opportunity_OPP003",
+          "TechnicalProposal_003",
+          "68952.0"
+        ],
+        [
+          "Opportunity_OPP004",
+          "TechnicalProposal_004",
+          "45026.0"
+        ],
+        [
+          "Opportunity_OPP005",
+          "TechnicalProposal_005",
+          "36751.0"
+        ]
+      ],
+      "answer": "As oportunidades que já possuem proposta técnica com estimativa de custo são [Opportunity_OPP001] com a proposta [TechnicalProposal_001], [Opportunity_OPP002] com [TechnicalProposal_002], [Opportunity_OPP003] com [TechnicalProposal_003], [Opportunity_OPP004] com [TechnicalProposal_004] e [Opportunity_OPP005] com [TechnicalProposal_005]. Os custos estimados para cada uma são, respectivamente, 75486.0, 28963.0, 68952.0, 45026.0 e 36751.0. Cabe notar que os dados subjacentes que suportam esta resposta atravessaram o pipeline Source -> Kafka -> Bronze -> Silver -> Gold.",
+      "latency_ms": {
+        "nl_to_sparql": 1310.21,
+        "sparql_execution": 7.59,
+        "lineage_enrichment": 2.56,
+        "synthesis": 1812.9,
+        "total": 5141.06
+      },
+      "sparql_meta": {
+        "latency_ms": 1310.21,
+        "model": "gemini-3.5-flash",
+        "prompt_tokens": 1894,
+        "response_tokens": 82,
+        "raw_response_first200": "```sparql\nPREFIX : <http://www.semanticweb.org/anon/ontologies/2025/8/CorpOnto.owl#>\nSELECT DISTINCT ?opportunity ?techProposal ?cost\nWHERE {\n  ?opportunity a :Opportunity .\n  ?opportunity :hasTech"
+      },
+      "synth_meta": {
+        "latency_ms": 1812.9,
+        "model": "gemini-3.5-flash",
+        "prompt_tokens": 825,
+        "response_tokens": 189
+      }
+    },
+    {
+      "id": "PT-CQ2",
+      "lang": "pt",
+      "category": "paper_cq_pt",
+      "question": "Quais propostas técnicas precisam de um Backend Developer?",
+      "generated_sparql": "PREFIX : <http://www.semanticweb.org/anon/ontologies/2025/8/CorpOnto.owl#>\nSELECT DISTINCT ?tp WHERE {\n  ?tp a :TechnicalProposal .\n  ?tp :technicalProposalNeedsToWorkHourProfile ?whp .\n  ?whp :workHourProfileNeedsToProfile ?profile .\n  ?profile :hasName \"Backend Developer\" .\n}",
+      "reference_sparql": "PREFIX : <http://www.semanticweb.org/anon/ontologies/2025/8/CorpOnto.owl#>\nSELECT DISTINCT ?tp WHERE {\n  ?tp a :TechnicalProposal .\n  ?tp :technicalProposalNeedsToWorkHourProfile ?whp .\n  ?whp :workHourProfileNeedsToProfile ?p .\n  ?p :hasName \"Backend Developer\" .\n}",
+      "exec_error": null,
+      "n_rows_llm": 1,
+      "n_rows_reference": 1,
+      "correctness": "exact_match",
+      "rows_sample": [
+        [
+          "TechnicalProposal_001"
+        ]
+      ],
+      "answer": "A proposta técnica que precisa de um Backend Developer é a [TechnicalProposal_001]. Os dados subjacentes que suportam esta resposta passaram pelo pipeline de integração Source -> Kafka -> Bronze -> Silver -> Gold.",
+      "latency_ms": {
+        "nl_to_sparql": 1917.51,
+        "sparql_execution": 4.59,
+        "lineage_enrichment": 1.71,
+        "synthesis": 1212.22,
+        "total": 5141.46
+      },
+      "sparql_meta": {
+        "latency_ms": 1917.51,
+        "model": "gemini-3.5-flash",
+        "prompt_tokens": 1892,
+        "response_tokens": 97,
+        "raw_response_first200": "```sparql\nPREFIX : <http://www.semanticweb.org/anon/ontologies/2025/8/CorpOnto.owl#>\nSELECT DISTINCT ?tp WHERE {\n  ?tp a :TechnicalProposal .\n  ?tp :technicalProposalNeedsToWorkHourProfile ?whp .\n "
+      },
+      "synth_meta": {
+        "latency_ms": 1212.22,
+        "model": "gemini-3.5-flash",
+        "prompt_tokens": 390,
+        "response_tokens": 44
+      }
+    },
+    {
+      "id": "PT-CQ3",
+      "lang": "pt",
+      "category": "paper_cq_pt",
+      "question": "Quais projetos estão ligados a oportunidades?",
+      "generated_sparql": "PREFIX : <http://www.semanticweb.org/anon/ontologies/2025/8/CorpOnto.owl#>\nSELECT DISTINCT ?project ?opportunity WHERE {\n  ?project a :Project .\n  ?project :projectRelatedToOpportunity ?opportunity .\n  ?opportunity a :Opportunity .\n}",
+      "reference_sparql": "PREFIX : <http://www.semanticweb.org/anon/ontologies/2025/8/CorpOnto.owl#>\nSELECT DISTINCT ?proj ?opp WHERE {\n  ?proj a :Project .\n  ?proj :projectRelatedToOpportunity ?opp .\n} ORDER BY ?proj",
+      "exec_error": null,
+      "n_rows_llm": 5,
+      "n_rows_reference": 5,
+      "correctness": "exact_match",
+      "rows_sample": [
+        [
+          "Project_001",
+          "Opportunity_OPP001"
+        ],
+        [
+          "Project_002",
+          "Opportunity_OPP002"
+        ],
+        [
+          "Project_003",
+          "Opportunity_OPP003"
+        ],
+        [
+          "Project_004",
+          "Opportunity_OPP004"
+        ],
+        [
+          "Project_005",
+          "Opportunity_OPP005"
+        ]
+      ],
+      "answer": "Os projetos vinculados a oportunidades são [Project_001] associado a [Opportunity_OPP001], [Project_002] a [Opportunity_OPP002], [Project_003] a [Opportunity_OPP003], [Project_004] a [Opportunity_OPP004] e [Project_005] a [Opportunity_OPP005]. Os dados subjacentes que suportam esta resposta atravessaram o pipeline Source -> Kafka -> Bronze -> Silver -> Gold.",
+      "latency_ms": {
+        "nl_to_sparql": 1261.44,
+        "sparql_execution": 4.69,
+        "lineage_enrichment": 1.97,
+        "synthesis": 1368.93,
+        "total": 4643.07
+      },
+      "sparql_meta": {
+        "latency_ms": 1261.44,
+        "model": "gemini-3.5-flash",
+        "prompt_tokens": 1889,
+        "response_tokens": 75,
+        "raw_response_first200": "```sparql\nPREFIX : <http://www.semanticweb.org/anon/ontologies/2025/8/CorpOnto.owl#>\nSELECT DISTINCT ?project ?opportunity WHERE {\n  ?project a :Project .\n  ?project :projectRelatedToOpportunity ?o"
+      },
+      "synth_meta": {
+        "latency_ms": 1368.93,
+        "model": "gemini-3.5-flash",
+        "prompt_tokens": 759,
+        "response_tokens": 120
+      }
+    },
+    {
+      "id": "PT-CQ4",
+      "lang": "pt",
+      "category": "paper_cq_pt",
+      "question": "Quais funcionários sabem Python?",
+      "generated_sparql": "PREFIX : <http://www.semanticweb.org/anon/ontologies/2025/8/CorpOnto.owl#>\nSELECT DISTINCT ?employee WHERE {\n  ?employee a :Employee .\n  ?employee :hasKnowledge ?knowledge .\n  ?knowledge :hasName \"Python\" .\n}",
+      "reference_sparql": "PREFIX : <http://www.semanticweb.org/anon/ontologies/2025/8/CorpOnto.owl#>\nSELECT DISTINCT ?emp ?profName WHERE {\n  ?emp a :Employee .\n  ?emp :hasKnowledge ?k .\n  ?k :hasName \"Python\" .\n  OPTIONAL { ?emp :hasProfile ?p . ?p :hasName ?profName }\n} ORDER BY ?emp",
+      "exec_error": null,
+      "n_rows_llm": 9,
+      "n_rows_reference": 9,
+      "correctness": "partial_match",
+      "rows_sample": [
+        [
+          "Employee_012"
+        ],
+        [
+          "Employee_019"
+        ],
+        [
+          "Employee_032"
+        ],
+        [
+          "Employee_034"
+        ],
+        [
+          "Employee_038"
+        ]
+      ],
+      "answer": "Os funcionários que possuem conhecimento em Python são [Employee_011], [Employee_012], [Employee_019], [Employee_032], [Employee_034], [Employee_038], [Employee_040], [Employee_042] e [Employee_045]. Os dados subjacentes que suportam esta resposta atravessaram o pipeline de dados Source -> Kafka -> Bronze -> Silver -> Gold.",
+      "latency_ms": {
+        "nl_to_sparql": 1309.12,
+        "sparql_execution": 19.12,
+        "lineage_enrichment": 1.49,
+        "synthesis": 1324.16,
+        "total": 4675.86
+      },
+      "sparql_meta": {
+        "latency_ms": 1309.12,
+        "model": "gemini-3.5-flash",
+        "prompt_tokens": 1887,
+        "response_tokens": 74,
+        "raw_response_first200": "```sparql\nPREFIX : <http://www.semanticweb.org/anon/ontologies/2025/8/CorpOnto.owl#>\nSELECT DISTINCT ?employee WHERE {\n  ?employee a :Employee .\n  ?employee :hasKnowledge ?knowledge .\n  ?knowledge "
+      },
+      "synth_meta": {
+        "latency_ms": 1324.16,
+        "model": "gemini-3.5-flash",
+        "prompt_tokens": 740,
+        "response_tokens": 99
+      }
+    },
+    {
+      "id": "PT-CQ5",
+      "lang": "pt",
+      "category": "paper_cq_pt",
+      "question": "Quais perfis são necessários para o projeto ligado à oportunidade OPP001?",
+      "generated_sparql": "PREFIX : <http://www.semanticweb.org/anon/ontologies/2025/8/CorpOnto.owl#>\nSELECT DISTINCT ?profileName WHERE {\n  # Find the project related to opportunity OPP001\n  # Note: OPP001 can be represented as :OPP001 or matched by IRI/name. We will use the IRI :OPP001.\n  ?project :projectRelatedToOpportunity :OPP001 .\n  \n  # Get the opportunity's technical proposal\n  :OPP001 :hasTechnicalProposal ?techProposal .\n  \n  # Get the work hour profiles needed for this technical proposal\n  ?techProposal :technicalProposalNeedsToWorkHourProfile ?whProfile .\n  \n  # Get the profiles associated with those work hour profiles\n  ?whProfile :workHourProfileNeedsToProfile ?profile .\n  \n  # Get the name of the profile\n  ?profile :hasName ?profileName .\n}",
+      "reference_sparql": "PREFIX : <http://www.semanticweb.org/anon/ontologies/2025/8/CorpOnto.owl#>\nSELECT DISTINCT ?profName ?hours WHERE {\n  :Opportunity_OPP001 :hasTechnicalProposal ?tp .\n  ?tp :technicalProposalNeedsToWorkHourProfile ?whp .\n  ?whp :expectedHours ?hours .\n  ?whp :workHourProfileNeedsToProfile ?p .\n  ?p :hasName ?profName .\n}",
+      "exec_error": null,
+      "n_rows_llm": 0,
+      "n_rows_reference": 1,
+      "correctness": "no_match",
+      "rows_sample": [],
+      "answer": "Não foram encontrados perfis necessários para o projeto ligado à oportunidade [OPP001] nos dados atuais. Esta informação foi processada através do pipeline de dados que percorreu as etapas Source -> Kafka -> Bronze -> Silver -> Gold.",
+      "latency_ms": {
+        "nl_to_sparql": 1815.69,
+        "sparql_execution": 6.78,
+        "lineage_enrichment": 0,
+        "synthesis": 1971.93,
+        "total": 5800.79
+      },
+      "sparql_meta": {
+        "latency_ms": 1815.69,
+        "model": "gemini-3.5-flash",
+        "prompt_tokens": 1898,
+        "response_tokens": 224,
+        "raw_response_first200": "```sparql\nPREFIX : <http://www.semanticweb.org/anon/ontologies/2025/8/CorpOnto.owl#>\nSELECT DISTINCT ?profileName WHERE {\n  # Find the project related to opportunity OPP001\n  # Note: OPP001 can be "
+      },
+      "synth_meta": {
+        "latency_ms": 1971.93,
+        "model": "gemini-3.5-flash",
+        "prompt_tokens": 432,
+        "response_tokens": 48
+      }
+    },
+    {
+      "id": "PT-CQ6",
+      "lang": "pt",
+      "category": "paper_cq_pt",
+      "question": "Quais projetos tiveram margem real acima de 25%?",
+      "generated_sparql": "PREFIX : <http://www.semanticweb.org/anon/ontologies/2025/8/CorpOnto.owl#>\nSELECT DISTINCT ?project ?margin WHERE {\n  ?project a :Project .\n  ?project :hasRealMargin ?margin .\n  FILTER(?margin > 0.25)\n}\nORDER BY DESC(?margin)",
+      "reference_sparql": "PREFIX : <http://www.semanticweb.org/anon/ontologies/2025/8/CorpOnto.owl#>\nSELECT DISTINCT ?proj ?margin WHERE {\n  ?proj a :Project .\n  ?proj :hasRealMargin ?margin .\n  FILTER(?margin > 0.25)\n} ORDER BY DESC(?margin)",
+      "exec_error": null,
+      "n_rows_llm": 2,
+      "n_rows_reference": 2,
+      "correctness": "exact_match",
+      "rows_sample": [
+        [
+          "Project_003",
+          "0.35"
+        ],
+        [
+          "Project_002",
+          "0.27"
+        ]
+      ],
+      "answer": "Os projetos que apresentaram margem real acima de 25% foram o [Project_003], com uma margem de 35%, e o [Project_002], com uma margem de 27%. Os dados subjacentes que suportam esta análise atravessaram o pipeline Source -> Kafka -> Bronze -> Silver -> Gold.",
+      "latency_ms": {
+        "nl_to_sparql": 1231.7,
+        "sparql_execution": 11.81,
+        "lineage_enrichment": 0.32,
+        "synthesis": 1366.1,
+        "total": 4617.74
+      },
+      "sparql_meta": {
+        "latency_ms": 1231.7,
+        "model": "gemini-3.5-flash",
+        "prompt_tokens": 1895,
+        "response_tokens": 85,
+        "raw_response_first200": "```sparql\nPREFIX : <http://www.semanticweb.org/anon/ontologies/2025/8/CorpOnto.owl#>\nSELECT DISTINCT ?project ?margin WHERE {\n  ?project a :Project .\n  ?project :hasRealMargin ?margin .\n  FILTER(?m"
+      },
+      "synth_meta": {
+        "latency_ms": 1366.1,
+        "model": "gemini-3.5-flash",
+        "prompt_tokens": 479,
+        "response_tokens": 75
+      }
+    },
+    {
+      "id": "NAT-1",
+      "lang": "en",
+      "category": "natural",
+      "question": "Show me the projects whose real margin is below their expected margin.",
+      "generated_sparql": "PREFIX : <http://www.semanticweb.org/anon/ontologies/2025/8/CorpOnto.owl#>\nSELECT DISTINCT ?project ?realMargin ?expectedMargin WHERE {\n  ?project a :Project .\n  ?project :hasRealMargin ?realMargin .\n  ?project :projectRelatedToOpportunity ?opp .\n  ?opp :expectedMargin ?expectedMargin .\n  FILTER(?realMargin < ?expectedMargin)\n}",
+      "reference_sparql": "PREFIX : <http://www.semanticweb.org/anon/ontologies/2025/8/CorpOnto.owl#>\nSELECT DISTINCT ?proj ?real ?expected WHERE {\n  ?proj a :Project .\n  ?proj :hasRealMargin ?real .\n  ?proj :expectedMargin ?expected .\n  FILTER(?real < ?expected)\n}",
+      "exec_error": null,
+      "n_rows_llm": 0,
+      "n_rows_reference": 0,
+      "correctness": "exact_match",
+      "rows_sample": [],
+      "answer": "Não foram encontrados projetos cujo valor de margem real seja inferior à margem esperada nos dados analisados. Esta informação foi processada através de um fluxo de dados que percorreu a pipeline Source -> Kafka -> Bronze -> Silver -> Gold.",
+      "latency_ms": {
+        "nl_to_sparql": 1960.71,
+        "sparql_execution": 7.23,
+        "lineage_enrichment": 0,
+        "synthesis": 1085.16,
+        "total": 5059.31
+      },
+      "sparql_meta": {
+        "latency_ms": 1960.71,
+        "model": "gemini-3.5-flash",
+        "prompt_tokens": 1894,
+        "response_tokens": 105,
+        "raw_response_first200": "```sparql\nPREFIX : <http://www.semanticweb.org/anon/ontologies/2025/8/CorpOnto.owl#>\nSELECT DISTINCT ?project ?realMargin ?expectedMargin WHERE {\n  ?project a :Project .\n  ?project :hasRealMargin ?"
+      },
+      "synth_meta": {
+        "latency_ms": 1085.16,
+        "model": "gemini-3.5-flash",
+        "prompt_tokens": 310,
+        "response_tokens": 48
+      }
+    },
+    {
+      "id": "NAT-2",
+      "lang": "pt",
+      "category": "natural",
+      "question": "Quantos funcionários temos por perfil?",
+      "generated_sparql": "PREFIX : <http://www.semanticweb.org/anon/ontologies/2025/8/CorpOnto.owl#>\nSELECT ?profileName (COUNT(DISTINCT ?emp) AS ?employeeCount)\nWHERE {\n  ?emp a :Employee .\n  ?emp :hasProfile ?profile .\n  ?profile :hasName ?profileName .\n}\nGROUP BY ?profileName\nORDER BY DESC(?employeeCount)",
+      "reference_sparql": "PREFIX : <http://www.semanticweb.org/anon/ontologies/2025/8/CorpOnto.owl#>\nSELECT ?profName (COUNT(?emp) AS ?count) WHERE {\n  ?emp a :Employee .\n  ?emp :hasProfile ?p .\n  ?p :hasName ?profName .\n} GROUP BY ?profName ORDER BY DESC(?count)",
+      "exec_error": null,
+      "n_rows_llm": 5,
+      "n_rows_reference": 5,
+      "correctness": "partial_match",
+      "rows_sample": [
+        [
+          "Frontend Developer",
+          "14"
+        ],
+        [
+          "Data Engineer",
+          "13"
+        ],
+        [
+          "Backend Developer",
+          "10"
+        ],
+        [
+          "Project Manager",
+          "8"
+        ],
+        [
+          "Data Scientist",
+          "5"
+        ]
+      ],
+      "answer": "Temos um total de 50 funcionários distribuídos por perfil, sendo 14 no perfil [Frontend Developer], 13 no perfil [Data Engineer], 10 no perfil [Backend Developer], 8 no perfil [Project Manager] e 5 no perfil [Data Scientist]. Os dados subjacentes que geraram esta informação passaram pelo pipeline de integração Source -> Kafka -> Bronze -> Silver -> Gold.",
+      "latency_ms": {
+        "nl_to_sparql": 1806.54,
+        "sparql_execution": 21.22,
+        "lineage_enrichment": 0.0,
+        "synthesis": 2049.35,
+        "total": 5891.59
+      },
+      "sparql_meta": {
+        "latency_ms": 1806.54,
+        "model": "gemini-3.5-flash",
+        "prompt_tokens": 1888,
+        "response_tokens": 102,
+        "raw_response_first200": "```sparql\nPREFIX : <http://www.semanticweb.org/anon/ontologies/2025/8/CorpOnto.owl#>\nSELECT ?profileName (COUNT(DISTINCT ?emp) AS ?employeeCount)\nWHERE {\n  ?emp a :Employee .\n  ?emp :hasProfile ?pr"
+      },
+      "synth_meta": {
+        "latency_ms": 2049.35,
+        "model": "gemini-3.5-flash",
+        "prompt_tokens": 333,
+        "response_tokens": 84
+      }
+    },
+    {
+      "id": "NAT-3",
+      "lang": "en",
+      "category": "natural",
+      "question": "What is the average expected hours across all technical proposals?",
+      "generated_sparql": "PREFIX : <http://www.semanticweb.org/anon/ontologies/2025/8/CorpOnto.owl#>\nSELECT (AVG(?hours) AS ?avgExpectedHours) WHERE {\n  ?tp a :TechnicalProposal .\n  ?tp :technicalProposalNeedsToWorkHourProfile ?whp .\n  ?whp :expectedHours ?hours .\n}",
+      "reference_sparql": "PREFIX : <http://www.semanticweb.org/anon/ontologies/2025/8/CorpOnto.owl#>\nSELECT (AVG(?h) AS ?avg_hours) WHERE {\n  ?tp a :TechnicalProposal .\n  ?tp :technicalProposalNeedsToWorkHourProfile ?whp .\n  ?whp :expectedHours ?h .\n}",
+      "exec_error": null,
+      "n_rows_llm": 1,
+      "n_rows_reference": 1,
+      "correctness": "exact_match",
+      "rows_sample": [
+        [
+          "176"
+        ]
+      ],
+      "answer": "O valor médio de horas esperadas em todas as propostas técnicas é de 176 horas, calculado com base no perfil de horas de trabalho associado a cada [TechnicalProposal]. Esta informação foi processada através de um pipeline de dados que percorreu o fluxo Source -> Kafka -> Bronze -> Silver -> Gold.",
+      "latency_ms": {
+        "nl_to_sparql": 1097.25,
+        "sparql_execution": 6.4,
+        "lineage_enrichment": 0.0,
+        "synthesis": 1603.25,
+        "total": 4712.52
+      },
+      "sparql_meta": {
+        "latency_ms": 1097.25,
+        "model": "gemini-3.5-flash",
+        "prompt_tokens": 1892,
+        "response_tokens": 89,
+        "raw_response_first200": "```sparql\nPREFIX : <http://www.semanticweb.org/anon/ontologies/2025/8/CorpOnto.owl#>\nSELECT (AVG(?hours) AS ?avgExpectedHours) WHERE {\n  ?tp a :TechnicalProposal .\n  ?tp :technicalProposalNeedsToWo"
+      },
+      "synth_meta": {
+        "latency_ms": 1603.25,
+        "model": "gemini-3.5-flash",
+        "prompt_tokens": 291,
+        "response_tokens": 64
+      }
+    },
+    {
+      "id": "NAT-4",
+      "lang": "pt",
+      "category": "natural",
+      "question": "Quais funcionários trabalham em mais de um projeto?",
+      "generated_sparql": "PREFIX : <http://www.semanticweb.org/anon/ontologies/2025/8/CorpOnto.owl#>\nSELECT DISTINCT ?employee WHERE {\n  ?employee a :Employee .\n  ?workHour :belongsTo ?employee .\n  ?workHour :allocatedTo ?project1 .\n  ?workHour2 :belongsTo ?employee .\n  ?workHour2 :allocatedTo ?project2 .\n  FILTER(?project1 != ?project2)\n}",
+      "reference_sparql": "PREFIX : <http://www.semanticweb.org/anon/ontologies/2025/8/CorpOnto.owl#>\nSELECT ?emp (COUNT(DISTINCT ?proj) AS ?n_projects) WHERE {\n  ?emp a :Employee .\n  ?proj :employs ?emp .\n} GROUP BY ?emp HAVING (COUNT(DISTINCT ?proj) > 1)",
+      "exec_error": null,
+      "n_rows_llm": 0,
+      "n_rows_reference": 0,
+      "correctness": "exact_match",
+      "rows_sample": [],
+      "answer": "Não foram encontrados funcionários que trabalham em mais de um projeto simultaneamente no momento. Esta informação foi obtida a partir de dados que percorreram o pipeline de integração Source -> Kafka -> Bronze -> Silver -> Gold.",
+      "latency_ms": {
+        "nl_to_sparql": 1267.32,
+        "sparql_execution": 68.62,
+        "lineage_enrichment": 0,
+        "synthesis": 1209.17,
+        "total": 4559.67
+      },
+      "sparql_meta": {
+        "latency_ms": 1267.32,
+        "model": "gemini-3.5-flash",
+        "prompt_tokens": 1892,
+        "response_tokens": 112,
+        "raw_response_first200": "```sparql\nPREFIX : <http://www.semanticweb.org/anon/ontologies/2025/8/CorpOnto.owl#>\nSELECT DISTINCT ?employee WHERE {\n  ?employee a :Employee .\n  ?workHour :belongsTo ?employee .\n  ?workHour :allo"
+      },
+      "synth_meta": {
+        "latency_ms": 1209.17,
+        "model": "gemini-3.5-flash",
+        "prompt_tokens": 314,
+        "response_tokens": 44
+      }
+    },
+    {
+      "id": "NAT-5",
+      "lang": "en",
+      "category": "natural",
+      "question": "Which opportunities have both a technical and a commercial proposal?",
+      "generated_sparql": "PREFIX : <http://www.semanticweb.org/anon/ontologies/2025/8/CorpOnto.owl#>\nSELECT DISTINCT ?opportunity WHERE {\n  ?opportunity a :Opportunity .\n  ?opportunity :hasTechnicalProposal ?techProposal .\n  ?opportunity :hasCommercialProposal ?commProposal .\n}",
+      "reference_sparql": "PREFIX : <http://www.semanticweb.org/anon/ontologies/2025/8/CorpOnto.owl#>\nSELECT DISTINCT ?opp WHERE {\n  ?opp a :Opportunity .\n  ?opp :hasTechnicalProposal ?tp .\n  ?opp :hasCommercialProposal ?cp .\n}",
+      "exec_error": null,
+      "n_rows_llm": 5,
+      "n_rows_reference": 5,
+      "correctness": "exact_match",
+      "rows_sample": [
+        [
+          "Opportunity_OPP001"
+        ],
+        [
+          "Opportunity_OPP002"
+        ],
+        [
+          "Opportunity_OPP003"
+        ],
+        [
+          "Opportunity_OPP004"
+        ],
+        [
+          "Opportunity_OPP005"
+        ]
+      ],
+      "answer": "The opportunities that have both a technical and a commercial proposal are [Opportunity_OPP001], [Opportunity_OPP002], [Opportunity_OPP003], [Opportunity_OPP004], and [Opportunity_OPP005]. Note that the underlying data traversed the Source -> Kafka -> Bronze -> Silver -> Gold pipeline.",
+      "latency_ms": {
+        "nl_to_sparql": 1238.75,
+        "sparql_execution": 3.91,
+        "lineage_enrichment": 0.82,
+        "synthesis": 1943.05,
+        "total": 5190.84
+      },
+      "sparql_meta": {
+        "latency_ms": 1238.75,
+        "model": "gemini-3.5-flash",
+        "prompt_tokens": 1892,
+        "response_tokens": 77,
+        "raw_response_first200": "```sparql\nPREFIX : <http://www.semanticweb.org/anon/ontologies/2025/8/CorpOnto.owl#>\nSELECT DISTINCT ?opportunity WHERE {\n  ?opportunity a :Opportunity .\n  ?opportunity :hasTechnicalProposal ?techP"
+      },
+      "synth_meta": {
+        "latency_ms": 1943.05,
+        "model": "gemini-3.5-flash",
+        "prompt_tokens": 741,
+        "response_tokens": 76
+      }
+    },
+    {
+      "id": "NAT-6",
+      "lang": "pt",
+      "category": "natural",
+      "question": "Qual o valor total dos pagamentos recebidos?",
+      "generated_sparql": "PREFIX : <http://www.semanticweb.org/anon/ontologies/2025/8/CorpOnto.owl#>\nSELECT (SUM(?val) AS ?totalPayments) WHERE {\n  ?payment a :IncomingPayment .\n  ?payment :amount ?val .\n}",
+      "reference_sparql": "PREFIX : <http://www.semanticweb.org/anon/ontologies/2025/8/CorpOnto.owl#>\nSELECT (SUM(?a) AS ?total) WHERE {\n  ?p a :IncomingPayment .\n  ?p :amount ?a .\n}",
+      "exec_error": null,
+      "n_rows_llm": 1,
+      "n_rows_reference": 1,
+      "correctness": "exact_match",
+      "rows_sample": [
+        [
+          "188171.0"
+        ]
+      ],
+      "answer": "O valor total dos pagamentos recebidos é de 188171.0, calculado a partir das instâncias de [IncomingPayment] registradas no sistema. Esta informação foi processada através de dados que atravessaram o pipeline Source -> Kafka -> Bronze -> Silver -> Gold.",
+      "latency_ms": {
+        "nl_to_sparql": 1227.69,
+        "sparql_execution": 5.18,
+        "lineage_enrichment": 0.0,
+        "synthesis": 1235.47,
+        "total": 4507.38
+      },
+      "sparql_meta": {
+        "latency_ms": 1227.69,
+        "model": "gemini-3.5-flash",
+        "prompt_tokens": 1891,
+        "response_tokens": 70,
+        "raw_response_first200": "```sparql\nPREFIX : <http://www.semanticweb.org/anon/ontologies/2025/8/CorpOnto.owl#>\nSELECT (SUM(?val) AS ?totalPayments) WHERE {\n  ?payment a :IncomingPayment .\n  ?payment :amount ?val .\n}\n```"
+      },
+      "synth_meta": {
+        "latency_ms": 1235.47,
+        "model": "gemini-3.5-flash",
+        "prompt_tokens": 276,
+        "response_tokens": 60
+      }
+    }
+  ]
+}
